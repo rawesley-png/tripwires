@@ -1,0 +1,32 @@
+name: Tripwires
+on:
+  schedule:
+    - cron: "30 12 * * 1-5"    # 7:30am US Eastern on weekdays; Monday sends the digest
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run the engine
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          EDGAR_USER_AGENT: ${{ secrets.EDGAR_USER_AGENT }}
+          FORWARD_PE_FALLBACK: ${{ secrets.FORWARD_PE_FALLBACK }}
+          SITE_URL: ${{ secrets.SITE_URL }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
+          PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
+          PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
+        run: |
+          if [ "$(date -u +%u)" = "1" ]; then python3 tripwires.py --digest; else python3 tripwires.py; fi
+      - name: Publish the app and history
+        run: |
+          git config user.name tripwires && git config user.email tripwires@users.noreply.github.com
+          git add docs history.json state.json
+          git commit -m "tripwires $(date -u +%F)" || true
+          git push || true

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tripwires</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@87.5,400;87.5,500;87.5,700;100,400;100,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    --panel: #E6E8E6; --tile: #F5F6F4; --tile-edge: #C6CAC5;
+    --ink: #22251F; --ink-2: #5C6157; --ink-3: #8C9186;
+    --green: #2F7D4F; --amber: #B8830E; --red: #B33A2C; --lamp-off: #C4C6BE; --ring: #B33A2C; --focus: #22251F;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --panel: #1B1E1D; --tile: #252927; --tile-edge: #3A403C;
+      --ink: #EDEEE8; --ink-2: #B4B8AE; --ink-3: #7F857B;
+      --green: #56B57E; --amber: #E0A93A; --red: #E2604F; --lamp-off: #4A4E47; --ring: #E2604F; --focus: #EDEEE8;
+    }
+  }
+  :root[data-theme="dark"] {
+    --panel: #1B1E1D; --tile: #252927; --tile-edge: #3A403C;
+    --ink: #EDEEE8; --ink-2: #B4B8AE; --ink-3: #7F857B;
+    --green: #56B57E; --amber: #E0A93A; --red: #E2604F; --lamp-off: #4A4E47; --ring: #E2604F; --focus: #EDEEE8;
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--panel); color: var(--ink); font-family: "Archivo", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-variation-settings: "wdth" 100; font-size: 15px; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 24px 18px 56px; }
+  .switch { display: flex; gap: 8px; margin-bottom: 18px; }
+  .switch button { flex: 1; font: inherit; font-weight: 500; padding: 12px 10px; border-radius: 10px; border: 1.5px solid var(--tile-edge); background: var(--tile); color: var(--ink-2); cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; }
+  .switch button[aria-selected="true"] { color: var(--ink); border-color: var(--ink); }
+  .switch button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+  .switch .count { display: inline-flex; gap: 5px; }
+  .switch .count i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+  header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 18px; margin-bottom: 14px; }
+  h1 { font-size: 30px; line-height: 1.1; margin: 0; font-weight: 700; font-variation-settings: "wdth" 87.5; letter-spacing: -0.01em; }
+  .stamp { color: var(--ink-2); font-size: 14px; }
+  .summary { font-size: 17px; margin: 0 0 20px; max-width: 62ch; }
+  .gate { display: grid; grid-template-columns: 64px 1fr; gap: 16px; align-items: center; background: var(--tile); border: 1.5px solid var(--tile-edge); border-radius: 10px; padding: 18px 20px; margin-bottom: 8px; }
+  .gate.rung { border-color: var(--ring); box-shadow: 0 0 0 4px color-mix(in srgb, var(--ring) 22%, transparent); }
+  .gate svg { width: 56px; height: 56px; display: block; }
+  .gate .title { font-weight: 700; font-size: 18px; font-variation-settings: "wdth" 87.5; margin: 0 0 3px; }
+  .gate p { margin: 0; color: var(--ink-2); font-size: 14px; }
+  .gate .parts { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; }
+  .gate .parts span { display: inline-flex; align-items: center; gap: 7px; }
+  .gate .parts i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; background: var(--lamp-off); }
+  .section { margin: 26px 0 10px; }
+  .section h3 { margin: 0 0 2px; font-size: 19px; font-weight: 700; font-variation-settings: "wdth" 87.5; }
+  .section p { margin: 0; color: var(--ink-2); font-size: 14px; max-width: 70ch; }
+  .grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+  @media (min-width: 700px) { .grid { grid-template-columns: 1fr 1fr; } }
+  .tile { background: var(--tile); border: 1.5px solid var(--tile-edge); border-radius: 10px; padding: 16px 18px 14px; display: grid; grid-template-columns: 22px 1fr; gap: 6px 14px; cursor: pointer; }
+  .tile:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+  .tile.red { border-color: color-mix(in srgb, var(--red) 55%, var(--tile-edge)); }
+  .tile.amber { border-color: color-mix(in srgb, var(--amber) 55%, var(--tile-edge)); }
+  .lamp { width: 18px; height: 18px; border-radius: 50%; background: var(--lamp-off); margin-top: 3px; grid-row: 1 / span 2; }
+  i.green, .lamp.green { background: var(--green); } i.amber, .lamp.amber { background: var(--amber); } i.red, .lamp.red { background: var(--red); }
+  .lamp.green { box-shadow: 0 0 10px color-mix(in srgb, var(--green) 55%, transparent); }
+  .lamp.amber { box-shadow: 0 0 12px color-mix(in srgb, var(--amber) 70%, transparent); }
+  .lamp.red { box-shadow: 0 0 14px color-mix(in srgb, var(--red) 75%, transparent); }
+  .tile h2 { margin: 0; font-size: 17px; font-weight: 700; font-variation-settings: "wdth" 87.5; line-height: 1.2; }
+  .tile .tag { grid-column: 2; margin: 0 0 2px; font-size: 12.5px; color: var(--ink-3); }
+  .tile .q { color: var(--ink-2); font-size: 14px; grid-column: 2; margin: 0; }
+  .tile .reading { grid-column: 2; margin: 8px 0 0; font-size: 15px; }
+  .tile .trip { grid-column: 2; color: var(--ink-3); font-size: 13px; margin: 3px 0 0; }
+  .tile .subs { grid-column: 2; list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 6px; }
+  .tile .subs li { display: grid; grid-template-columns: 12px 1fr; gap: 10px; align-items: start; font-size: 14px; }
+  .tile .subs i { width: 11px; height: 11px; border-radius: 50%; margin-top: 5px; display: inline-block; background: var(--lamp-off); }
+  .tile .subs b { font-weight: 500; } .tile .subs span { color: var(--ink-2); }
+  .tile .foot { grid-column: 2; display: flex; justify-content: space-between; align-items: end; gap: 10px; margin-top: 10px; color: var(--ink-3); font-size: 12.5px; }
+  .tile svg.spark { width: 84px; height: 22px; flex: none; }
+  .tile .more { grid-column: 2; display: none; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--tile-edge); font-size: 14px; color: var(--ink-2); }
+  .tile .more a { color: var(--ink); overflow-wrap: anywhere; }
+  .tile.open .more { display: block; }
+  .status-word { font-weight: 500; }
+  .status-word.green { color: var(--green); } .status-word.amber { color: var(--amber); } .status-word.red { color: var(--red); }
+  .legend { margin: 26px 0 0; color: var(--ink-2); font-size: 14px; display: flex; flex-wrap: wrap; gap: 8px 22px; }
+  .legend span { display: inline-flex; align-items: center; gap: 8px; }
+  .legend i { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+  .note { margin: 18px 0 0; color: var(--ink-3); font-size: 13.5px; max-width: 70ch; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="switch" role="tablist" id="switch"></div>
+  <header><h1 id="title"></h1><div class="stamp" id="stamp"></div></header>
+  <p class="summary" id="summary"></p>
+  <div class="gate" id="gate" role="status"></div>
+  <div id="grid"></div>
+  <div class="legend">
+    <span><i style="background:var(--green)"></i>Calm</span>
+    <span><i style="background:var(--amber)"></i>Watch</span>
+    <span><i style="background:var(--red)"></i>Tripped</span>
+    <span>Tap a tile for the evidence</span>
+  </div>
+  <p class="note" id="note"></p>
+</div>
+
+<script id="tripwire-data" type="application/json">/*TRIPWIRE_DATA*/{}</script>
+<script>
+(function () {
+  const DATA = JSON.parse(document.getElementById("tripwire-data").textContent.replace(/^\/\*TRIPWIRE_DATA\*\//, "") || "{}");
+  const WORD = { green: "Calm", amber: "Watch", red: "Tripped" };
+  const norm = s => ({ green: "green", amber: "amber", yellow: "amber", red: "red" })[String(s || "green").toLowerCase()] || "amber";
+  const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const BELL = '<svg viewBox="0 0 56 56" aria-hidden="true"><path class="shape" d="M28 6c1.6 0 3 1.2 3 2.8v1.4c6.7 1.5 11 7.2 11 14.3v9.4l4.2 5.6c.8 1.1 0 2.7-1.4 2.7H11.2c-1.4 0-2.2-1.6-1.4-2.7L14 33.9v-9.4c0-7.1 4.3-12.8 11-14.3V8.8C25 7.2 26.4 6 28 6z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M23 45.5a5 5 0 0 0 10 0" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>';
+  const GATE = '<svg viewBox="0 0 56 56" aria-hidden="true"><rect class="shape" x="8" y="10" width="40" height="36" rx="4" fill="none" stroke="currentColor" stroke-width="2.4"/><line x1="8" y1="22" x2="48" y2="22" stroke="currentColor" stroke-width="2.4"/><line x1="8" y1="34" x2="48" y2="34" stroke="currentColor" stroke-width="2.4"/></svg>';
+
+  function spark(history) {
+    const pts = (history || []).filter(h => typeof h.value === "number");
+    if (pts.length < 2) return '<svg class="spark" viewBox="0 0 84 22" aria-hidden="true"><circle cx="78" cy="11" r="2.5" fill="currentColor"/></svg>';
+    const vals = pts.map(p => p.value), lo = Math.min(...vals), hi = Math.max(...vals), span = hi - lo || 1, step = 80 / (pts.length - 1);
+    const d = pts.map((p, i) => `${i === 0 ? "M" : "L"}${(2 + i * step).toFixed(1)},${(19 - (p.value - lo) / span * 16).toFixed(1)}`).join(" ");
+    return `<svg class="spark" viewBox="0 0 84 22" aria-hidden="true"><path d="${d}" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>`;
+  }
+
+  function tileHtml(it) {
+    const s = norm(it.status);
+    return `<div class="tile ${s}" tabindex="0" role="button" aria-expanded="false">
+      <div class="lamp ${s}" aria-label="${WORD[s]}"></div>
+      <h2>${esc(it.name)}</h2>
+      ${it.tag ? `<p class="tag">${esc(it.tag)}</p>` : ""}
+      <p class="q">${esc(it.question)}</p>
+      <p class="reading"><span class="status-word ${s}">${WORD[s]}.</span> ${esc(it.reading)}</p>
+      <p class="trip">${esc(it.trip)}</p>
+      ${it.subs && it.subs.length ? `<ul class="subs">${it.subs.map(x => `<li><i class="${norm(x.status)}"></i><div><b>${esc(x.name)}.</b> <span>${esc(x.reading)}</span></div></li>`).join("")}</ul>` : ""}
+      <div class="foot"><span>${esc(it.source)}${it.checked ? " · " + esc(it.checked) : ""}</span>${spark(it.history)}</div>
+      <div class="more">${esc(it.evidence)}${it.url ? ` <a href="${esc(it.url)}" target="_blank" rel="noopener">Source</a>` : ""}</div>
+    </div>`;
+  }
+
+  function renderBoard(b) {
+    document.getElementById("title").textContent = b.title;
+    document.getElementById("stamp").textContent = "Checked " + (DATA.updated || "");
+    document.getElementById("summary").textContent = b.summary || "";
+    const g = b.gate || {};
+    const gate = document.getElementById("gate");
+    gate.classList.toggle("rung", !!g.rung);
+    gate.innerHTML = (g.kind === "bell" ? BELL : GATE) + `<div><p class="title">${esc(g.title)}</p><p>${esc(g.text)}</p><div class="parts">${(g.parts || []).map(p => `<span><i class="${norm(p.status)}"></i>${esc(p.name)}</span>`).join("")}</div></div>`;
+    if (g.rung) gate.querySelector(".shape").setAttribute("fill", "var(--ring)");
+    document.getElementById("grid").innerHTML = (b.groups || []).map(gr => {
+      const rows = (b.tiles || []).filter(t => t.group === gr.key);
+      if (!rows.length) return "";
+      return `<div class="section"><h3>${esc(gr.title)}</h3><p>${esc(gr.blurb)}</p></div><div class="grid">${rows.map(tileHtml).join("")}</div>`;
+    }).join("");
+    document.querySelectorAll(".tile").forEach(t => {
+      const toggle = () => { t.classList.toggle("open"); t.setAttribute("aria-expanded", t.classList.contains("open")); };
+      t.addEventListener("click", toggle);
+      t.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); } });
+    });
+    document.getElementById("note").textContent = (DATA.soft_checked ? "Hard data from FRED, Yahoo Finance, and SEC filings; soft signals from a web check. " : "Hard data only — soft-signal tiles were not checked on this run. ") + "Updated automatically by the tripwires script.";
+  }
+
+  const boards = DATA.boards || [];
+  const sw = document.getElementById("switch");
+  let current = location.hash === "#market" ? 1 : 0;
+  function drawSwitch() {
+    sw.innerHTML = boards.map((b, i) => {
+      const reds = (b.tiles || []).filter(t => norm(t.status) === "red").length, ambers = (b.tiles || []).filter(t => norm(t.status) === "amber").length;
+      return `<button role="tab" aria-selected="${i === current}" data-i="${i}">${esc(b.title)}<span class="count">${"<i class=\"red\"></i>".repeat(reds)}${"<i class=\"amber\"></i>".repeat(ambers)}</span></button>`;
+    }).join("");
+    sw.querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => { current = +btn.dataset.i; location.hash = boards[current].key; drawSwitch(); renderBoard(boards[current]); }));
+  }
+  if (boards.length) { drawSwitch(); renderBoard(boards[current]); }
+  else { document.getElementById("title").textContent = "Tripwires"; document.getElementById("summary").textContent = "No data yet — run tripwires.py."; document.getElementById("gate").style.display = "none"; }
+})();
+</script>
+</body>
+</html>
