@@ -1,7 +1,7 @@
 name: Tripwires
 on:
   schedule:
-    - cron: "30 12 * * 1-5"    # 7:30am US Eastern on weekdays; Monday sends the digest
+    - cron: "45 13 * * 1-5"    # 9:45am EDT / 8:45am EST on weekdays, after the 8:30 data releases; Monday sends the digest
   workflow_dispatch:
 permissions:
   contents: write
