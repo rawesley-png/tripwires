@@ -31,11 +31,11 @@
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--panel); color: var(--ink); font-family: "Archivo", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-variation-settings: "wdth" 100; font-size: 15px; line-height: 1.45; -webkit-font-smoothing: antialiased; }
   .wrap { max-width: 980px; margin: 0 auto; padding: 24px 18px 56px; }
-  .switch { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
-  .switch button { flex: 1 1 120px; min-width: 0; font: inherit; font-weight: 500; padding: 12px 10px; border-radius: 10px; border: 1.5px solid var(--tile-edge); background: var(--tile); color: var(--ink-2); cursor: pointer; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px 10px; text-align: center; }
+  .switch { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 8px; margin-bottom: 18px; }
+  .switch button { min-width: 0; font: inherit; font-weight: 500; padding: 11px 8px 10px; border-radius: 10px; border: 1.5px solid var(--tile-edge); background: var(--tile); color: var(--ink-2); cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 7px; text-align: center; line-height: 1.2; }
   .switch button[aria-selected="true"] { color: var(--ink); border-color: var(--ink); }
   .switch button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
-  .switch .count { display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 5px; max-width: 100%; }
+  .switch .count { display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; max-width: 100%; min-height: 9px; }
   .switch .count i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
   header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 18px; margin-bottom: 14px; }
   h1 { font-size: 30px; line-height: 1.1; margin: 0; font-weight: 700; font-variation-settings: "wdth" 87.5; letter-spacing: -0.01em; }
