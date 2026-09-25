@@ -87,3 +87,13 @@ Two more boards, rendered as tabs on the same page:
 Each run now makes four Claude calls instead of two (about $0.40–0.90 per run at Sonnet prices). Tile ids are
 unique across boards: `r*`, `e*`, `n*`, `q1`/`q2` on plumbing; `s*`, `v*`, `p*` on fiscal. History and state are keyed
 by tile id, so existing `history.json` and `state.json` files carry forward untouched and the new tiles start fresh.
+
+## Added 2026-09-25 (second pass)
+
+- Tabs now run fastest-clock-first: Plumbing, Market, AI cycle, Fiscal, Taiwan. Each board carries a short `label`
+  for the tab strip and keeps its full `title` for the heading.
+- The market board's breadth tile counts the S&P 500 constituents below their own 200-day average itself (Wikipedia
+  constituent list cached 30 days in `constituents.json`; one Yahoo call per member, about 20–40 seconds with 8
+  threads). Amber at 50% below, red at 65%. The web-check number is only a fallback now.
+- Gate lamps that are green now render green (they were falling back to the "off" grey).
+- Hash routing works for any tab (`#plumbing`, `#fiscal`, …) and follows back/forward navigation.

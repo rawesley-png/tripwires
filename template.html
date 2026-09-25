@@ -32,7 +32,7 @@
   body { margin: 0; background: var(--panel); color: var(--ink); font-family: "Archivo", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-variation-settings: "wdth" 100; font-size: 15px; line-height: 1.45; -webkit-font-smoothing: antialiased; }
   .wrap { max-width: 980px; margin: 0 auto; padding: 24px 18px 56px; }
   .switch { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
-  .switch button { flex: 1 1 150px; min-width: 0; font: inherit; font-weight: 500; padding: 12px 10px; border-radius: 10px; border: 1.5px solid var(--tile-edge); background: var(--tile); color: var(--ink-2); cursor: pointer; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px 10px; text-align: center; }
+  .switch button { flex: 1 1 120px; min-width: 0; font: inherit; font-weight: 500; padding: 12px 10px; border-radius: 10px; border: 1.5px solid var(--tile-edge); background: var(--tile); color: var(--ink-2); cursor: pointer; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px 10px; text-align: center; }
   .switch button[aria-selected="true"] { color: var(--ink); border-color: var(--ink); }
   .switch button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
   .switch .count { display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 5px; max-width: 100%; }
@@ -49,6 +49,7 @@
   .gate .parts { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; }
   .gate .parts span { display: inline-flex; align-items: center; gap: 7px; }
   .gate .parts i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; background: var(--lamp-off); }
+  .gate .parts i.green { background: var(--green); } .gate .parts i.amber { background: var(--amber); } .gate .parts i.red { background: var(--red); }
   .section { margin: 26px 0 10px; }
   .section h3 { margin: 0 0 2px; font-size: 19px; font-weight: 700; font-variation-settings: "wdth" 87.5; }
   .section p { margin: 0; color: var(--ink-2); font-size: 14px; max-width: 70ch; }
@@ -164,7 +165,7 @@
   function drawSwitch() {
     sw.innerHTML = boards.map((b, i) => {
       const reds = (b.tiles || []).filter(t => norm(t.status) === "red").length, ambers = (b.tiles || []).filter(t => norm(t.status) === "amber").length;
-      return `<button role="tab" aria-selected="${i === current}" data-i="${i}">${esc(b.title)}<span class="count">${"<i class=\"red\"></i>".repeat(reds)}${"<i class=\"amber\"></i>".repeat(ambers)}</span></button>`;
+      return `<button role="tab" aria-selected="${i === current}" data-i="${i}">${esc(b.label || b.title)}<span class="count">${"<i class=\"red\"></i>".repeat(reds)}${"<i class=\"amber\"></i>".repeat(ambers)}</span></button>`;
     }).join("");
     sw.querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => { current = +btn.dataset.i; location.hash = boards[current].key; drawSwitch(); renderBoard(boards[current]); }));
   }

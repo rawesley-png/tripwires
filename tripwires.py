@@ -48,7 +48,7 @@ CONFIG = {
     "capex_to_ocf_amber": 0.80, "capex_to_ocf_red": 1.00,
     "capex_decel_amber": 15, "capex_decel_red": 30,
     "erp_red": 0.0, "erp_amber": 1.0,          # forward earnings yield minus 10-year, percentage points
-    "breadth_amber": 50.0,                       # % of S&P 500 below 200-day (from the soft check when available)
+    "breadth_amber": 50.0, "breadth_red": 65.0,   # % of S&P 500 members below their own 200-day average (counted by the engine)
     "cpi_amber": 3.5, "cpi_red": 4.0,
     "soft_model": "claude-sonnet-4-6",
     "alert_on": ["RED", "AMBER"],
@@ -324,6 +324,57 @@ def soft_line(soft, key, fallback=""):
     return d.get("status", "AMBER"), d.get("evidence", ""), d.get("url", "")
 
 
+
+# ----------------------------------------------------------------------------- breadth: count the S&P 500 constituents below their 200-day average
+CONSTITUENTS_FILE = os.path.join(HERE, "constituents.json")
+
+def sp500_constituents():
+    """Ticker list from Wikipedia, cached for 30 days in constituents.json."""
+    try:
+        if os.path.exists(CONSTITUENTS_FILE):
+            c = json.load(open(CONSTITUENTS_FILE))
+            if (dt.date.today() - dt.date.fromisoformat(c["fetched"])).days < 30 and len(c["symbols"]) > 450:
+                return c["symbols"]
+    except Exception:
+        pass
+    import html as _html, re as _re
+    page = http_get("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies", headers={"User-Agent": "Mozilla/5.0"}).decode("utf-8", "ignore")
+    tbl = page.split('id="constituents"')[1].split("</table>")[0]
+    syms = []
+    for row in _re.findall(r"<tr[^>]*>(.*?)</tr>", tbl, _re.S)[1:]:
+        cells = _re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", row, _re.S)
+        if len(cells) >= 4:
+            syms.append(_html.unescape(_re.sub(r"<[^>]+>", "", cells[0])).strip().replace(".", "-"))
+    if len(syms) < 450:
+        raise RuntimeError(f"constituent list too short ({len(syms)})")
+    json.dump({"fetched": TODAY, "symbols": syms}, open(CONSTITUENTS_FILE, "w"))
+    return syms
+
+
+def breadth_below_200d(max_workers=8):
+    """Percent of S&P 500 members closing below their own 200-day average. Returns (pct_below, counted)."""
+    import concurrent.futures as cf
+    syms = sp500_constituents()
+    def one(t):
+        for _ in range(2):
+            try:
+                cl = [c for _, c in yahoo(t, "1y")]
+                if len(cl) < 200:
+                    return None
+                return cl[-1] < sum(cl[-200:]) / 200
+            except Exception:
+                continue
+        return None
+    res = []
+    with cf.ThreadPoolExecutor(max_workers=max_workers) as ex:
+        for r in ex.map(one, syms):
+            if r is not None:
+                res.append(r)
+    if len(res) < 400:
+        raise RuntimeError(f"only {len(res)} constituents priced")
+    return 100.0 * sum(res) / len(res), len(res)
+
+
 # ----------------------------------------------------------------------------- hard checks used by both boards
 def rates_state():
     v = fred("DGS10")
@@ -539,18 +590,27 @@ def market_board(soft, ai_tiles):
         rsp = [c for _, c in yahoo("RSP")]; spy = [c for _, c in yahoo("SPY")]
         n = min(len(rsp), len(spy)); rel = (rsp[-1] / rsp[-61]) / (spy[-1] / spy[-61]) - 1 if n > 61 else 0.0
         b = soft.get("breadth", {}) if soft else {}
-        above = b.get("pct_above_200dma")
-        below = 100 - float(above) if isinstance(above, (int, float)) else None
+        counted = None
+        try:
+            below, counted = breadth_below_200d()
+            below = round(below, 1)
+        except Exception as be:
+            print("breadth count failed, using web check:", be)
+            above = b.get("pct_above_200dma")
+            below = 100 - float(above) if isinstance(above, (int, float)) else None
         st = "RED" if streak >= CONFIG["ma_break_days"] else "GREEN"
-        if below is not None and below >= CONFIG["breadth_amber"]:
+        if below is not None and below >= CONFIG["breadth_red"]:
+            st = worst(st, "RED")
+        elif below is not None and below >= CONFIG["breadth_amber"]:
             st = worst(st, "AMBER")
         if rel <= -0.05:
             st = worst(st, "AMBER")
         T.append(tile("m4", G, "amplifier", "Amplifier", "The average stock is already falling", "Is the index rising on a few giant companies while most stocks fall?",
-                      "Watch at half the stocks below their 200-day average; trips when the index itself breaks its 200-day average.", st,
-                      f"S&P 500 {spx[-1]:,.0f} vs 200-day {ma:,.0f} ({streak} closes below). Equal-weight vs cap-weight over 60 sessions: {rel:+.1%}. "
-                      + (f"{below:.0f}% of members below their 200-day. " if below is not None else "") + b.get("evidence", ""),
-                      "Narrow leadership is how the last two bear markets began.", "Yahoo Finance; breadth data via web check", value=below if below is not None else round(rel * 100, 1)))
+                      "Watch at half the members below their own 200-day average; red at two-thirds, or when the index itself breaks its 200-day average.", st,
+                      f"S&P 500 {spx[-1]:,.0f} vs 200-day {ma:,.0f} ({streak} closes below). "
+                      + (f"{below:.0f}% of {counted} members below their own 200-day average (counted). " if counted else (f"{below:.0f}% of members below their 200-day (web check). " if below is not None else ""))
+                      + f"Equal-weight vs cap-weight over 60 sessions: {rel:+.1%}. " + b.get("evidence", ""),
+                      "Narrow leadership is how the last two bear markets began.", "Yahoo Finance, all constituents; web check as fallback", value=below if below is not None else round(rel * 100, 1)))
     except Exception as e:
         T.append(failed("m4", G, "amplifier", "Amplifier", "The average stock is already falling", "", "", e))
     # m5 credit and fear
@@ -1398,23 +1458,23 @@ def run(digest=False):
     s5 = f"{sum(t['status'] == 'RED' for t in fi)} tripped, {sum(t['status'] == 'AMBER' for t in fi)} on watch, of {len(fi)}. {fi_gate['title']}."
     data = {"updated": TODAY, "soft_checked": soft is not None, "site_url": os.environ.get("SITE_URL", ""),
             "boards": [
-                {"key": "ai", "title": "AI cycle tripwires", "summary": s1, "gate": ai_gate,
-                 "groups": [{"key": "trigger", "title": "What comes first", "blurb": "The two signals that showed up a year before the 2000 crash."},
-                            {"key": "bell", "title": "What rings the bell", "blurb": "The two that together have led the crash by one to two quarters."},
-                            {"key": "pressure", "title": "What adds pressure", "blurb": "Rates, credit, price action, oil."}],
-                 "tiles": ai},
-                {"key": "market", "title": "US market tripwires", "summary": s2, "gate": mk_gate,
+                {"key": "plumbing", "label": "Plumbing", "title": "Plumbing tripwires", "summary": s4, "gate": pl_gate, "groups": PLUMBING_GROUPS, "tiles": pl},
+                {"key": "market", "label": "Market", "title": "US market tripwires", "summary": s2, "gate": mk_gate,
                  "groups": [{"key": "trigger", "title": "What starts a bear market", "blurb": "The three conditions the gate counts."},
                             {"key": "amplifier", "title": "What decides how far it falls", "blurb": "Not triggers — they set the size of the drop."},
                             {"key": "driver", "title": "What could flip a trigger", "blurb": "Early warning for the top section."}],
                  "tiles": mk},
-                {"key": "taiwan", "title": "Taiwan tripwires", "summary": s3, "gate": tw_gate,
+                {"key": "ai", "label": "AI cycle", "title": "AI cycle tripwires", "summary": s1, "gate": ai_gate,
+                 "groups": [{"key": "trigger", "title": "What comes first", "blurb": "The two signals that showed up a year before the 2000 crash."},
+                            {"key": "bell", "title": "What rings the bell", "blurb": "The two that together have led the crash by one to two quarters."},
+                            {"key": "pressure", "title": "What adds pressure", "blurb": "Rates, credit, price action, oil."}],
+                 "tiles": ai},
+                {"key": "fiscal", "label": "Fiscal", "title": "Fiscal dominance tripwires", "summary": s5, "gate": fi_gate, "groups": FISCAL_GROUPS, "tiles": fi},
+                {"key": "taiwan", "label": "Taiwan", "title": "Taiwan tripwires", "summary": s3, "gate": tw_gate,
                  "groups": [{"key": "reason", "title": "What would force Xi's hand", "blurb": "A red line crossed, or Beijing deciding the peaceful path is dead."},
                             {"key": "opening", "title": "Whether the window is open", "blurb": "Capability and opportunity. Three or more of these off green means the door is open."},
                             {"key": "decision", "title": "Whether a decision has been made", "blurb": "The signs that can't be hidden once a move is under way."}],
-                 "tiles": tw},
-                {"key": "plumbing", "title": "Plumbing tripwires", "summary": s4, "gate": pl_gate, "groups": PLUMBING_GROUPS, "tiles": pl},
-                {"key": "fiscal", "title": "Fiscal dominance tripwires", "summary": s5, "gate": fi_gate, "groups": FISCAL_GROUPS, "tiles": fi}]}
+                 "tiles": tw}]}
     render(data)
 
     prev = json.load(open(STATE_FILE)) if os.path.exists(STATE_FILE) else {}
