@@ -80,7 +80,7 @@
   {
    "date": "2026-09-25",
    "status": "GREEN",
-   "value": 225.2
+   "value": 225.16
   }
  ],
  "t8": [
@@ -116,7 +116,7 @@
   {
    "date": "2026-09-25",
    "status": "AMBER",
-   "value": 0.13
+   "value": 0.08
   }
  ],
  "m3": [
@@ -241,8 +241,8 @@
  "k6": [
   {
    "date": "2026-09-25",
-   "status": "AMBER",
-   "value": 1.4
+   "status": "GREEN",
+   "value": null
   }
  ],
  "k7": [
@@ -256,21 +256,21 @@
   {
    "date": "2026-09-25",
    "status": "AMBER",
-   "value": 12.0
+   "value": null
   }
  ],
  "k9": [
   {
    "date": "2026-09-25",
    "status": "GREEN",
-   "value": 58.7
+   "value": null
   }
  ],
  "k10": [
   {
    "date": "2026-09-25",
-   "status": "AMBER",
-   "value": 5.0
+   "status": "GREEN",
+   "value": null
   }
  ],
  "k11": [
@@ -297,7 +297,7 @@
  "r2": [
   {
    "date": "2026-09-25",
-   "status": "AMBER",
+   "status": "GREEN",
    "value": 0.0
   }
  ],
@@ -318,21 +318,21 @@
  "r5": [
   {
    "date": "2026-09-25",
-   "status": "RED",
+   "status": "AMBER",
    "value": 105.0
   }
  ],
  "r6": [
   {
    "date": "2026-09-25",
-   "status": "AMBER",
+   "status": "GREEN",
    "value": 6.2
   }
  ],
  "e1": [
   {
    "date": "2026-09-25",
-   "status": "AMBER",
+   "status": "GREEN",
    "value": null
   }
  ],
@@ -346,7 +346,7 @@
  "e3": [
   {
    "date": "2026-09-25",
-   "status": "AMBER",
+   "status": "GREEN",
    "value": 157.3
   }
  ],
@@ -354,7 +354,7 @@
   {
    "date": "2026-09-25",
    "status": "AMBER",
-   "value": 0.9
+   "value": null
   }
  ],
  "n2": [
@@ -367,8 +367,8 @@
  "n3": [
   {
    "date": "2026-09-25",
-   "status": "GREEN",
-   "value": 303.0
+   "status": "AMBER",
+   "value": null
   }
  ],
  "n4": [
@@ -388,7 +388,7 @@
  "q2": [
   {
    "date": "2026-09-25",
-   "status": "AMBER",
+   "status": "GREEN",
    "value": 0
   }
  ],
@@ -431,14 +431,14 @@
   {
    "date": "2026-09-25",
    "status": "GREEN",
-   "value": 4325.0
+   "value": 4327.0
   }
  ],
  "v3": [
   {
    "date": "2026-09-25",
    "status": "AMBER",
-   "value": 54.3
+   "value": null
   }
  ],
  "v4": [
@@ -473,7 +473,7 @@
   {
    "date": "2026-09-25",
    "status": "AMBER",
-   "value": 244.0
+   "value": null
   }
  ]
 }
