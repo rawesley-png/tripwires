@@ -8,63 +8,54 @@
     "label": "Plumbing",
     "kind": "status",
     "name": "The Fed's repo window",
-    "old": "AMBER",
-    "new": "GREEN",
-    "reading": "Fed overnight repo lending $0.0 billion on 2026-09-24; peak in the last ten sessions $0.1 billion."
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Fed overnight repo lending $0.0 billion on 2026-09-25; peak in the last ten sessions $0.1 billion. As of Sept 25, 2026 (quarter-end eve), analysts had penciled in ~$50bn SRF usage on Sept 30; routine mid-month usage has "
    },
    {
     "board": "plumbing",
     "label": "Plumbing",
     "kind": "status",
     "name": "Treasury market function",
-    "old": "RED",
-    "new": "AMBER",
-    "reading": "MOVE index 105."
-   },
-   {
-    "board": "plumbing",
-    "label": "Plumbing",
-    "kind": "status",
-    "name": "Bank stress",
     "old": "AMBER",
-    "new": "GREEN",
-    "reading": "Discount-window primary credit $6.2 billion (week of 2026-09-23)."
+    "new": "RED",
+    "reading": "MOVE index 105. Sept 23, 2026 $70bn 5-yr Treasury auction tailed 3.1bp (second-largest tail on record), BTC fell to 2.212 (weakest since Dec 2018), and primary dealers absorbed 15.8% of the offering."
    },
    {
     "board": "plumbing",
     "label": "Plumbing",
     "kind": "status",
     "name": "The dollar shortage gauge",
-    "old": "AMBER",
-    "new": "GREEN",
-    "reading": "Not checked this run (no Claude key)."
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "EUR/USD 3-month cross-currency basis was approximately -16 to -20bp in mid-May 2026; JPY/USD basis under widening pressure at quarter-end as yen weakened to ~157.6/USD on Sept 24 after BOJ hike and Japan holiday thin liq"
    },
    {
     "board": "plumbing",
     "label": "Plumbing",
     "kind": "status",
     "name": "Japan and the carry trade",
-    "old": "AMBER",
-    "new": "GREEN",
-    "reading": "Yen 157.3 per dollar, +0.8% on the week (negative = yen surging)."
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Yen 157.2 per dollar, +0.7% on the week (negative = yen surging). Bank of Japan hiked 25bp to 1.25% on Sept 18, 2026 (highest since 1995); yen fell ~2% in the week of the decision to ~157.6/USD with two board dissents si"
    },
    {
     "board": "plumbing",
     "label": "Plumbing",
     "kind": "status",
     "name": "Stablecoins",
-    "old": "GREEN",
-    "new": "AMBER",
-    "reading": "Not checked this run (no Claude key)."
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Total stablecoin supply was approximately $302–303bn as of early September 2026, with USDT at ~$183bn (60.6%) and USDC at ~$74bn; no issuer traded below par or reported a depeg; supply stable week-over-week (+0.37%)."
    },
    {
     "board": "plumbing",
     "label": "Plumbing",
     "kind": "status",
     "name": "The Fed's response",
-    "old": "AMBER",
-    "new": "GREEN",
-    "reading": "Nothing to respond to."
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Fed operations under way. FOMC on Sept 16, 2026 hiked fed funds to 3.75–4.0%, set SRF rate at 4.0%, and authorized ongoing T-bill Reserve Management Purchases (RMPs) to maintain ample reserves; ~$40bn in RMPs conducted D"
    },
    {
     "board": "market",
@@ -78,11 +69,11 @@
    {
     "board": "market",
     "label": "Market",
-    "kind": "value",
+    "kind": "status",
     "name": "Stocks yield no more than bonds",
-    "old": 0.22,
-    "new": 0.08,
-    "reading": "Forward P/E 19.3 → earnings yield 5.19% against a 10-year at 5.11%: premium +0.08 points."
+    "old": "AMBER",
+    "new": "RED",
+    "reading": "Forward P/E 22.5 → earnings yield 4.44% against a 10-year at 5.11%: premium -0.67 points."
    },
    {
     "board": "market",
@@ -90,26 +81,26 @@
     "kind": "value",
     "name": "The average stock is already falling",
     "old": -3.8,
-    "new": 53.9,
-    "reading": "S&P 500 7,741 vs 200-day 7,205 (0 closes below). 54% of 501 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: -4.3%. S&P 500 constituents above 200-DMA: ~67% as of Sept 4, 20"
+    "new": 54.3,
+    "reading": "S&P 500 7,741 vs 200-day 7,205 (0 closes below). 54% of 501 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: -4.4%. As of September 23, 2026 (StreetStats): only 29.2% of S&P"
    },
    {
     "board": "market",
     "label": "Market",
-    "kind": "value",
-    "name": "Outside shock",
-    "old": 4,
-    "new": 5,
-    "reading": "0 red, 5 on watch, of five."
+    "kind": "status",
+    "name": "The AI-cycle bell",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Not rung. Spending growth: Green; chips easier: Green."
    },
    {
     "board": "ai",
     "label": "AI cycle",
-    "kind": "value",
+    "kind": "status",
     "name": "Chips are getting easier to get",
-    "old": 3.25,
-    "new": 3.44,
-    "reading": "Nvidia inventory +111% vs sales +106% (quarter ended 2026-07-26); inventory days 119. As of Sept 25, 2026, H100 median on-demand is $3.44/hr (GetDeploying, 40 providers); B200 ranges $5.99–$16.11/hr (Hyperbolic low end, "
+    "old": "RED",
+    "new": "GREEN",
+    "reading": "Nvidia inventory +111% vs sales +106% (quarter ended 2026-07-26); inventory days 119. As of September 25, 2026, H100 on-demand median is $3.44/hr across 40 providers (GetDeploying); B200 ranges $5.99–$16.11/hr with Vast."
    },
    {
     "board": "ai",
@@ -121,24 +112,60 @@
     "reading": "5.11% on 2026-09-23; 1 consecutive readings at or above 5%."
    },
    {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "status",
+    "name": "Lenders are getting nervous",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "High-yield spread 2.80% (+0.01 pts in 60 days). On July 29–30, 2026, CoreWeave had to raise yield on a $2.6B leveraged loan by up to 125 bps (to L+550, offered at 96–97 cents on dollar) as investors grow wary of AI-relat"
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "gate",
+    "name": "Gate",
+    "old": "The Fed has taken none of the four steps",
+    "new": "The Fed is on step one of four — pressure building toward step three",
+    "reading": ""
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "status",
+    "name": "Reserve purchases outgrow reserves",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Fed total assets $6,748 billion, +12 billion over 13 weeks; bank reserves -21 billion over the same period. As of Sep 2026 the Fed's Open Market Desk is running ~$10 bn/month in T-bill-only Reserve Management Purchases ("
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "gate",
+    "name": "Gate",
+    "old": "No invasion condition present; 3 on watch",
+    "new": "A decision is showing — inspections or mobilization under way",
+    "reading": ""
+   },
+   {
     "board": "taiwan",
     "label": "Taiwan",
     "kind": "status",
     "name": "China's war chest",
-    "old": "AMBER",
-    "new": "GREEN",
-    "reading": "Not checked this run (no Claude key)."
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "EIA and Kpler estimates put China's total crude inventories at ~1.4 billion barrels entering 2026 (~121 days of imports, well above IEA's 90-day benchmark); the government directed NOCs to buy 140 million bbl for storage"
    },
    {
     "board": "taiwan",
     "label": "Taiwan",
     "kind": "status",
     "name": "From drills to inspections",
-    "old": "AMBER",
-    "new": "GREEN",
-    "reading": "Not checked this run (no Claude key)."
+    "old": "GREEN",
+    "new": "RED",
+    "reading": "Jun 1 2026: China Coast Guard launched its first 'Special Maritime Traffic Law Enforcement Operation' east of Taiwan, inspecting 198 vessels over 1,030 nautical miles; patrols rotated and continued through Jul-Sep 2026 a"
    }
   ],
-  "summary": "9 status change(s), 0 gate change(s), 6 notable move(s)."
+  "summary": "13 status change(s), 2 gate change(s), 3 notable move(s)."
  }
 ]
