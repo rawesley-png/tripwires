@@ -169,8 +169,8 @@
     sw.querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => { current = +btn.dataset.i; location.hash = boards[current].key; drawSwitch(); renderBoard(boards[current]); }));
   }
   if (boards.length) { drawSwitch(); renderBoard(boards[current]); }
-  addEventListener("hashchange", () => { const i = boards.findIndex(b => "#" + b.key === location.hash); if (i >= 0 && i !== current) { current = i; drawSwitch(); renderBoard(boards[current]); } });
   else { document.getElementById("title").textContent = "Tripwires"; document.getElementById("summary").textContent = "No data yet — run tripwires.py."; document.getElementById("gate").style.display = "none"; }
+  addEventListener("hashchange", () => { const i = boards.findIndex(b => "#" + b.key === location.hash); if (i >= 0 && i !== current) { current = i; drawSwitch(); renderBoard(boards[current]); } });
 })();
 </script>
 </body>
