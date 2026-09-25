@@ -3,17 +3,17 @@
  "t2": "AMBER",
  "t3": "GREEN",
  "t4": "RED",
- "t5": "AMBER",
- "t6": "GREEN",
+ "t5": "RED",
+ "t6": "AMBER",
  "t7": "GREEN",
  "t8": "AMBER",
- "m1": "AMBER",
+ "m1": "RED",
  "m2": "AMBER",
  "m3": "GREEN",
  "m4": "GREEN",
  "m5": "GREEN",
- "m6": "AMBER",
+ "m6": "RED",
  "m7": "GREEN",
  "m9": "AMBER",
- "m10": "AMBER"
+ "m10": "RED"
 }
