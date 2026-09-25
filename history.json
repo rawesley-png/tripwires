@@ -44,7 +44,7 @@
   {
    "date": "2026-09-25",
    "status": "RED",
-   "value": 3.25
+   "value": 3.44
   }
  ],
  "t5": [
@@ -67,8 +67,8 @@
   },
   {
    "date": "2026-09-25",
-   "status": "AMBER",
-   "value": 2.73
+   "status": "GREEN",
+   "value": 2.8
   }
  ],
  "t7": [
@@ -80,7 +80,7 @@
   {
    "date": "2026-09-25",
    "status": "GREEN",
-   "value": 225.47
+   "value": 225.78
   }
  ],
  "t8": [
@@ -116,7 +116,7 @@
   {
    "date": "2026-09-25",
    "status": "AMBER",
-   "value": 0.13
+   "value": 0.07
   }
  ],
  "m3": [
@@ -128,7 +128,7 @@
   {
    "date": "2026-09-25",
    "status": "GREEN",
-   "value": 26.5
+   "value": 28.9
   }
  ],
  "m4": [
@@ -140,7 +140,7 @@
   {
    "date": "2026-09-25",
    "status": "GREEN",
-   "value": 43.0
+   "value": 40.0
   }
  ],
  "m5": [
@@ -152,7 +152,7 @@
   {
    "date": "2026-09-25",
    "status": "GREEN",
-   "value": 2.73
+   "value": 2.8
   }
  ],
  "m6": [
@@ -163,7 +163,7 @@
   },
   {
    "date": "2026-09-25",
-   "status": "RED",
+   "status": "AMBER",
    "value": 5
   }
  ],
@@ -201,6 +201,279 @@
    "date": "2026-09-25",
    "status": "RED",
    "value": 4.0
+  }
+ ],
+ "k1": [
+  {
+   "date": "2026-09-25",
+   "status": "GREEN",
+   "value": null
+  }
+ ],
+ "k2": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": null
+  }
+ ],
+ "k3": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": null
+  }
+ ],
+ "k4": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": null
+  }
+ ],
+ "k5": [
+  {
+   "date": "2026-09-25",
+   "status": "GREEN",
+   "value": null
+  }
+ ],
+ "k6": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": 1.4
+  }
+ ],
+ "k7": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": null
+  }
+ ],
+ "k8": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": 12.0
+  }
+ ],
+ "k9": [
+  {
+   "date": "2026-09-25",
+   "status": "GREEN",
+   "value": 58.7
+  }
+ ],
+ "k10": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": null
+  }
+ ],
+ "k11": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": null
+  }
+ ],
+ "k12": [
+  {
+   "date": "2026-09-25",
+   "status": "GREEN",
+   "value": 11.5
+  }
+ ],
+ "r1": [
+  {
+   "date": "2026-09-25",
+   "status": "GREEN",
+   "value": -2.0
+  }
+ ],
+ "r2": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": 0.0
+  }
+ ],
+ "r3": [
+  {
+   "date": "2026-09-25",
+   "status": "RED",
+   "value": 1.0
+  }
+ ],
+ "r4": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": 5
+  }
+ ],
+ "r5": [
+  {
+   "date": "2026-09-25",
+   "status": "RED",
+   "value": 105.0
+  }
+ ],
+ "r6": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": 6.2
+  }
+ ],
+ "e1": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": null
+  }
+ ],
+ "e2": [
+  {
+   "date": "2026-09-25",
+   "status": "GREEN",
+   "value": 0.1
+  }
+ ],
+ "e3": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": 157.1
+  }
+ ],
+ "n1": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": 0.9
+  }
+ ],
+ "n2": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": null
+  }
+ ],
+ "n3": [
+  {
+   "date": "2026-09-25",
+   "status": "GREEN",
+   "value": 302.8
+  }
+ ],
+ "n4": [
+  {
+   "date": "2026-09-25",
+   "status": "RED",
+   "value": null
+  }
+ ],
+ "q1": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": 1
+  }
+ ],
+ "q2": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": 0
+  }
+ ],
+ "s1": [
+  {
+   "date": "2026-09-25",
+   "status": "GREEN",
+   "value": 12.0
+  }
+ ],
+ "s2": [
+  {
+   "date": "2026-09-25",
+   "status": "GREEN",
+   "value": null
+  }
+ ],
+ "s3": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": null
+  }
+ ],
+ "s4": [
+  {
+   "date": "2026-09-25",
+   "status": "GREEN",
+   "value": null
+  }
+ ],
+ "v1": [
+  {
+   "date": "2026-09-25",
+   "status": "GREEN",
+   "value": 2.33
+  }
+ ],
+ "v2": [
+  {
+   "date": "2026-09-25",
+   "status": "GREEN",
+   "value": 4312.0
+  }
+ ],
+ "v3": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": 54.3
+  }
+ ],
+ "v4": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": 5.4
+  }
+ ],
+ "v5": [
+  {
+   "date": "2026-09-25",
+   "status": "GREEN",
+   "value": 119.5
+  }
+ ],
+ "p1": [
+  {
+   "date": "2026-09-25",
+   "status": "GREEN",
+   "value": -1.45
+  }
+ ],
+ "p2": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": 0
+  }
+ ],
+ "p3": [
+  {
+   "date": "2026-09-25",
+   "status": "AMBER",
+   "value": 244.0
   }
  ]
 }

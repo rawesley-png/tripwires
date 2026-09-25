@@ -31,7 +31,7 @@
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--panel); color: var(--ink); font-family: "Archivo", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-variation-settings: "wdth" 100; font-size: 15px; line-height: 1.45; -webkit-font-smoothing: antialiased; }
   .wrap { max-width: 980px; margin: 0 auto; padding: 24px 18px 56px; }
-  .switch { display: flex; gap: 8px; margin-bottom: 18px; }
+  .switch { overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; display: flex; gap: 8px; margin-bottom: 18px; }
   .switch button { flex: 1; font: inherit; font-weight: 500; padding: 12px 10px; border-radius: 10px; border: 1.5px solid var(--tile-edge); background: var(--tile); color: var(--ink-2); cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; }
   .switch button[aria-selected="true"] { color: var(--ink); border-color: var(--ink); }
   .switch button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
@@ -110,6 +110,8 @@
   const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const BELL = '<svg viewBox="0 0 56 56" aria-hidden="true"><path class="shape" d="M28 6c1.6 0 3 1.2 3 2.8v1.4c6.7 1.5 11 7.2 11 14.3v9.4l4.2 5.6c.8 1.1 0 2.7-1.4 2.7H11.2c-1.4 0-2.2-1.6-1.4-2.7L14 33.9v-9.4c0-7.1 4.3-12.8 11-14.3V8.8C25 7.2 26.4 6 28 6z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M23 45.5a5 5 0 0 0 10 0" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>';
   const GATE = '<svg viewBox="0 0 56 56" aria-hidden="true"><rect class="shape" x="8" y="10" width="40" height="36" rx="4" fill="none" stroke="currentColor" stroke-width="2.4"/><line x1="8" y1="22" x2="48" y2="22" stroke="currentColor" stroke-width="2.4"/><line x1="8" y1="34" x2="48" y2="34" stroke="currentColor" stroke-width="2.4"/></svg>';
+  const STEPS = '<svg viewBox="0 0 56 56" aria-hidden="true"><path class="shape" d="M8 48h12V36h12V24h12V12h8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/></svg>';
+  const STAGES = '<svg viewBox="0 0 56 56" aria-hidden="true"><path class="shape" d="M10 14h36M10 42h36" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M18 14v28M38 14v28" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M18 28h20" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" opacity="0.5"/></svg>';
 
   function spark(history) {
     const pts = (history || []).filter(h => typeof h.value === "number");
@@ -141,8 +143,8 @@
     const g = b.gate || {};
     const gate = document.getElementById("gate");
     gate.classList.toggle("rung", !!g.rung);
-    gate.innerHTML = (g.kind === "bell" ? BELL : GATE) + `<div><p class="title">${esc(g.title)}</p><p>${esc(g.text)}</p><div class="parts">${(g.parts || []).map(p => `<span><i class="${norm(p.status)}"></i>${esc(p.name)}</span>`).join("")}</div></div>`;
-    if (g.rung) gate.querySelector(".shape").setAttribute("fill", "var(--ring)");
+    gate.innerHTML = ({ bell: BELL, steps: STEPS, stages: STAGES }[g.kind] || GATE) + `<div><p class="title">${esc(g.title)}</p><p>${esc(g.text)}</p><div class="parts">${(g.parts || []).map(p => `<span><i class="${norm(p.status)}"></i>${esc(p.name)}</span>`).join("")}</div></div>`;
+    if (g.rung) { const sh = gate.querySelector(".shape"); if (sh) sh.setAttribute(g.kind === "steps" || g.kind === "stages" ? "stroke" : "fill", "var(--ring)"); }
     document.getElementById("grid").innerHTML = (b.groups || []).map(gr => {
       const rows = (b.tiles || []).filter(t => t.group === gr.key);
       if (!rows.length) return "";
@@ -158,7 +160,7 @@
 
   const boards = DATA.boards || [];
   const sw = document.getElementById("switch");
-  let current = location.hash === "#market" ? 1 : 0;
+  let current = Math.max(0, boards.findIndex(b => "#" + b.key === location.hash));
   function drawSwitch() {
     sw.innerHTML = boards.map((b, i) => {
       const reds = (b.tiles || []).filter(t => norm(t.status) === "red").length, ambers = (b.tiles || []).filter(t => norm(t.status) === "amber").length;
@@ -167,6 +169,7 @@
     sw.querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => { current = +btn.dataset.i; location.hash = boards[current].key; drawSwitch(); renderBoard(boards[current]); }));
   }
   if (boards.length) { drawSwitch(); renderBoard(boards[current]); }
+  addEventListener("hashchange", () => { const i = boards.findIndex(b => "#" + b.key === location.hash); if (i >= 0 && i !== current) { current = i; drawSwitch(); renderBoard(boards[current]); } });
   else { document.getElementById("title").textContent = "Tripwires"; document.getElementById("summary").textContent = "No data yet — run tripwires.py."; document.getElementById("gate").style.display = "none"; }
 })();
 </script>
