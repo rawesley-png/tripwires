@@ -57,6 +57,17 @@
   @media (min-width: 700px) { .grid { grid-template-columns: 1fr 1fr; } }
   .tile { background: var(--tile); border: 1.5px solid var(--tile-edge); border-radius: 10px; padding: 16px 18px 14px; display: grid; grid-template-columns: 22px 1fr; gap: 6px 14px; cursor: pointer; }
   .tile:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+  .since { margin: -6px 0 14px; font-size: 14px; color: var(--ink-2); }
+  .since b { color: var(--ink); font-weight: 500; }
+  .since i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; margin: 0 4px 0 2px; background: var(--lamp-off); vertical-align: middle; }
+  .since i.green { background: var(--green); } .since i.amber { background: var(--amber); } .since i.red { background: var(--red); }
+  .log { display: grid; gap: 10px; }
+  .log .day { background: var(--tile); border: 1.5px solid var(--tile-edge); border-radius: 10px; padding: 14px 16px; }
+  .log .day h4 { margin: 0 0 4px; font-size: 16px; font-weight: 700; font-variation-settings: "wdth" 87.5; }
+  .log .day p.sum { margin: 0 0 8px; color: var(--ink-2); font-size: 14px; }
+  .log .item { display: grid; grid-template-columns: 76px 1fr; gap: 10px; padding: 6px 0; border-top: 1px solid var(--tile-edge); font-size: 14px; }
+  .log .item .b { color: var(--ink-3); font-size: 12px; padding-top: 3px; }
+  .log .item .r { color: var(--ink-2); font-size: 13px; margin-top: 2px; }
   .tile.red { border-color: color-mix(in srgb, var(--red) 55%, var(--tile-edge)); }
   .tile.amber { border-color: color-mix(in srgb, var(--amber) 55%, var(--tile-edge)); }
   .lamp { width: 18px; height: 18px; border-radius: 50%; background: var(--lamp-off); margin-top: 3px; grid-row: 1 / span 2; }
@@ -91,6 +102,7 @@
   <div class="switch" role="tablist" id="switch"></div>
   <header><h1 id="title"></h1><div class="stamp" id="stamp"></div></header>
   <p class="summary" id="summary"></p>
+  <p class="since" id="since"></p>
   <div class="gate" id="gate" role="status"></div>
   <div id="grid"></div>
   <div class="legend">
@@ -108,6 +120,7 @@
   const DATA = JSON.parse(document.getElementById("tripwire-data").textContent.replace(/^\/\*TRIPWIRE_DATA\*\//, "") || "{}");
   const WORD = { green: "Calm", amber: "Watch", red: "Tripped" };
   const norm = s => ({ green: "green", amber: "amber", yellow: "amber", red: "red" })[String(s || "green").toLowerCase()] || "amber";
+  const fmt = v => typeof v === "number" ? (Math.abs(v) >= 100 ? v.toLocaleString(undefined, { maximumFractionDigits: 0 }) : v.toLocaleString(undefined, { maximumFractionDigits: 2 })) : String(v);
   const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const BELL = '<svg viewBox="0 0 56 56" aria-hidden="true"><path class="shape" d="M28 6c1.6 0 3 1.2 3 2.8v1.4c6.7 1.5 11 7.2 11 14.3v9.4l4.2 5.6c.8 1.1 0 2.7-1.4 2.7H11.2c-1.4 0-2.2-1.6-1.4-2.7L14 33.9v-9.4c0-7.1 4.3-12.8 11-14.3V8.8C25 7.2 26.4 6 28 6z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M23 45.5a5 5 0 0 0 10 0" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>';
   const GATE = '<svg viewBox="0 0 56 56" aria-hidden="true"><rect class="shape" x="8" y="10" width="40" height="36" rx="4" fill="none" stroke="currentColor" stroke-width="2.4"/><line x1="8" y1="22" x2="48" y2="22" stroke="currentColor" stroke-width="2.4"/><line x1="8" y1="34" x2="48" y2="34" stroke="currentColor" stroke-width="2.4"/></svg>';
@@ -138,9 +151,24 @@
   }
 
   function renderBoard(b) {
+    if (b.isLog) {
+      document.getElementById("title").textContent = b.title;
+      document.getElementById("summary").textContent = b.summary;
+      const sl0 = document.getElementById("since"); if (sl0) sl0.innerHTML = "";
+      document.getElementById("gate").style.display = "none";
+      document.getElementById("grid").innerHTML = `<div class="log">${(DATA.changelog || []).map(d => `<div class="day"><h4>${esc(d.date)}</h4><p class="sum">${esc(d.summary)}</p>${(d.items || []).map(i => `<div class="item"><span class="b">${esc(i.label)}</span><div>${i.kind === "gate" ? `<b>Gate</b>: ${esc(i.old)} → <b>${esc(i.new)}</b>` : i.kind === "status" ? `<b>${esc(i.name)}</b>: ${esc(WORD[norm(i.old)])} → <b>${esc(WORD[norm(i.new)])}</b>` : `<b>${esc(i.name)}</b>: ${esc(fmt(i.old))} → <b>${esc(fmt(i.new))}</b>`}${i.reading ? `<div class="r">${esc(i.reading)}</div>` : ""}</div></div>`).join("")}</div>`).join("")}</div>`;
+      document.getElementById("note").textContent = "Each entry compares the run with the previous one. Kept for 90 days.";
+      return;
+    }
+    document.getElementById("gate").style.display = "";
     document.getElementById("title").textContent = b.title;
     document.getElementById("stamp").textContent = "Checked " + (DATA.updated || "");
     document.getElementById("summary").textContent = b.summary || "";
+    const sl = document.getElementById("since");
+    if (sl) {
+      const items = b.since_last_run || [];
+      sl.innerHTML = items.length ? "Since last run: " + items.map(i => i.kind === "gate" ? `<b>Gate:</b> ${esc(i.new)}` : i.kind === "status" ? `<b>${esc(i.name)}</b> <i class="${norm(i.old)}"></i>→<i class="${norm(i.new)}"></i>` : `<b>${esc(i.name)}</b> ${esc(fmt(i.old))} → ${esc(fmt(i.new))}`).join(" · ") : "Since last run: nothing moved.";
+    }
     const g = b.gate || {};
     const gate = document.getElementById("gate");
     gate.classList.toggle("rung", !!g.rung);
@@ -159,7 +187,8 @@
     document.getElementById("note").textContent = (DATA.soft_checked ? "Hard data from FRED, Yahoo Finance, and SEC filings; soft signals from a web check. " : "Hard data only — soft-signal tiles were not checked on this run. ") + "Updated automatically by the tripwires script.";
   }
 
-  const boards = DATA.boards || [];
+  const boards = (DATA.boards || []).slice();
+  if (DATA.changelog) boards.push({ key: "log", label: "Log", title: "Daily change log", summary: `${DATA.changelog.length} day(s) recorded. Status changes, gate changes, and hard-data moves of ${3}% or more since the previous run.`, isLog: true });
   const sw = document.getElementById("switch");
   let current = Math.max(0, boards.findIndex(b => "#" + b.key === location.hash));
   function drawSwitch() {

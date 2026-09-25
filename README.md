@@ -97,3 +97,11 @@ by tile id, so existing `history.json` and `state.json` files carry forward unto
   threads). Amber at 50% below, red at 65%. The web-check number is only a fallback now.
 - Gate lamps that are green now render green (they were falling back to the "off" grey).
 - Hash routing works for any tab (`#plumbing`, `#fiscal`, …) and follows back/forward navigation.
+
+## Added 2026-09-25 (third pass): daily change log
+
+Each run compares itself with the previous run and appends an entry to `changelog.json` (kept 90 days): every tile
+whose status changed, every gate whose title changed, and every hard-data value that moved 3% or more (countdowns,
+streaks and mirror tiles excluded via `CONFIG["value_log_skip"]`). The site gets a **Log** tab with the day-by-day
+record, and every board shows a "Since last run" line under its summary. The first run after deploying records
+"First run; nothing to compare." — the log starts the next day.

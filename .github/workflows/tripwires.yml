@@ -27,6 +27,6 @@ jobs:
       - name: Publish the app and history
         run: |
           git config user.name tripwires && git config user.email tripwires@users.noreply.github.com
-          git add docs history.json state.json
+          git add docs history.json state.json changelog.json constituents.json
           git commit -m "tripwires $(date -u +%F)" || true
           git push || true

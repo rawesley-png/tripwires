@@ -35,6 +35,7 @@ DOCS = os.path.join(HERE, "docs")
 TEMPLATE = os.path.join(HERE, "template.html")
 STATE_FILE = os.path.join(HERE, "state.json")
 HISTORY_FILE = os.path.join(HERE, "history.json")
+CHANGELOG_FILE = os.path.join(HERE, "changelog.json")
 ENV_FILE = os.path.join(HERE, ".env")
 TODAY = dt.date.today().isoformat()
 
@@ -53,6 +54,9 @@ CONFIG = {
     "soft_model": "claude-sonnet-4-6",
     "alert_on": ["RED", "AMBER"],
     "history_cap": 120,
+    "changelog_days": 90,           # days of daily change entries kept and shown on the Log tab
+    "value_move_pct": 3.0,          # a hard-data value moving this much since the last run is logged even if the status didn't change
+    "value_log_skip": ["r4", "q1", "q2", "p2", "m9"],   # countdowns, streaks and mirrors: never log their value moves
 }
 HYPERSCALERS = {"Microsoft": "0000789019", "Amazon": "0001018724", "Alphabet": "0001652044", "Meta": "0001326801"}
 NVDA_CIK = "0001045810"
@@ -1389,6 +1393,38 @@ def update_history(tiles):
     json.dump(hist, open(HISTORY_FILE, "w"), indent=1)
 
 
+
+def build_changelog(boards, prev_state, prev_values, prev_gates):
+    """One entry per run: status changes, gate title changes, and notable value moves. Returns the entry and the updated log."""
+    log = json.load(open(CHANGELOG_FILE)) if os.path.exists(CHANGELOG_FILE) else []
+    items = []
+    for b in boards:
+        g = b["gate"]; old_title = prev_gates.get(b["key"])
+        if old_title and old_title != g["title"]:
+            items.append({"board": b["key"], "label": b.get("label", b["title"]), "kind": "gate", "name": "Gate", "old": old_title, "new": g["title"], "reading": ""})
+        for t in b["tiles"]:
+            old = prev_state.get(t["id"])
+            if old is not None and old != t["status"]:
+                items.append({"board": b["key"], "label": b.get("label", b["title"]), "kind": "status", "name": t["name"], "old": old, "new": t["status"], "reading": t["reading"][:220]})
+                continue
+            ov, nv = prev_values.get(t["id"]), t.get("value")
+            if t["id"] in CONFIG["value_log_skip"]:
+                continue
+            if isinstance(ov, (int, float)) and isinstance(nv, (int, float)) and ov != 0 and abs(nv - ov) / abs(ov) * 100 >= CONFIG["value_move_pct"]:
+                items.append({"board": b["key"], "label": b.get("label", b["title"]), "kind": "value", "name": t["name"], "old": ov, "new": nv, "reading": t["reading"][:220]})
+    first_run = not prev_state
+    entry = {"date": TODAY, "first_run": first_run, "items": items,
+             "summary": ("First run; nothing to compare." if first_run else
+                         f"{sum(i['kind'] == 'status' for i in items)} status change(s), {sum(i['kind'] == 'gate' for i in items)} gate change(s), {sum(i['kind'] == 'value' for i in items)} notable move(s)." if items else "Nothing moved.")}
+    if log and log[-1]["date"] == TODAY:
+        log[-1] = entry
+    else:
+        log.append(entry)
+    del log[:-CONFIG["changelog_days"]]
+    json.dump(log, open(CHANGELOG_FILE, "w"), indent=1, ensure_ascii=False)
+    return entry, log
+
+
 def render(data):
     os.makedirs(DOCS, exist_ok=True)
     tpl = open(TEMPLATE, encoding="utf-8").read()
@@ -1451,6 +1487,15 @@ def run(digest=False):
     fi_gate = fiscal_gate(fi)
     ai_gate, mk_gate = gates(ai, mk)
     tw_gate = taiwan_gate(tw)
+    prev_hist = json.load(open(HISTORY_FILE)) if os.path.exists(HISTORY_FILE) else {}
+    prev_values = {k: (v[-1].get("value") if v and v[-1].get("date") != TODAY else (v[-2].get("value") if len(v) > 1 else None)) for k, v in prev_hist.items()}
+    prev_state_early = json.load(open(STATE_FILE)) if os.path.exists(STATE_FILE) else {}
+    prev_gates = {}
+    try:
+        old_data = json.load(open(os.path.join(DOCS, "data.json")))
+        prev_gates = {b["key"]: b["gate"]["title"] for b in old_data.get("boards", [])}
+    except Exception:
+        pass
     update_history(ai + mk + tw + pl + fi)
     s1, s2 = summaries(ai, mk, ai_gate, mk_gate)
     s3 = f"{sum(t['status'] == 'RED' for t in tw)} tripped, {sum(t['status'] == 'AMBER' for t in tw)} on watch, of {len(tw)}. {tw_gate['title']}."
@@ -1475,6 +1520,10 @@ def run(digest=False):
                             {"key": "opening", "title": "Whether the window is open", "blurb": "Capability and opportunity. Three or more of these off green means the door is open."},
                             {"key": "decision", "title": "Whether a decision has been made", "blurb": "The signs that can't be hidden once a move is under way."}],
                  "tiles": tw}]}
+    entry, log = build_changelog(data["boards"], prev_state_early, prev_values, prev_gates)
+    data["changelog"] = log[::-1]   # newest first
+    for b in data["boards"]:
+        b["since_last_run"] = [i for i in entry["items"] if i["board"] == b["key"]]
     render(data)
 
     prev = json.load(open(STATE_FILE)) if os.path.exists(STATE_FILE) else {}

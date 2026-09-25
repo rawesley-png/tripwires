@@ -1,0 +1,90 @@
+[
+ {
+  "date": "2026-09-25",
+  "first_run": false,
+  "items": [
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "Bank stress",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Discount-window primary credit $6.2 billion (week of 2026-09-23). No public reports of large-bank discount window usage or deposit flight in the last 30 days; tech-sector CDS widened (Oracle ~200bp in 2026) and a new CDX"
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "Borrowing costs have jumped",
+    "old": 4.96,
+    "new": 5.11,
+    "reading": "5.11% on 2026-09-23; 1 consecutive readings at or above 5%."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "Stocks yield no more than bonds",
+    "old": 0.22,
+    "new": 0.13,
+    "reading": "Forward P/E 19.1 → earnings yield 5.24% against a 10-year at 5.11%: premium +0.13 points."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "The average stock is already falling",
+    "old": -3.8,
+    "new": 53.9,
+    "reading": "S&P 500 7,740 vs 200-day 7,205 (0 closes below). 54% of 501 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: -4.3%. As of Sept 23, 2026, S&P 500 index is above its 200-DMA ("
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "Outside shock",
+    "old": 4,
+    "new": 5,
+    "reading": "0 red, 5 on watch, of five."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "status",
+    "name": "Chips are getting easier to get",
+    "old": "AMBER",
+    "new": "RED",
+    "reading": "Nvidia inventory +111% vs sales +106% (quarter ended 2026-07-26); inventory days 119. As of Sept 25 2026, H100 on-demand median is $3.44/hr (GetDeploying, 40 providers); B200 ranges $5.99–$16.11/hr with limited availabil"
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "value",
+    "name": "Interest rates keep rising",
+    "old": 4.96,
+    "new": 5.11,
+    "reading": "5.11% on 2026-09-23; 1 consecutive readings at or above 5%."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "status",
+    "name": "Lenders are getting nervous",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "High-yield spread 2.80% (+0.01 pts in 60 days). OpenAI closed $122B round (March 2026, $852B valuation); Anthropic closed $65B Series H (May 2026, $965B valuation); CoreWeave guiding $12–13B 2026 revenue with $66.8B back"
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "status",
+    "name": "Taiwan's will",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "An Academia Sinica survey (Jan 20-26 2026, n=1,206) found 58.7% of Taiwanese willing to resist a Chinese invasion 'at all costs' even without US military help, slightly down ~2 pct from the prior wave; a separate TVBS po"
+   }
+  ],
+  "summary": "4 status change(s), 0 gate change(s), 5 notable move(s)."
+ }
+]
