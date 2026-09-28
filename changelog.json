@@ -167,5 +167,147 @@
    }
   ],
   "summary": "13 status change(s), 2 gate change(s), 3 notable move(s)."
+ },
+ {
+  "date": "2026-09-28",
+  "first_run": false,
+  "items": [
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "SOFR against the Fed's rate",
+    "old": -2.0,
+    "new": 0.0,
+    "reading": "SOFR 3.90% on 2026-09-25, +0 bp against the rate on reserves (3.90%); ceiling 4.00%. Worst spread in the last five sessions +0 bp."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "Treasury market function",
+    "old": 105.0,
+    "new": 96.0,
+    "reading": "MOVE index 96. Sep 23 2026 $70bn 5-year auction priced at 5.033% with a 3.1bp tail (second-largest on record), bid-to-cover 2.212 (weakest since Dec 2018), primary dealers absorbed 15.8%."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "Bank stress",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Discount-window primary credit $6.2 billion (week of 2026-09-23). No public evidence of discount-window draws or large-bank CDS spikes in Sep 2026; big-bank stocks fell after the Sep 16 Fed hike but JPMorgan raised its d"
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "The dollar shortage gauge",
+    "old": -25.0,
+    "new": -32.0,
+    "reading": "EUR/USD 3m basis was approximately -16 to -20bp in mid-May 2026; at Sep 28 quarter-end, structural JPY basis pressure is building (Japan's $550bn US investment deal expected to push JPY/USD basis more negative) but no RE"
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "Stocks yield no more than bonds",
+    "old": "RED",
+    "new": "AMBER",
+    "reading": "Forward P/E 19.3 → earnings yield 5.18% against a 10-year at 5.18%: premium +0.00 points."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "Outside shock",
+    "old": 4,
+    "new": 5,
+    "reading": "0 red, 5 on watch, of five."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "The AI-cycle bell",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Half-lit. Spending growth: Green; chips easier: Red."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "status",
+    "name": "Chips are getting easier to get",
+    "old": "GREEN",
+    "new": "RED",
+    "reading": "Nvidia inventory +111% vs sales +106% (quarter ended 2026-07-26); inventory days 119. As of Sep 13–27, 2026, H100 median on-demand price is ~$3.25–$3.84/hr (Mercatus/AIM trackers), down roughly 40–50% from early-2024 pea"
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "value",
+    "name": "The stock is acting wrong",
+    "old": 224.49,
+    "new": 231.36,
+    "reading": "$231 vs 200-day average $200; 0 closes below it; +3% over 30 sessions."
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "value",
+    "name": "Gold against real yields",
+    "old": 4324.0,
+    "new": 4187.0,
+    "reading": "Gold $4,187 (52-week high $5,318); 30-year TIPS real yield 3.21% (+0.52 over three months)."
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "value",
+    "name": "Foreign demand",
+    "old": 52.5,
+    "new": 79.2,
+    "reading": "Sep 9 2026 10-yr auction: indirect bidders 79.2%, bid-to-cover 2.71 (solid); Sep 10 30-yr: indirect 79.5%, BTC 2.61; but Sep 15 20-yr: indirect bidders only 52.5%, BTC 2.57, and analysts note primary-dealer share 'somewh"
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "value",
+    "name": "The arithmetic",
+    "old": -1.45,
+    "new": -1.38,
+    "reading": "Nominal GDP growth 6.6% over the year to 2026-04-01; 10-year yield 5.18%; federal interest running at $1,247 billion a year."
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "gate",
+    "name": "Gate",
+    "old": "A decision is showing — inspections or mobilization under way",
+    "new": "No invasion condition present; 3 on watch",
+    "reading": ""
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "status",
+    "name": "From drills to inspections",
+    "old": "RED",
+    "new": "AMBER",
+    "reading": "In June 2026 China launched a 'special maritime law enforcement operation' east of Taiwan, hailing three foreign vessels (Singapore, Benin, Liberia-flagged) by radio to demand ship information — no physical boarding occu"
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "value",
+    "name": "Markets smell it",
+    "old": 11.5,
+    "new": 12.5,
+    "reading": "Taiwan dollar +0.3% vs USD in 30 days; Taiwan ETF vs S&P 500 over 60 sessions +5.2%. Prediction markets: Will China invade Taiwan by September 30, 2026? 0%; Will China invade Taiwan by end of 2026? 3%; Will China blockad"
+   }
+  ],
+  "summary": "5 status change(s), 1 gate change(s), 9 notable move(s)."
  }
 ]
