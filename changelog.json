@@ -309,5 +309,138 @@
    }
   ],
   "summary": "5 status change(s), 1 gate change(s), 9 notable move(s)."
+ },
+ {
+  "date": "2026-09-29",
+  "first_run": false,
+  "items": [
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "Treasury market function",
+    "old": 96.0,
+    "new": 102.0,
+    "reading": "MOVE index 102. The Sep 23, 2026 $70B 5-year note auction priced at 5.033%, tailed 3.1bp (second-largest tail on record), bid-to-cover 2.212 (weakest since Dec 2018), with primary dealers forced to absorb 15.8% of the of"
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "The dollar shortage gauge",
+    "old": -32.0,
+    "new": -25.0,
+    "reading": "As of mid-May 2026, the 3-month EUR/USD xccy basis was approximately -16 to -20bp; Japan's $550bn US trade deal is driving structural pressure toward a wider (more negative) JPY/USD basis into Q4 2026, with quarter-end b"
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "Transmission",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Current streak of sessions with yields up, stocks down and the dollar up: 0. 10-year 5.17% on 2026-09-25."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "The average stock is already falling",
+    "old": 54.9,
+    "new": 57.3,
+    "reading": "S&P 500 7,678 vs 200-day 7,213 (0 closes below). 57% of 501 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: -4.2%. As of Sep 28 2026, only 25.2% of S&P 500 constituents tra"
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "Lenders are getting nervous",
+    "old": 2.8,
+    "new": 2.93,
+    "reading": "High-yield spread 2.93% (+0.12 pts in 60 days); VIX 14.2."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "Outside shock",
+    "old": 5,
+    "new": 4,
+    "reading": "0 red, 4 on watch, of five."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "status",
+    "name": "Chips are getting easier to get",
+    "old": "RED",
+    "new": "AMBER",
+    "reading": "Nvidia inventory +111% vs sales +106% (quarter ended 2026-07-26); inventory days 119. As of Sep 27–28 2026, H100 median on-demand is ~$3.25–$3.84/hr (down ~50% since early 2024 due to Blackwell arrival); B200 median is $"
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "status",
+    "name": "Lenders are getting nervous",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "High-yield spread 2.93% (+0.12 pts in 60 days). No rounds delayed or downsized in the last 30 days; Anthropic closed a $65B Series H (May 2026) at $965B valuation; OpenAI closed $122B in March 2026; one notable AMBER fla"
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "gate",
+    "name": "Gate",
+    "old": "The Fed is on step one of four — pressure building toward step three",
+    "new": "The Fed has taken none of the four steps",
+    "reading": ""
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "status",
+    "name": "Reserve purchases outgrow reserves",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Fed total assets $6,748 billion, +12 billion over 13 weeks; bank reserves -21 billion over the same period. As of Sep 14 2026, the Fed announced for the second straight month it will conduct zero reserve management purch"
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "status",
+    "name": "Foreign demand",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "The Sep 9 2026 10-year auction drew an indirect bidder share of 79.2% (bid-to-cover 2.71 vs 12-month avg 2.49, graded STRONG); the Sep 10 30-year auction saw indirects take 79.5%, the second-highest share on record for t"
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "value",
+    "name": "The Fed's own position",
+    "old": 244.0,
+    "new": 236.0,
+    "reading": "As of Jul 1 2026 the Fed's consolidated deferred asset stood at ~$236 bn (down $7 bn since Jan 2026), with remittances to Treasury still suspended since Sep 2022; Sen. Rand Paul reintroduced the Audit the Fed bill (Jul 2"
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "value",
+    "name": "Taiwan's own clock",
+    "old": 12.0,
+    "new": 11.0,
+    "reading": "Taiwan's LNG reserve is 11 days as of early 2026 (plan to raise to 14 days by 2027); Iran war has disrupted ~10 of 30 monthly LNG shipments from the Middle East, though Taiwan secured supply through September 2026; the l"
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "value",
+    "name": "From drills to inspections",
+    "old": 7.5,
+    "new": 5.0,
+    "reading": "Since July 2026 China's Coast Guard has conducted regularized patrols east of Taiwan for the first time; 244 Chinese vessels (60% coast guard) detected in August 2026 vs 55 in June; on Sep 28-29 Taiwan's MND reported 3 P"
+   }
+  ],
+  "summary": "5 status change(s), 1 gate change(s), 8 notable move(s)."
  }
 ]

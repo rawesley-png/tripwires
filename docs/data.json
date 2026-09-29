@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-28",
+ "updated": "2026-09-29",
  "soft_checked": true,
  "site_url": "https://rawesley-png.github.io/tripwires/",
  "boards": [
@@ -7,7 +7,7 @@
    "key": "plumbing",
    "label": "Plumbing",
    "title": "Plumbing tripwires",
-   "summary": "3 tripped, 9 on watch, of 15. Stage 0 of 4 — every ingredient, no event: the buffer is gone and a drain day is near.",
+   "summary": "3 tripped, 8 on watch, of 15. Stage 0 of 4 — every ingredient, no event: the buffer is gone and a drain day is near.",
    "gate": {
     "kind": "stages",
     "rung": false,
@@ -32,7 +32,7 @@
      },
      {
       "name": "Stage 3: transmission to markets",
-      "status": "AMBER"
+      "status": "GREEN"
      },
      {
       "name": "Stage 4: Fed fails to act",
@@ -72,13 +72,13 @@
      "question": "Is overnight cash costing more than the Fed pays banks to hold it?",
      "trip": "Red at +25 basis points over the rate on reserves outside a month-end, or SOFR above the Fed's standing-repo ceiling on any day. A spike that does not come back down the next day is the real thing.",
      "status": "GREEN",
-     "reading": "SOFR 3.90% on 2026-09-25, +0 bp against the rate on reserves (3.90%); ceiling 4.00%. Worst spread in the last five sessions +0 bp.",
+     "reading": "SOFR 3.90% on 2026-09-28, +0 bp against the rate on reserves (3.90%); ceiling 4.00%. Worst spread in the last five sessions +0 bp.",
      "evidence": "September 2019: 2% to 8% in a morning, the day after a tax date and a Treasury settlement drained cash together.",
      "source": "FRED: SOFR, IORB, DFEDTARU",
      "value": 0.0,
      "subs": null,
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -87,6 +87,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "GREEN",
+       "value": 0.0
+      },
+      {
+       "date": "2026-09-29",
        "status": "GREEN",
        "value": 0.0
       }
@@ -101,13 +106,13 @@
      "question": "Are banks borrowing from the Fed because private lenders won't lend?",
      "trip": "Red at $50 billion or more, or any sustained use on ordinary days. Amber at $10 billion on a day that isn't month-end.",
      "status": "AMBER",
-     "reading": "Fed overnight repo lending $0.0 billion on 2026-09-25; peak in the last ten sessions $0.1 billion. SRF usage returned to ~$0 intra-month after the Dec-2025/Jan-2026 year-end spike (peak $75bn); reserves stood at $3.04tn as of Sep 9 2026 with RMPs paused for a second month, suggesting comfortable but watch-worthy conditions at Sep-30 quarter-end.",
+     "reading": "Fed overnight repo lending $0.0 billion on 2026-09-28; peak in the last ten sessions $0.1 billion. Wrightson ICAP penciled in ~$50bn of SRF take-up on Sep 30, 2026 (quarter-end), well above the $11bn seen on Jun 30; the Fed has paused Reserve Management Purchases through mid-Oct, leaving quarter-end pressure squarely on the SRF.",
      "evidence": "The window is a ceiling only if banks will use it; stigma has kept it under-used, which is why spikes get past it.",
      "source": "FRED: RPONTSYD; web check",
      "value": 0.0,
      "subs": null,
-     "url": "https://www.bloomberg.com/news/articles/2026-09-14/fed-prolongs-pause-on-reserve-management-purchases-to-mid-oct",
-     "checked": "2026-09-28",
+     "url": "https://finance.yahoo.com/news/feds-standing-repo-facility-track-133325520.html",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -116,6 +121,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "AMBER",
+       "value": 0.0
+      },
+      {
+       "date": "2026-09-29",
        "status": "AMBER",
        "value": 0.0
       }
@@ -136,7 +146,7 @@
      "value": 1.0,
      "subs": null,
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -145,6 +155,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "RED",
+       "value": 1.0
+      },
+      {
+       "date": "2026-09-29",
        "status": "RED",
        "value": 1.0
       }
@@ -159,13 +174,13 @@
      "question": "Is a day coming when cash leaves the banks all at once?",
      "trip": "Amber inside five business days of a quarter-end, month-end settlement, or tax date; the lamp is a calendar, not a reading. Red only in combination with the SOFR or window tiles.",
      "status": "AMBER",
-     "reading": "Next drain: Wednesday Sep 30 (quarter-end), 2 days away. Upcoming: Sep 30 (quarter-end); Oct 15 (mid-month coupon settlement); Oct 31 (month-end settlement); Nov 15 (mid-month coupon settlement).",
+     "reading": "Next drain: Wednesday Sep 30 (quarter-end), 1 days away. Upcoming: Sep 30 (quarter-end); Oct 15 (mid-month coupon settlement); Oct 31 (month-end settlement); Nov 15 (mid-month coupon settlement).",
      "evidence": "2019's spike and every quarter-end pop since late 2025 landed on these dates. Seizures do not happen on a random Tuesday.",
      "source": "Treasury settlement and tax calendars",
-     "value": 2,
+     "value": 1,
      "subs": null,
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -176,6 +191,11 @@
        "date": "2026-09-28",
        "status": "AMBER",
        "value": 2
+      },
+      {
+       "date": "2026-09-29",
+       "status": "AMBER",
+       "value": 1
       }
      ]
     },
@@ -188,13 +208,13 @@
      "question": "Can the basis trade be unwound without breaking the market?",
      "trip": "Red on a failed or badly tailed coupon auction, dealers refusing balance sheet, bond volatility (MOVE) above 140, or bid-ask spreads widening the way they did in March 2020. Amber with MOVE above 100.",
      "status": "RED",
-     "reading": "MOVE index 96. Sep 23 2026 $70bn 5-year auction priced at 5.033% with a 3.1bp tail (second-largest on record), bid-to-cover 2.212 (weakest since Dec 2018), primary dealers absorbed 15.8%.",
+     "reading": "MOVE index 102. The Sep 23, 2026 $70B 5-year note auction priced at 5.033%, tailed 3.1bp (second-largest tail on record), bid-to-cover 2.212 (weakest since Dec 2018), with primary dealers forced to absorb 15.8% of the offering; the Sep 24 7-year note tailed 0.7bp with indirects 57.2% vs 64.6% average.",
      "evidence": "March 2020: repo tightened, the basis trade could not roll, Treasuries were dumped, and the Fed bought $75 billion a day. Ten days start to finish.",
      "source": "Yahoo Finance ^MOVE; auction results via web check",
-     "value": 96.0,
+     "value": 102.0,
      "subs": null,
      "url": "https://www.tftc.io/5-year-treasury-auction-5-percent-yield-second-biggest-tail-record",
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -205,6 +225,11 @@
        "date": "2026-09-28",
        "status": "RED",
        "value": 96.0
+      },
+      {
+       "date": "2026-09-29",
+       "status": "RED",
+       "value": 102.0
       }
      ]
     },
@@ -217,13 +242,13 @@
      "question": "Are the lenders worried about each other?",
      "trip": "Red on a spike in a large bank's default-insurance cost or discount-window borrowing above $50 billion. Amber above $10 billion, or if uninsured deposits start moving to money funds again.",
      "status": "AMBER",
-     "reading": "Discount-window primary credit $6.2 billion (week of 2026-09-23). No public evidence of discount-window draws or large-bank CDS spikes in Sep 2026; big-bank stocks fell after the Sep 16 Fed hike but JPMorgan raised its dividend 10% on Sep 15, signalling balance-sheet strength; deposit flight to MMFs not reported at stress levels.",
+     "reading": "Discount-window primary credit $6.2 billion (week of 2026-09-23). Big U.S. bank stocks fell on Sep 16, 2026 after the Fed hiked rates; JPMorgan raised its quarterly dividend, signaling capital adequacy, but no public discount-window draws or outsized CDS spikes at large banks have been reported; bank reserves held at $3.04T as of Sep 9, 2026.",
      "evidence": "March 2023: $42 billion left one bank in a day through an app. The next run will be as fast.",
      "source": "FRED: WLCFLPCL; bank CDS via web check",
      "value": 6.2,
      "subs": null,
      "url": "https://www.investing.com/rates-bonds/jp-morgan-cds-5-year-usd",
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -232,6 +257,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "AMBER",
+       "value": 6.2
+      },
+      {
+       "date": "2026-09-29",
        "status": "AMBER",
        "value": 6.2
       }
@@ -246,13 +276,13 @@
      "question": "Are foreigners paying extra to borrow dollars through swaps?",
      "trip": "Amber past -30 basis points outside a quarter-end; red at -60 and beyond, the dealers refusing to extend balance sheet. March 2020 reached -150 on the yen.",
      "status": "AMBER",
-     "reading": "EUR/USD 3m basis was approximately -16 to -20bp in mid-May 2026; at Sep 28 quarter-end, structural JPY basis pressure is building (Japan's $550bn US investment deal expected to push JPY/USD basis more negative) but no RED-threshold breach reported; best available indicative JPY 3m basis circa -25 to -35bp at quarter-end.",
+     "reading": "As of mid-May 2026, the 3-month EUR/USD xccy basis was approximately -16 to -20bp; Japan's $550bn US trade deal is driving structural pressure toward a wider (more negative) JPY/USD basis into Q4 2026, with quarter-end balance-sheet compression expected to widen both bases further on Sep 30.",
      "evidence": "When the swap market seizes, foreign holders do not default — they sell Treasuries. An offshore funding problem becomes a Treasury problem in the same week.",
      "source": "Cross-currency basis via web check",
-     "value": -32.0,
+     "value": -25.0,
      "subs": null,
      "url": "https://convextrade.com/glossary/eurodollar-basis",
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -263,6 +293,11 @@
        "date": "2026-09-28",
        "status": "AMBER",
        "value": -32.0
+      },
+      {
+       "date": "2026-09-29",
+       "status": "AMBER",
+       "value": -25.0
       }
      ]
     },
@@ -281,7 +316,7 @@
      "value": 0.1,
      "subs": null,
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -290,6 +325,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "GREEN",
+       "value": 0.1
+      },
+      {
+       "date": "2026-09-29",
        "status": "GREEN",
        "value": 0.1
       }
@@ -304,13 +344,13 @@
      "question": "Is the largest source of swapped dollars being pulled home?",
      "trip": "Red on a yen move of more than 5% in a week against the dollar, or a surprise Bank of Japan hike. Amber at 3%, or while the hiking cycle runs.",
      "status": "AMBER",
-     "reading": "Yen 157.2 per dollar, +0.1% on the week (negative = yen surging). BOJ hiked 25bp to 1.25% on Sep 18 2026 (highest since 1995); hike was fully priced so no surprise; USD/JPY was at 157.69 on Sep 28 2026, down ~1.3% over past month but not a 5% weekly move; Oct hike talk building.",
+     "reading": "Yen 157.4 per dollar, +0.0% on the week (negative = yen surging). On Sep 18, 2026, the Bank of Japan hiked its policy rate by 25bp to 1.25% (highest since 1995), in a 7-2 split decision; USD/JPY stood at ~157.3 on Sep 29, 2026, having ranged 155.96–158.85 over the past two weeks, a ~1.8% weekly range—below the 5% RED threshold but carry-trade unwind risk remains elevated.",
      "evidence": "August 2024: the yen jumped and U.S. stocks fell 8% in three days on no American news.",
      "source": "Yahoo Finance JPY=X; BoJ via web check",
-     "value": 157.2,
+     "value": 157.4,
      "subs": null,
-     "url": "https://www.japantimes.co.jp/business/2026/09/18/economy/boj-meeting-september/",
-     "checked": "2026-09-28",
+     "url": "https://www.cnbc.com/2026/09/18/japan-raises-rates-30-year-high-yen-jgb.html",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -321,6 +361,11 @@
        "date": "2026-09-28",
        "status": "AMBER",
        "value": 157.2
+      },
+      {
+       "date": "2026-09-29",
+       "status": "AMBER",
+       "value": 157.4
       }
      ]
     },
@@ -333,13 +378,13 @@
      "question": "How much of the Treasury market is held on overnight money?",
      "trip": "Red when the trade unwinds — Treasury selling into a falling market with the futures basis blowing out. Amber standing while it exceeds $1 trillion.",
      "status": "AMBER",
-     "reading": "Morgan Stanley estimates basis trade notional fell to ~$900bn as of late Sep 2026, down from $1.26tn at start of 2026, reflecting reduced arbitrage opportunity rather than forced unwind; OFR estimated hedge-fund long cash Treasuries at $2.0tn as of Aug 2026.",
+     "reading": "As of late September 2026, Morgan Stanley estimates the notional value of leveraged investors' Treasury basis positions has fallen to ~$900bn from ~$1.26tn at start of 2026, the smallest in over two years; OFR estimated $2T in long cash Treasuries by hedge funds as of Aug 2026, with $1.4T in offsetting short futures.",
      "evidence": "Central clearing (December for cash trades, June 2027 for repo) will force margin on the trade, capping its leverage — safer after, riskier during the changeover.",
      "source": "OFR; CFTC via web check",
      "value": 0.9,
      "subs": null,
      "url": "https://hedgeweek.com/news/hedge-funds-scale-back-treasury-basis-trade-as-arbitrage-gaps-narrow",
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -348,6 +393,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "AMBER",
+       "value": 0.9
+      },
+      {
+       "date": "2026-09-29",
        "status": "AMBER",
        "value": 0.9
       }
@@ -362,13 +412,13 @@
      "question": "Will the plumbing survive its own repair?",
      "trip": "Red on a delay announced under pressure, a clearing-house margin call that cascades, or dealers dropping smaller counterparties in the run-up. Green once both deadlines have passed cleanly.",
      "status": "AMBER",
-     "reading": "SEC confirmed on Sep 22 2026 it does not intend to extend Dec 31 2026 (cash) or Jun 30 2027 (repo) deadlines; two significant scope questions remain outstanding; largest implementation challenge is bilateral legal documentation; IIB extraterritoriality exemption still open.",
+     "reading": "The SEC confirmed in September 2026 it does not intend to extend the Dec 31, 2026 (cash) and Jun 30, 2027 (repo) clearing deadlines; implementation challenges remain significant, including heavy legal documentation burdens for bilateral agreements, open scope questions on non-US transactions, and margin netting relief still being finalized.",
      "evidence": "The clearing house becomes the too-big-to-fail node: 2020 and the 2022 nickel blowup showed what a margin spiral looks like.",
      "source": "SEC; FICC via web check",
      "value": null,
      "subs": null,
-     "url": "https://www.sec.gov/newsroom/speeches-statements/uyeda-remarks-2026-u-s-treasury-market-conference-092226",
-     "checked": "2026-09-28",
+     "url": "https://www.sec.gov/newsroom/speeches-statements/uyeda-statement-update-secs-work-toward-treasury-clearing-implementation-080726-update-secs-work-toward-treasury-clearing-implementation-august-2026",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -377,6 +427,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "AMBER",
+       "value": null
+      },
+      {
+       "date": "2026-09-29",
        "status": "AMBER",
        "value": null
       }
@@ -391,13 +446,13 @@
      "question": "How large is the new money-fund lookalike with no backstop?",
      "trip": "Red on a large issuer trading below par for more than a day, or total supply falling 10% in a week. Amber standing.",
      "status": "GREEN",
-     "reading": "Total stablecoin supply ~$303bn as of Aug 2026 (Allium); Solana chain hit record $17.3bn on Sep 25 2026; no major issuer trading below par; supply down ~4.5% from May 2026 peak of $322bn but well within normal drift, no 10%-in-a-week drop or depeg event reported.",
+     "reading": "Total stablecoin supply was ~$302.8bn as of Sep 10, 2026 (down ~0.8% over 90 days from a May peak of $322.4bn, well within the 10%-per-week RED threshold); no major issuer has traded below par; Solana stablecoin supply hit a record $17.3bn on Sep 25, 2026.",
      "evidence": "2022's Terra collapse and 2023's USDC break were the rehearsals, at a tenth of today's size.",
      "source": "Issuer attestations via web check",
-     "value": 303.0,
+     "value": 302.8,
      "subs": null,
-     "url": "https://solanacompass.com/news/solana-stablecoin-supply-hits-new-all-time-high-of-173b",
-     "checked": "2026-09-28",
+     "url": "https://stablecoinbeat.com/tracker/",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -408,6 +463,11 @@
        "date": "2026-09-28",
        "status": "GREEN",
        "value": 303.0
+      },
+      {
+       "date": "2026-09-29",
+       "status": "GREEN",
+       "value": 302.8
       }
      ]
     },
@@ -420,13 +480,13 @@
      "question": "Has the newest shadow bank closed its doors?",
      "trip": "Standing red while large funds gate redemptions; green after a full quarter of redemptions met in full.",
      "status": "RED",
-     "reading": "Blackstone BCRED ($79bn) gated at 5% in Jun 2026 after $4.4bn Q2 redemption requests; Blue Owl OBDC II suspended repurchases entirely; Q2 2026 industry requests hit record 12.4% of NAV with only 38% filled, leaving ~$9.6bn unmet; secondary-market tender offers pricing at 15-30% discounts to NAV.",
+     "reading": "Blackstone gated redemptions on its $79bn BCRED fund in June 2026 after requests exceeded 10% of NAV; Q2 2026 redemption requests hit a record 12.4% of NAV industry-wide with only 38% filled (~$9.6bn unfilled); Blue Owl permanently suspended repurchases on OBDC II; Cox Capital offered shares of HPS, Apollo, and Ares BDCs at 15–30% discounts to NAV.",
      "evidence": "About $2 trillion of bank lending done outside banks, funded by insurers and bank credit lines, with no window. The decision lives on Standing Orders.",
      "source": "Fund filings via web check",
      "value": null,
      "subs": null,
      "url": "https://angelinvestorsnetwork.com/alternative-investments/bdc-redemption-gates-explained-non-traded-fund-liquidity",
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -435,6 +495,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "RED",
+       "value": null
+      },
+      {
+       "date": "2026-09-29",
        "status": "RED",
        "value": null
       }
@@ -448,14 +513,14 @@
      "name": "Transmission",
      "question": "Has the seizure reached the markets — Treasuries and stocks falling together, the dollar jumping?",
      "trip": "Red when 10-year Treasury prices and the S&P 500 fall together for three sessions with the dollar index up. Amber on the first such day.",
-     "status": "AMBER",
-     "reading": "Current streak of sessions with yields up, stocks down and the dollar up: 1. 10-year 5.18% on 2026-09-24.",
+     "status": "GREEN",
+     "reading": "Current streak of sessions with yields up, stocks down and the dollar up: 0. 10-year 5.17% on 2026-09-25.",
      "evidence": "In 2019 the spike never left the repo desks; the Fed lent within 48 hours. In 2020 it reached the Treasury market in ten days and every margin call in the world landed the same week.",
      "source": "FRED: DGS10, DTWEXBGS; Yahoo SPY",
-     "value": 1,
+     "value": 0,
      "subs": null,
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -466,6 +531,11 @@
        "date": "2026-09-28",
        "status": "AMBER",
        "value": 1
+      },
+      {
+       "date": "2026-09-29",
+       "status": "GREEN",
+       "value": 0
       }
      ]
     },
@@ -478,13 +548,13 @@
      "question": "Once a seizure starts, how fast does the Fed lend — and does it stop when the episode ends?",
      "trip": "Red if a seizure (SOFR 25 bp over the floor for three sessions) runs with no Fed operations. Amber while operations run; green when they end. Purchases that continue after the episode normalizes are step two on the fiscal dominance board.",
      "status": "AMBER",
-     "reading": "Fed operations under way. Fed paused Reserve Management Purchases for a second consecutive month through mid-Oct 2026 (Sep 14 announcement), citing $3.04tn in bank reserves as ample; ~$15.6bn in reinvestment purchases continue; SRF rate set at 4.0% per Sep 16 implementation note; no emergency repo ops.",
+     "reading": "Fed operations under way. As of Sep 14, 2026, the Fed paused Reserve Management Purchases (RMP) for a second consecutive month through mid-October, conducting only ~$15.6bn in reinvestment purchases; bank reserves stood at $3.04T as of Sep 9, 2026, deemed ample; the SRF stands ready at a 4.0% rate per the Sep 16 implementation note but no emergency repo operations have been launched.",
      "evidence": "The precedents are days: 48 hours in 2019, ten days in 2020, a weekend in 2023. The Fed has never failed to act on a repo seizure since 1987; the only way this goes red is if it is stopped from acting.",
      "source": "FRED: SOFR, IORB, RPONTSYD; web check",
      "value": 0,
      "subs": null,
      "url": "https://www.bloomberg.com/news/articles/2026-09-14/fed-prolongs-pause-on-reserve-management-purchases-to-mid-oct",
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -493,6 +563,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "AMBER",
+       "value": 0
+      },
+      {
+       "date": "2026-09-29",
        "status": "AMBER",
        "value": 0
       }
@@ -504,37 +579,28 @@
      "board": "plumbing",
      "label": "Plumbing",
      "kind": "value",
-     "name": "SOFR against the Fed's rate",
-     "old": -2.0,
-     "new": 0.0,
-     "reading": "SOFR 3.90% on 2026-09-25, +0 bp against the rate on reserves (3.90%); ceiling 4.00%. Worst spread in the last five sessions +0 bp."
-    },
-    {
-     "board": "plumbing",
-     "label": "Plumbing",
-     "kind": "value",
      "name": "Treasury market function",
-     "old": 105.0,
-     "new": 96.0,
-     "reading": "MOVE index 96. Sep 23 2026 $70bn 5-year auction priced at 5.033% with a 3.1bp tail (second-largest on record), bid-to-cover 2.212 (weakest since Dec 2018), primary dealers absorbed 15.8%."
-    },
-    {
-     "board": "plumbing",
-     "label": "Plumbing",
-     "kind": "status",
-     "name": "Bank stress",
-     "old": "GREEN",
-     "new": "AMBER",
-     "reading": "Discount-window primary credit $6.2 billion (week of 2026-09-23). No public evidence of discount-window draws or large-bank CDS spikes in Sep 2026; big-bank stocks fell after the Sep 16 Fed hike but JPMorgan raised its d"
+     "old": 96.0,
+     "new": 102.0,
+     "reading": "MOVE index 102. The Sep 23, 2026 $70B 5-year note auction priced at 5.033%, tailed 3.1bp (second-largest tail on record), bid-to-cover 2.212 (weakest since Dec 2018), with primary dealers forced to absorb 15.8% of the of"
     },
     {
      "board": "plumbing",
      "label": "Plumbing",
      "kind": "value",
      "name": "The dollar shortage gauge",
-     "old": -25.0,
-     "new": -32.0,
-     "reading": "EUR/USD 3m basis was approximately -16 to -20bp in mid-May 2026; at Sep 28 quarter-end, structural JPY basis pressure is building (Japan's $550bn US investment deal expected to push JPY/USD basis more negative) but no RE"
+     "old": -32.0,
+     "new": -25.0,
+     "reading": "As of mid-May 2026, the 3-month EUR/USD xccy basis was approximately -16 to -20bp; Japan's $550bn US trade deal is driving structural pressure toward a wider (more negative) JPY/USD basis into Q4 2026, with quarter-end b"
+    },
+    {
+     "board": "plumbing",
+     "label": "Plumbing",
+     "kind": "status",
+     "name": "Transmission",
+     "old": "AMBER",
+     "new": "GREEN",
+     "reading": "Current streak of sessions with yields up, stocks down and the dollar up: 0. 10-year 5.17% on 2026-09-25."
     }
    ]
   },
@@ -590,13 +656,13 @@
      "question": "Is the 10-year Treasury yield holding above 5%?",
      "trip": "Trips when the 10-year holds above 5% for more than a few days.",
      "status": "RED",
-     "reading": "5.18% on 2026-09-24; 2 consecutive readings at or above 5%.",
+     "reading": "5.17% on 2026-09-25; 3 consecutive readings at or above 5%.",
      "evidence": "Rates, not earnings, are what has moved this year.",
      "source": "FRED",
-     "value": 5.18,
+     "value": 5.17,
      "subs": null,
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-24",
@@ -612,6 +678,11 @@
        "date": "2026-09-28",
        "status": "RED",
        "value": 5.18
+      },
+      {
+       "date": "2026-09-29",
+       "status": "RED",
+       "value": 5.17
       }
      ]
     },
@@ -624,13 +695,13 @@
      "question": "Does the market pay you anything extra for owning stocks instead of Treasuries?",
      "trip": "Trips when the earnings yield falls to or below the 10-year yield.",
      "status": "AMBER",
-     "reading": "Forward P/E 19.3 → earnings yield 5.18% against a 10-year at 5.18%: premium +0.00 points.",
+     "reading": "Forward P/E 19.2 → earnings yield 5.21% against a 10-year at 5.17%: premium +0.04 points.",
      "evidence": "Expensive markets don't fall because they're expensive; they fall when a trigger hits, and valuation decides how far.",
      "source": "FactSet-style estimate via web check; FRED",
-     "value": 0.0,
+     "value": 0.04,
      "subs": null,
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-24",
@@ -646,6 +717,11 @@
        "date": "2026-09-28",
        "status": "AMBER",
        "value": 0.0
+      },
+      {
+       "date": "2026-09-29",
+       "status": "AMBER",
+       "value": 0.04
       }
      ]
     },
@@ -658,13 +734,13 @@
      "question": "Are company profits still rising, and are forecasts still going up?",
      "trip": "Trips when forecasts for the next quarter start being cut, or growth falls below 10%.",
      "status": "GREEN",
-     "reading": "Next-quarter S&P 500 earnings growth estimate 29.1%; revisions up. As of Sep 24, 2026, S&P 500 forward 12-month P/E is ~19.3x on $398.74 forward EPS; FactSet reports Q3 2026 estimated YoY earnings growth of 29.1% (up from 26.7% at June 30); 62% of S&P 500 companies issued positive Q3 EPS guidance, well above the 5-year average of 41%.",
+     "reading": "Next-quarter S&P 500 earnings growth estimate 29.1%; revisions up. FactSet as of ~Sep 26 2026: S&P 500 forward 12-month P/E is 19.2 (below 5-yr avg 19.8; above 10-yr avg 19.0); Q3 2026 estimated earnings growth is 29.1% (revised up from 26.7% at Jun 30); full-year 2026 EPS growth estimate is 32.0%; revisions for Q3 are net upward led by Energy, IT, and Financials.",
      "evidence": "About half of this year's earnings growth comes from AI-infrastructure companies.",
      "source": "FactSet-style estimates via web check",
      "value": 29.1,
      "subs": null,
-     "url": "https://streetstats.finance/valuation/market",
-     "checked": "2026-09-28",
+     "url": "https://www.factset.com/earningsinsight",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-24",
@@ -680,6 +756,11 @@
        "date": "2026-09-28",
        "status": "GREEN",
        "value": 29.1
+      },
+      {
+       "date": "2026-09-29",
+       "status": "GREEN",
+       "value": 29.1
       }
      ]
     },
@@ -692,13 +773,13 @@
      "question": "Is the index rising on a few giant companies while most stocks fall?",
      "trip": "Watch at half the members below their own 200-day average; red at two-thirds, or when the index itself breaks its 200-day average.",
      "status": "AMBER",
-     "reading": "S&P 500 7,710 vs 200-day 7,210 (0 closes below). 55% of 501 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: -5.2%. As of Sep 25, 2026, S&P 500 at 7,742 is above its 50-DMA (7,636) and well above its 200-DMA (7,205); however, only ~49.9–56% of S&P 500 stocks trade above their 200-DMA (most recent confirmed print ~49.9% in late May/early June, with a market recovery since), indicating the rally remains somewhat concentrated and below the 60% historical average.",
+     "reading": "S&P 500 7,678 vs 200-day 7,213 (0 closes below). 57% of 501 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: -4.2%. As of Sep 28 2026, only 25.2% of S&P 500 constituents trade above their 50-day MA (10th percentile historically, an unusually weak reading); S&P 500 index itself trades above its 200-day MA (7684 vs 7209), but 52-week range for % above 200-day is 42–74%, suggesting concentrated index gains driven by mega-caps.",
      "evidence": "Narrow leadership is how the last two bear markets began.",
      "source": "Yahoo Finance, all constituents; web check as fallback",
-     "value": 54.9,
+     "value": 57.3,
      "subs": null,
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-24",
@@ -714,6 +795,11 @@
        "date": "2026-09-28",
        "status": "AMBER",
        "value": 54.9
+      },
+      {
+       "date": "2026-09-29",
+       "status": "AMBER",
+       "value": 57.3
       }
      ]
     },
@@ -726,13 +812,13 @@
      "question": "Are bond investors demanding more to lend to risky companies?",
      "trip": "Trips on spreads above 5%, a 1.5-point jump in 60 days, or a VIX that stays above 30.",
      "status": "GREEN",
-     "reading": "High-yield spread 2.80% (+0.01 pts in 60 days); VIX 14.2.",
+     "reading": "High-yield spread 2.93% (+0.12 pts in 60 days); VIX 14.2.",
      "evidence": "Credit usually cracks after rates and before earnings.",
      "source": "FRED",
-     "value": 2.8,
+     "value": 2.93,
      "subs": null,
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-24",
@@ -748,6 +834,11 @@
        "date": "2026-09-28",
        "status": "GREEN",
        "value": 2.8
+      },
+      {
+       "date": "2026-09-29",
+       "status": "GREEN",
+       "value": 2.93
       }
      ]
     },
@@ -760,10 +851,10 @@
      "question": "Has anything from outside the market hit hard enough to force earnings down or rates up?",
      "trip": "Trips the moment any one of the five below goes red.",
      "status": "AMBER",
-     "reading": "0 red, 5 on watch, of five.",
+     "reading": "0 red, 4 on watch, of five.",
      "evidence": "The market treats every oil rise as a rate rise; the financial-accident row matters most while every one of its ingredients is present.",
      "source": "FRED; web check",
-     "value": 5,
+     "value": 4,
      "subs": [
       {
        "name": "Energy",
@@ -773,26 +864,26 @@
       {
        "name": "China, Taiwan, the trade truce",
        "status": "AMBER",
-       "reading": "On Sep 23–24, 2026, Xi Jinping completed a state visit to Washington and Treasury Secretary Bessent confirmed the US-China trade truce extended through January 10, 2027, with reciprocal tariff cuts on $60B of goods; Taiwan chip-export controls and arms sales ($14B package frozen) remain unresolved; analysts warn the truce could break down on new unilateral tariffs or Taiwan disputes. Red if the chip and rare-earth rules snap back, a Chinese bank is sanctioned, or Taiwan sees a quarantine."
+       "reading": "On Sep 24 2026, Trump and Xi extended the US-China trade truce by 2 months to Jan 10 2027, with tariffs at ~31% on Chinese goods; rare-earth deliveries still falling short of commitments; Hormuz partially closed due to US-Iran war (negotiations for phased reopening ongoing); Taiwan $14B arms package on hold; no quarantine or bank sanctions but January cliff looms. Red if the chip and rare-earth rules snap back, a Chinese bank is sanctioned, or Taiwan sees a quarantine."
       },
       {
        "name": "A financial accident",
        "status": "AMBER",
-       "reading": "Japan's 10-year JGB yield hit 3.03% on Sep 15, 2026 (30-year high), prompting a historic joint US-Japan yen intervention in late July/early August 2026; the 10-year US Treasury yield touched 5.01% in September according to the AI circular-financing tracker; carry-trade stress is elevated but a disorderly unwind has not yet materialized — no large fund or lender failure confirmed. Yen -1.0% in 30 days. Red on a Treasury-market seizure, a carry-trade unwind, or a large fund or lender failing."
+       "reading": "BOJ hiked to 1.25% on Sep 18 2026 (highest in 3 decades), accelerating yen carry trade unwind; 10-yr Treasury yield near 5.10% and 30-yr at 5.43% (near 20-yr highs); $70B 5-yr note auction cleared with bid-to-cover of 2.21 (slightly soft); Japanese MoF data shows ¥4T net foreign security sales since Jan 2026; no large fund or lender failure reported but BIS flags systemic risk from circular AI financing. Yen -1.4% in 30 days. Red on a Treasury-market seizure, a carry-trade unwind, or a large fund or lender failing."
       },
       {
        "name": "Policy shock",
        "status": "AMBER",
-       "reading": "On Sep 5, 2026, Trump, Vance, Bessent, and senior economic advisors publicly pressured new Fed Chair Kevin Warsh not to raise rates — an unusually broad pressure campaign — but Warsh proceeded with a 25bp hike on Sep 16, 2026; the debt ceiling is not an immediate constraint (next binding event estimated summer 2027); Supreme Court struck down IEEPA tariffs in Feb 2026 adding legal uncertainty. Red on broad new tariffs, a Fed-independence fight, or a debt-ceiling standoff."
+       "reading": "Supreme Court ruled many Trump tariffs illegal in 2026 requiring up to $166B in refunds; new tariffs re-imposed under Section 122 are under appeal; debt ceiling raised to $41.1T in July 2025 (One Big Beautiful Bill Act), next episode projected late-2027; no debt-ceiling standoff or contested election currently; US-Iran war ongoing but no broad new tariff shock in last 30 days. Red on broad new tariffs, a Fed-independence fight, or a debt-ceiling standoff."
       },
       {
        "name": "Pandemic, cyberattack, disaster",
-       "status": "AMBER",
-       "reading": "Iranian state-sponsored hackers targeted US water, telecom, and energy infrastructure since late August 2026 (NBC News, Sep 2); the FBI confirmed water/wastewater utilities in at least 7 states reported incidents since July 27, 2026; no mass-casualty or market-disrupting event confirmed, but attacks are escalating in scope. No warning possible; red only when it happens."
+       "status": "GREEN",
+       "reading": "No pandemic declared; Iranian-linked hackers targeted over 100 US water providers per CISA (Sep 2026), and Boston Scientific suffered a significant ransomware attack recovering into September; no attack on financial markets or exchanges; no national economic-impact disaster declared in last 30 days. No warning possible; red only when it happens."
       }
      ],
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-24",
@@ -808,6 +899,11 @@
        "date": "2026-09-28",
        "status": "AMBER",
        "value": 5
+      },
+      {
+       "date": "2026-09-29",
+       "status": "AMBER",
+       "value": 4
       }
      ]
     },
@@ -826,7 +922,7 @@
      "value": 4.1,
      "subs": null,
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-24",
@@ -842,6 +938,11 @@
        "date": "2026-09-28",
        "status": "GREEN",
        "value": 4.1
+      },
+      {
+       "date": "2026-09-29",
+       "status": "GREEN",
+       "value": 4.1
       }
      ]
     },
@@ -854,13 +955,13 @@
      "question": "Has the AI spending boom started to turn? (Mirrors the AI board.)",
      "trip": "Trips when the AI board's bell rings: spending growth slowing and rental prices falling at the same time.",
      "status": "AMBER",
-     "reading": "Half-lit. Spending growth: Green; chips easier: Red.",
+     "reading": "Half-lit. Spending growth: Green; chips easier: Amber.",
      "evidence": "Because AI companies supply half of index earnings growth, that bell is the likeliest trigger for the earnings tile.",
      "source": "AI board",
      "value": 1,
      "subs": null,
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-24",
@@ -876,6 +977,11 @@
        "date": "2026-09-28",
        "status": "AMBER",
        "value": 1
+      },
+      {
+       "date": "2026-09-29",
+       "status": "AMBER",
+       "value": 1
       }
      ]
     },
@@ -888,13 +994,13 @@
      "question": "Is the central bank tightening into a stretched market?",
      "trip": "Trips on a hike while the 10-year is above 5%, or a surprise at the next meeting.",
      "status": "RED",
-     "reading": "Fed funds target (upper) 4.00%, up from 3.75% 90 days ago. On Sep 16, 2026, the FOMC unanimously raised the federal funds rate by 25bp to 3.75%–4.00% — its first hike since 2023; the Sep dot plot shifted year-end projections to 4.1%–4.4%; futures markets as of Sep 25 price ~4.2% by December and ~4.8% by Sep 2027; the next meeting is October 27–28, 2026, where markets are split between a hold and another 25bp hike.",
+     "reading": "Fed funds target (upper) 4.00%, up from 3.75% 90 days ago. Fed hiked 25bp to 3.75–4.00% on Sep 16 2026 (unanimous 12-0, first hike since July 2023); Chair Warsh cited elevated inflation and energy prices; SEP shows 16/18 participants expect at least one more hike; futures pricing ~4.2% by Dec 2026 and ~4.8% by Sep 2027; next meeting Oct 27-28 2026.",
      "evidence": "The last hiking cycle coincided with a 20%+ decline.",
      "source": "FRED; Fed communications via web check",
      "value": 4.0,
      "subs": null,
-     "url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html",
-     "checked": "2026-09-28",
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-24",
@@ -910,6 +1016,11 @@
        "date": "2026-09-28",
        "status": "RED",
        "value": 4.0
+      },
+      {
+       "date": "2026-09-29",
+       "status": "RED",
+       "value": 4.0
       }
      ]
     }
@@ -918,29 +1029,29 @@
     {
      "board": "market",
      "label": "Market",
-     "kind": "status",
-     "name": "Stocks yield no more than bonds",
-     "old": "RED",
-     "new": "AMBER",
-     "reading": "Forward P/E 19.3 → earnings yield 5.18% against a 10-year at 5.18%: premium +0.00 points."
+     "kind": "value",
+     "name": "The average stock is already falling",
+     "old": 54.9,
+     "new": 57.3,
+     "reading": "S&P 500 7,678 vs 200-day 7,213 (0 closes below). 57% of 501 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: -4.2%. As of Sep 28 2026, only 25.2% of S&P 500 constituents tra"
+    },
+    {
+     "board": "market",
+     "label": "Market",
+     "kind": "value",
+     "name": "Lenders are getting nervous",
+     "old": 2.8,
+     "new": 2.93,
+     "reading": "High-yield spread 2.93% (+0.12 pts in 60 days); VIX 14.2."
     },
     {
      "board": "market",
      "label": "Market",
      "kind": "value",
      "name": "Outside shock",
-     "old": 4,
-     "new": 5,
-     "reading": "0 red, 5 on watch, of five."
-    },
-    {
-     "board": "market",
-     "label": "Market",
-     "kind": "status",
-     "name": "The AI-cycle bell",
-     "old": "GREEN",
-     "new": "AMBER",
-     "reading": "Half-lit. Spending growth: Green; chips easier: Red."
+     "old": 5,
+     "new": 4,
+     "reading": "0 red, 4 on watch, of five."
     }
    ]
   },
@@ -948,7 +1059,7 @@
    "key": "ai",
    "label": "AI cycle",
    "title": "AI cycle tripwires",
-   "summary": "2 tripped, 4 on watch, of 8. The bell has not rung.",
+   "summary": "1 tripped, 4 on watch, of 8. The bell has not rung.",
    "gate": {
     "kind": "bell",
     "rung": false,
@@ -961,7 +1072,7 @@
      },
      {
       "name": "Chips are getting easier to get",
-      "status": "RED"
+      "status": "AMBER"
      }
     ]
    },
@@ -998,7 +1109,7 @@
      "value": 1.0,
      "subs": null,
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-24",
@@ -1012,6 +1123,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "AMBER",
+       "value": 1.0
+      },
+      {
+       "date": "2026-09-29",
        "status": "AMBER",
        "value": 1.0
       }
@@ -1026,13 +1142,13 @@
      "question": "Is the chip seller lending or investing in the companies that buy its chips?",
      "trip": "A structural condition, not a level — it stays lit until the circular deals unwind.",
      "status": "AMBER",
-     "reading": "As of Aug–Sep 2026, Nvidia's equity portfolio in AI customers reached $99B (Sep 4 CNBC), with ~$46B in direct stakes and $879B in multi-year purchase commitments traced in Bloomberg's circular-flow diagram; Nvidia also announced $500B in third-party financing partnerships with Wall Street asset managers on Aug 10, and the BIS named AI capex circular financing one of three top global financial stability risks in its June 2026 Annual Report.",
+     "reading": "On Aug 10 2026 Nvidia signed MOUs with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, and KKR to mobilize $500B in third-party capital, with Nvidia potentially backstopping $125B; Nvidia equity investments reached $99B as of Jul 26 2026 (up from ~$7B a year ago); BIS named circular AI financing as one of three biggest global financial stability risks in its 2026 Annual Report.",
      "evidence": "Lucent and Nortel financed their own customers in 1999, a year before they collapsed.",
      "source": "Company disclosures",
      "value": 1,
      "subs": null,
      "url": "https://www.cnbc.com/2026/09/04/nvidia-ai-investments-99-billion.html",
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-24",
@@ -1046,6 +1162,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "AMBER",
+       "value": 1
+      },
+      {
+       "date": "2026-09-29",
        "status": "AMBER",
        "value": 1
       }
@@ -1060,13 +1181,13 @@
      "question": "Are the big buyers still raising next year's spending forecasts, or starting to talk about 'digestion'?",
      "trip": "Trips on the first cut to the growth rate — not the level — or the word 'digestion' on a call.",
      "status": "GREEN",
-     "reading": "Trailing-year capex growth: Microsoft +80% (was +58%); Amazon +61% (was +62%); Alphabet +98% (was +90%); Meta +71% (was +73%). As of Q2 2026 earnings (late July 2026), Amazon raised 2026 capex guidance to ~$220B, Alphabet to $195–205B, and Meta to $130–145B; Microsoft's ~$175B reflects a lease-accounting reclassification, not a spending cut — all four reaffirmed or raised guidance with no digestion or efficiency language. In Q2 2026, Google Cloud grew 82% YoY to $24.8B with a $514B committed backlog; AWS grew 37% YoY to $42.2B; Azure grew 43% YoY — all three accelerating relative to Q1 2026.",
+     "reading": "Trailing-year capex growth: Microsoft +80% (was +58%); Amazon +61% (was +62%); Alphabet +98% (was +90%); Meta +71% (was +73%). As of Q2 2026 earnings (July), the four hyperscalers raised or held 2026 capex guidance to a combined $720–$745B range, with no digestion, optimization, or efficiency language; Microsoft noted capacity constrained through 2026 and Alphabet cited 'unprecedented demand for AI compute resources'. In Q2 2026, Google Cloud grew 82% YoY to $24.8B with $514B backlog (up from $106B a year earlier); AWS grew 37% to $42.2B and Azure grew 43%, all three accelerating versus Q1.",
      "evidence": "This is the bell. Historically it rings one to two quarters before the guidance cut everyone waits for.",
      "source": "SEC filings; earnings calls",
      "value": 0,
      "subs": null,
-     "url": "https://valueaddvc.com/ai-spending",
-     "checked": "2026-09-28",
+     "url": "https://valueaddvc.com/blog/meta-145b-ai-capex-2026-why-zuckerberg-raised-guidance-twice",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-24",
@@ -1082,6 +1203,11 @@
        "date": "2026-09-28",
        "status": "GREEN",
        "value": 0
+      },
+      {
+       "date": "2026-09-29",
+       "status": "GREEN",
+       "value": 0
       }
      ]
     },
@@ -1093,14 +1219,14 @@
      "name": "Chips are getting easier to get",
      "question": "Are rental prices for AI computing falling, waitlists disappearing, inventory piling up?",
      "trip": "Trips on a sustained 20–30% drop in rental prices, or Nvidia inventory growing 25 points faster than sales.",
-     "status": "RED",
-     "reading": "Nvidia inventory +111% vs sales +106% (quarter ended 2026-07-26); inventory days 119. As of Sep 13–27, 2026, H100 median on-demand price is ~$3.25–$3.84/hr (Mercatus/AIM trackers), down roughly 40–50% from early-2024 peak but with demand spikes tightening availability; B200 averages ~$6.39/hr across 12 providers with floor at $3.69/hr; direction over 90 days is flat-to-modestly-declining for H100, stable for B200. As of September 2026, all three DRAM suppliers (Samsung, SK Hynix, Micron) describe 2026 HBM output as effectively committed/sold out; conventional DRAM contract prices surged 93–98% QoQ in Q1 2026 with further increases of 10–20%/month guided through year-end; new HBM capacity not expected until 2028–2029. On Sep 16, 2026, Silicon Data reported B200 residual value at 158% of original cost (58% premium); H100 used prices stable at $18K–$25K with strong resale demand and CoreWeave's 2022-vintage H100s immediately rebooked at 95% of original pricing — no distressed volume dumping observed.",
+     "status": "AMBER",
+     "reading": "Nvidia inventory +111% vs sales +106% (quarter ended 2026-07-26); inventory days 119. As of Sep 27–28 2026, H100 median on-demand is ~$3.25–$3.84/hr (down ~50% since early 2024 due to Blackwell arrival); B200 median is $6.39–$6.49/hr, up ~4% over the past 90 days; H100 rental prices have fallen hard while B200 prices are gently rising, indicating generational shift not demand collapse. HBM is effectively sold out for 2026 under multi-year agreements; conventional DRAM contract prices rose 93–98% QoQ in Q1 2026 (fastest on record per TrendForce); HBM3E contract pricing ~$13–17/GB, down slightly from H1 2025 peak of $17–20/GB but still tight with 20–26 week lead times. Used H100s now trade at $22K–$25K (down from $50K peak in mid-2024), with 34% depreciation recorded by January 2026 triggered by Blackwell launch; ex-hyperscaler Hopper fleets are flowing to broker desks and auction platforms; B200 residual value is 158% of original cost (58% premium) as of Sep 16 2026 per Silicon Data.",
      "evidence": "In 2000 Cisco's inventory outran its sales two quarters before the crash — visible in the public filings.",
      "source": "SEC filings; GPU rental indexes",
-     "value": 3.25,
+     "value": 3.84,
      "subs": null,
-     "url": "https://dev.to/fastgpu/what-it-costs-to-rent-an-h100-b200-or-rtx-4090-in-september-2026-live-prices-from-28-gpu-clouds-12n3",
-     "checked": "2026-09-28",
+     "url": "https://www.mercatus-ai.com/blog/gpu-rental-prices",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-24",
@@ -1116,6 +1242,11 @@
        "date": "2026-09-28",
        "status": "RED",
        "value": 3.25
+      },
+      {
+       "date": "2026-09-29",
+       "status": "AMBER",
+       "value": 3.84
       }
      ]
     },
@@ -1128,13 +1259,13 @@
      "question": "Is the 10-year Treasury yield holding above 5%?",
      "trip": "Amber at 4.75%; trips at 5% sustained.",
      "status": "RED",
-     "reading": "5.18% on 2026-09-24; 2 consecutive readings at or above 5%.",
+     "reading": "5.17% on 2026-09-25; 3 consecutive readings at or above 5%.",
      "evidence": "Higher rates make the borrowing in tile 1 more expensive and expensive stocks worth less on paper.",
      "source": "Federal Reserve (FRED)",
-     "value": 5.18,
+     "value": 5.17,
      "subs": null,
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-24",
@@ -1150,6 +1281,11 @@
        "date": "2026-09-28",
        "status": "RED",
        "value": 5.18
+      },
+      {
+       "date": "2026-09-29",
+       "status": "RED",
+       "value": 5.17
       }
      ]
     },
@@ -1161,14 +1297,14 @@
      "name": "Lenders are getting nervous",
      "question": "Are bond investors demanding more to lend to the AI borrowers, and are the labs still raising money easily?",
      "trip": "Trips on spreads above 5%, a 1.5-point jump in 60 days, or a delayed or downsized AI-lab round.",
-     "status": "AMBER",
-     "reading": "High-yield spread 2.80% (+0.01 pts in 60 days). Financing remains robust — Anthropic closed a $65B Series H in May 2026 at a $965B valuation and CoreWeave announced a ~$3B ATM offering and $3B in convertible notes on Sep 18, 2026 — but OpenAI delayed its IPO to 2027+, and Amazon's $50B commitment to OpenAI includes $35B conditional on milestones, introducing contingency risk in the largest deal.",
+     "status": "GREEN",
+     "reading": "High-yield spread 2.93% (+0.12 pts in 60 days). No rounds delayed or downsized in the last 30 days; Anthropic closed a $65B Series H (May 2026) at $965B valuation; OpenAI closed $122B in March 2026; one notable AMBER flag is the Poolside AI 'Project Horizon' compute contract collapse in March 2026, and CoreWeave's $21B debt load with 85%+ top-3 customer concentration flagged by S&P.",
      "evidence": "Watch Oracle- and CoreWeave-type borrowers first; they are the leveraged link between the labs and Nvidia.",
      "source": "FRED; financing headlines",
-     "value": 2.8,
+     "value": 2.93,
      "subs": null,
-     "url": "https://scouts.yutori.com/cda2486d-3e39-4717-af02-843305716536",
-     "checked": "2026-09-28",
+     "url": "https://aifundingtracker.com/top-50-ai-startups/",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-24",
@@ -1184,6 +1320,11 @@
        "date": "2026-09-28",
        "status": "AMBER",
        "value": 2.8
+      },
+      {
+       "date": "2026-09-29",
+       "status": "GREEN",
+       "value": 2.93
       }
      ]
     },
@@ -1196,13 +1337,13 @@
      "question": "Has Nvidia broken below its one-year average price, or gone vertical?",
      "trip": "Trips on 10 straight closes below the 200-day average, or +35% in 30 sessions.",
      "status": "GREEN",
-     "reading": "$231 vs 200-day average $200; 0 closes below it; +3% over 30 sessions.",
+     "reading": "$230 vs 200-day average $200; 0 closes below it; +2% over 30 sessions.",
      "evidence": "Picks-and-shovels stocks peak before their customers' spending does.",
      "source": "Yahoo Finance",
-     "value": 231.36,
+     "value": 229.85,
      "subs": null,
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-24",
@@ -1218,6 +1359,11 @@
        "date": "2026-09-28",
        "status": "GREEN",
        "value": 231.36
+      },
+      {
+       "date": "2026-09-29",
+       "status": "GREEN",
+       "value": 229.85
       }
      ]
     },
@@ -1236,7 +1382,7 @@
      "value": 114.89,
      "subs": null,
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-24",
@@ -1252,6 +1398,11 @@
        "date": "2026-09-28",
        "status": "AMBER",
        "value": 114.89
+      },
+      {
+       "date": "2026-09-29",
+       "status": "AMBER",
+       "value": 114.89
       }
      ]
     }
@@ -1262,18 +1413,18 @@
      "label": "AI cycle",
      "kind": "status",
      "name": "Chips are getting easier to get",
-     "old": "GREEN",
-     "new": "RED",
-     "reading": "Nvidia inventory +111% vs sales +106% (quarter ended 2026-07-26); inventory days 119. As of Sep 13–27, 2026, H100 median on-demand price is ~$3.25–$3.84/hr (Mercatus/AIM trackers), down roughly 40–50% from early-2024 pea"
+     "old": "RED",
+     "new": "AMBER",
+     "reading": "Nvidia inventory +111% vs sales +106% (quarter ended 2026-07-26); inventory days 119. As of Sep 27–28 2026, H100 median on-demand is ~$3.25–$3.84/hr (down ~50% since early 2024 due to Blackwell arrival); B200 median is $"
     },
     {
      "board": "ai",
      "label": "AI cycle",
-     "kind": "value",
-     "name": "The stock is acting wrong",
-     "old": 224.49,
-     "new": 231.36,
-     "reading": "$231 vs 200-day average $200; 0 closes below it; +3% over 30 sessions."
+     "kind": "status",
+     "name": "Lenders are getting nervous",
+     "old": "AMBER",
+     "new": "GREEN",
+     "reading": "High-yield spread 2.93% (+0.12 pts in 60 days). No rounds delayed or downsized in the last 30 days; Anthropic closed a $65B Series H (May 2026) at $965B valuation; OpenAI closed $122B in March 2026; one notable AMBER fla"
     }
    ]
   },
@@ -1281,16 +1432,16 @@
    "key": "fiscal",
    "label": "Fiscal",
    "title": "Fiscal dominance tripwires",
-   "summary": "0 tripped, 6 on watch, of 12. The Fed is on step one of four — pressure building toward step three.",
+   "summary": "0 tripped, 4 on watch, of 12. The Fed has taken none of the four steps.",
    "gate": {
     "kind": "steps",
     "rung": false,
-    "title": "The Fed is on step one of four — pressure building toward step three",
+    "title": "The Fed has taken none of the four steps",
     "text": "The path from central bank to Treasury financier has four steps, each defensible on its own: bill purchases for reserve management; a crisis purchase that outlasts the crisis; political pressure to hold yields down; a stated ceiling. Step one is normal. Step two is the slope. Step three is the pressure. Step four is 1942.",
     "parts": [
      {
       "name": "Reserve purchases outgrow reserves",
-      "status": "AMBER"
+      "status": "GREEN"
      },
      {
       "name": "A crisis purchase that outlasts the crisis",
@@ -1332,14 +1483,14 @@
      "name": "Reserve purchases outgrow reserves",
      "question": "Is the Fed buying more than the plumbing needs?",
      "trip": "Red when the balance sheet grows more than $100 billion beyond the growth in bank reserves over 13 weeks, or when the Fed buys coupons rather than bills. Amber while bill purchases run.",
-     "status": "AMBER",
-     "reading": "Fed total assets $6,748 billion, +12 billion over 13 weeks; bank reserves -21 billion over the same period. As of Sep 27 2026, the Fed has bought ~$215 bn in Treasury bills since Dec 2025 under Reserve Management Purchases (RMPs) explicitly labelled reserve management, not yield support; the Sep 16 implementation note says purchases may extend to Treasuries ≤3-yr maturity 'if needed,' and ~$15.6 bn more are scheduled through Oct 14 to replace rolling-off MBS.",
+     "status": "GREEN",
+     "reading": "Fed total assets $6,748 billion, +12 billion over 13 weeks; bank reserves -21 billion over the same period. As of Sep 14 2026, the Fed announced for the second straight month it will conduct zero reserve management purchases of T-bills in the period ending Oct 14; only ~$15.6 bn in reinvestment (MBS-into-bills) purchases are planned, explicitly for reserve maintenance, not yield support.",
      "evidence": "Compare the Fed's total assets with bank reserve balances, both weekly on the H.4.1. Buying that outruns reserves is buying for the Treasury.",
      "source": "FRED: WALCL, WRESBAL; web check",
      "value": 12.0,
      "subs": null,
-     "url": "https://www.hokanews.com/2026/09/fed-pauses-treasury-bill-purchases.html",
-     "checked": "2026-09-28",
+     "url": "https://www.bloomberg.com/news/articles/2026-09-14/fed-prolongs-pause-on-reserve-management-purchases-to-mid-oct",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -1349,6 +1500,11 @@
       {
        "date": "2026-09-28",
        "status": "AMBER",
+       "value": 12.0
+      },
+      {
+       "date": "2026-09-29",
+       "status": "GREEN",
        "value": 12.0
       }
      ]
@@ -1362,13 +1518,13 @@
      "question": "Has the Fed bought bonds under a financial-stability banner and kept buying after the episode ended?",
      "trip": "Red if purchases begun in an episode continue after the episode's own indicators (repo rates, auction results) have normalized.",
      "status": "GREEN",
-     "reading": "No legacy crisis-era purchase programme is active; the Dec 2025 RMP programme is framed as routine reserve management, not a financial-stability intervention, and ON RRP usage has fallen to near zero, indicating money-market stress has fully normalised.",
+     "reading": "The reserve management purchase program begun Dec 2025 was wound down on schedule through mid-2026; as of Aug–Sep 2026 RMPs are at $0 and repo/SOFR markets show no stress signals, with ON-RRP near zero and reserves at $2.93 tn, indicating the program ended as reserves normalized.",
      "evidence": "Every crisis purchase since 1987 was justified as temporary; 2008's became permanent. The tell is the second month.",
      "source": "Fed statements; H.4.1 via web check",
      "value": null,
      "subs": null,
-     "url": "https://home.treasury.gov/news/press-releases/sb0385",
-     "checked": "2026-09-28",
+     "url": "https://www.indexbox.io/blog/fed-extends-pause-on-reserve-management-treasury-purchases-for-second-straight-month/",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -1377,6 +1533,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "GREEN",
+       "value": null
+      },
+      {
+       "date": "2026-09-29",
        "status": "GREEN",
        "value": null
       }
@@ -1391,13 +1552,13 @@
      "question": "Is the executive branch or the Treasury talking about long yields as something the Fed should manage?",
      "trip": "Red when the Treasury Secretary or the White House names the 10-year as a target in public, or when the Fed's independence is challenged in law.",
      "status": "AMBER",
-     "reading": "Around Sep 5 2026, 'the president, vice president, Treasury secretary and one of the president's senior economic counselors' all publicly urged the Fed not to raise rates; Trump has not named a specific 10-yr or 30-yr yield target, and Warsh hiked 25 bp unanimously on Sep 16 despite the pressure.",
+     "reading": "In the week of Sep 5 2026, the president, vice president, Treasury secretary and a senior economic counselor all publicly urged the Fed not to raise rates and in some cases to cut them, but no executive official has named the 10-year or 30-year yield as a specific public target.",
      "evidence": "The 1951 Accord that freed the Fed from the Treasury followed exactly this pressure, run the other way.",
      "source": "Public statements via web check",
      "value": null,
      "subs": null,
      "url": "https://www.cnbc.com/2026/09/05/trump-warsh-fed-september-rate-hike.html",
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -1406,6 +1567,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "AMBER",
+       "value": null
+      },
+      {
+       "date": "2026-09-29",
        "status": "AMBER",
        "value": null
       }
@@ -1420,13 +1586,13 @@
      "question": "Has the Fed announced a cap on long yields?",
      "trip": "Red the day it is said. Amber if yield-curve control enters Fed speeches as an option.",
      "status": "GREEN",
-     "reading": "No FOMC minutes, speeches or Fed statements in the last 30 days mention yield-curve control, yield caps or unlimited purchases as a policy option; Warsh's Aug 28 Jackson Hole speech and Sep 16 presser focused exclusively on fighting inflation, and analysts note the balance-sheet tool exists but Warsh has not floated using it to cap yields.",
+     "reading": "The Sep 16 2026 FOMC hiked rates 25 bp to 3.75–4.00% unanimously; Chair Warsh's Sep 16 press conference attributed rising 10-year yields to economic strength and geopolitical factors, with no mention of yield caps, yield-curve control, or unlimited purchase options in public statements or available minutes.",
      "evidence": "Japan ran a ceiling from 2016; it held only while inflation stayed near zero and domestic savers had nowhere to go. The U.S. ran one from 1942 to 1951.",
      "source": "Fed communications via web check",
      "value": null,
      "subs": null,
-     "url": "https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm",
-     "checked": "2026-09-28",
+     "url": "https://www.schwab.com/learn/story/fomc-meeting",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -1435,6 +1601,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "GREEN",
+       "value": null
+      },
+      {
+       "date": "2026-09-29",
        "status": "GREEN",
        "value": null
       }
@@ -1449,13 +1620,13 @@
      "question": "Do bond investors expect inflation to stay near 2%?",
      "trip": "Red when 5-year-forward breakevens pass 3%; amber at 2.6%. That is the market naming the policy before the Fed does.",
      "status": "GREEN",
-     "reading": "5-year, 5-year-forward breakeven 2.34%; 10-year breakeven 2.34% (2026-09-25).",
+     "reading": "5-year, 5-year-forward breakeven 2.35%; 10-year breakeven 2.34% (2026-09-28).",
      "evidence": "Breakevens are the cleanest reading of whether the anchor holds; they stayed anchored through 2021 until they didn't.",
      "source": "FRED: T5YIFR, T10YIE",
-     "value": 2.34,
+     "value": 2.35,
      "subs": null,
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -1466,6 +1637,11 @@
        "date": "2026-09-28",
        "status": "GREEN",
        "value": 2.34
+      },
+      {
+       "date": "2026-09-29",
+       "status": "GREEN",
+       "value": 2.35
       }
      ]
     },
@@ -1478,13 +1654,13 @@
      "question": "Is the world buying the one asset that isn't a promise, even while promises pay well?",
      "trip": "Amber when gold is within 3% of its 52-week high while 30-year real yields sit above 2%. Red when gold makes a new high while real yields rise — the referendum going against the pyramid with the odds still in its favor.",
      "status": "GREEN",
-     "reading": "Gold $4,187 (52-week high $5,318); 30-year TIPS real yield 3.21% (+0.52 over three months).",
+     "reading": "Gold $4,194 (52-week high $5,318); 30-year TIPS real yield 3.22% (+0.53 over three months).",
      "evidence": "Gold has outrun TIPS since 2022 while breakevens stayed flat. It is hedging the regime, not the index.",
      "source": "Yahoo GC=F; FRED DFII30",
-     "value": 4187.0,
+     "value": 4194.0,
      "subs": null,
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -1495,6 +1671,11 @@
        "date": "2026-09-28",
        "status": "GREEN",
        "value": 4187.0
+      },
+      {
+       "date": "2026-09-29",
+       "status": "GREEN",
+       "value": 4194.0
       }
      ]
     },
@@ -1506,14 +1687,14 @@
      "name": "Foreign demand",
      "question": "Are foreign official holders still showing up for Treasuries?",
      "trip": "Red on a badly tailed coupon auction attributed to foreign absence or a sharp fall in the indirect-bidder share; amber on a falling trend, central-bank gold buying, yuan oil settlement.",
-     "status": "AMBER",
-     "reading": "Sep 9 2026 10-yr auction: indirect bidders 79.2%, bid-to-cover 2.71 (solid); Sep 10 30-yr: indirect 79.5%, BTC 2.61; but Sep 15 20-yr: indirect bidders only 52.5%, BTC 2.57, and analysts note primary-dealer share 'somewhat elevated in 2025-26' versus historical averages, consistent with modestly weaker foreign participation.",
+     "status": "GREEN",
+     "reading": "The Sep 9 2026 10-year auction drew an indirect bidder share of 79.2% (bid-to-cover 2.71 vs 12-month avg 2.49, graded STRONG); the Sep 10 30-year auction saw indirects take 79.5%, the second-highest share on record for that maturity.",
      "evidence": "When foreign demand fades, the Fed becomes the marginal buyer whether it wants to or not. That is step one becoming step two by default.",
      "source": "TIC; auction results via web check",
      "value": 79.2,
      "subs": null,
      "url": "https://thevaultreport.com/treasury-auctions/2026-09",
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -1523,6 +1704,11 @@
       {
        "date": "2026-09-28",
        "status": "AMBER",
+       "value": 79.2
+      },
+      {
+       "date": "2026-09-29",
+       "status": "GREEN",
        "value": 79.2
       }
      ]
@@ -1536,13 +1722,13 @@
      "question": "Is the market charging more to hold the government's longest promises?",
      "trip": "Red when the 30-year holds above 5.5% with breakevens unchanged: the premium blowing out on supply alone. Amber above 5%.",
      "status": "AMBER",
-     "reading": "30-year 5.47% on 2026-09-24; 10-year breakeven +0.03 over three months — a supply premium, not an inflation premium.",
+     "reading": "30-year 5.49% on 2026-09-25; 10-year breakeven -0.01 over three months — a supply premium, not an inflation premium.",
      "evidence": "A long end rising while expected inflation is flat is the market's own yield-curve control, run against the Treasury.",
      "source": "FRED: DGS30, T10YIE",
-     "value": 5.47,
+     "value": 5.49,
      "subs": null,
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -1553,6 +1739,11 @@
        "date": "2026-09-28",
        "status": "AMBER",
        "value": 5.47
+      },
+      {
+       "date": "2026-09-29",
+       "status": "AMBER",
+       "value": 5.49
       }
      ]
     },
@@ -1565,13 +1756,13 @@
      "question": "Is money leaving the dollar, or just leaving bonds?",
      "trip": "Red when the dollar falls more than 5% in a month while long yields rise a quarter point or more — capital leaving the system rather than repricing within it. Amber at 3%.",
      "status": "GREEN",
-     "reading": "Broad dollar index 119.5, +1.0% over a month; 10-year yield +0.54 over the same period.",
+     "reading": "Broad dollar index 120.3, +1.5% over a month; 10-year yield +0.51 over the same period.",
      "evidence": "In 2008 and 2020 the dollar rose in the crisis. The day it falls in one is the day the fourth pillar is being tested. April 2025 was the preview.",
      "source": "FRED: DTWEXBGS, DGS10",
-     "value": 119.5,
+     "value": 120.3,
      "subs": null,
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -1582,6 +1773,11 @@
        "date": "2026-09-28",
        "status": "GREEN",
        "value": 119.5
+      },
+      {
+       "date": "2026-09-29",
+       "status": "GREEN",
+       "value": 120.3
       }
      ]
     },
@@ -1594,13 +1790,13 @@
      "question": "Does the debt cost more than the economy grows?",
      "trip": "Red when the 10-year yield exceeds nominal GDP growth; amber within a point of it. Interest costs are shown for scale.",
      "status": "GREEN",
-     "reading": "Nominal GDP growth 6.6% over the year to 2026-04-01; 10-year yield 5.18%; federal interest running at $1,247 billion a year.",
+     "reading": "Nominal GDP growth 6.6% over the year to 2026-04-01; 10-year yield 5.17%; federal interest running at $1,247 billion a year.",
      "evidence": "Every government at this point on the curve has reached for the bond desk. The arithmetic, not the politics, is what forces the steps.",
      "source": "FRED: GDP, DGS10, A091RC1Q027SBEA",
-     "value": -1.38,
+     "value": -1.39,
      "subs": null,
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -1611,6 +1807,11 @@
        "date": "2026-09-28",
        "status": "GREEN",
        "value": -1.38
+      },
+      {
+       "date": "2026-09-29",
+       "status": "GREEN",
+       "value": -1.39
       }
      ]
     },
@@ -1629,7 +1830,7 @@
      "value": 0,
      "subs": null,
      "url": null,
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -1638,6 +1839,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "AMBER",
+       "value": 0
+      },
+      {
+       "date": "2026-09-29",
        "status": "AMBER",
        "value": 0
       }
@@ -1652,13 +1858,13 @@
      "question": "Is the Fed politically weaker than it needs to be to keep saying no?",
      "trip": "Red when the Fed's losses or independence become a legislative target, or a dissent for cuts appears from a governor appointed for that purpose.",
      "status": "AMBER",
-     "reading": "As of Mar 25 2026, the Fed's consolidated deferred asset stood at $244 bn (accumulated losses since Sep 2022); the Fed returned to net interest income in late 2025 so the asset is slowly shrinking, but Trump has attempted to remove a governor and the CRS 119th-Congress report flags his 'vocal criticism' and efforts to 'reduce the Fed's independence' as active policy issues.",
+     "reading": "As of Jul 1 2026 the Fed's consolidated deferred asset stood at ~$236 bn (down $7 bn since Jan 2026), with remittances to Treasury still suspended since Sep 2022; Sen. Rand Paul reintroduced the Audit the Fed bill (Jul 2025) and a Jul 2026 House Financial Services hearing spotlighted Fed independence amid legal challenges to agency autonomy, though no legislation targeting the deferred asset has passed.",
      "evidence": "An institution that has to defend its own books is easier to pressure than one that doesn't. The deferred asset is about $230 billion.",
      "source": "Fed financials; Congress via web check",
-     "value": 244.0,
+     "value": 236.0,
      "subs": null,
-     "url": "https://www.federalreserve.gov/monetarypolicy/May-2026-Federal-Reserve-Balance-Sheet-Developments.htm",
-     "checked": "2026-09-28",
+     "url": "https://www.federalreserve.gov/monetarypolicy/2026-07-mpr-part2.htm",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -1669,6 +1875,11 @@
        "date": "2026-09-28",
        "status": "AMBER",
        "value": 244.0
+      },
+      {
+       "date": "2026-09-29",
+       "status": "AMBER",
+       "value": 236.0
       }
      ]
     }
@@ -1677,29 +1888,38 @@
     {
      "board": "fiscal",
      "label": "Fiscal",
-     "kind": "value",
-     "name": "Gold against real yields",
-     "old": 4324.0,
-     "new": 4187.0,
-     "reading": "Gold $4,187 (52-week high $5,318); 30-year TIPS real yield 3.21% (+0.52 over three months)."
+     "kind": "gate",
+     "name": "Gate",
+     "old": "The Fed is on step one of four — pressure building toward step three",
+     "new": "The Fed has taken none of the four steps",
+     "reading": ""
     },
     {
      "board": "fiscal",
      "label": "Fiscal",
-     "kind": "value",
+     "kind": "status",
+     "name": "Reserve purchases outgrow reserves",
+     "old": "AMBER",
+     "new": "GREEN",
+     "reading": "Fed total assets $6,748 billion, +12 billion over 13 weeks; bank reserves -21 billion over the same period. As of Sep 14 2026, the Fed announced for the second straight month it will conduct zero reserve management purch"
+    },
+    {
+     "board": "fiscal",
+     "label": "Fiscal",
+     "kind": "status",
      "name": "Foreign demand",
-     "old": 52.5,
-     "new": 79.2,
-     "reading": "Sep 9 2026 10-yr auction: indirect bidders 79.2%, bid-to-cover 2.71 (solid); Sep 10 30-yr: indirect 79.5%, BTC 2.61; but Sep 15 20-yr: indirect bidders only 52.5%, BTC 2.57, and analysts note primary-dealer share 'somewh"
+     "old": "AMBER",
+     "new": "GREEN",
+     "reading": "The Sep 9 2026 10-year auction drew an indirect bidder share of 79.2% (bid-to-cover 2.71 vs 12-month avg 2.49, graded STRONG); the Sep 10 30-year auction saw indirects take 79.5%, the second-highest share on record for t"
     },
     {
      "board": "fiscal",
      "label": "Fiscal",
      "kind": "value",
-     "name": "The arithmetic",
-     "old": -1.45,
-     "new": -1.38,
-     "reading": "Nominal GDP growth 6.6% over the year to 2026-04-01; 10-year yield 5.18%; federal interest running at $1,247 billion a year."
+     "name": "The Fed's own position",
+     "old": 244.0,
+     "new": 236.0,
+     "reading": "As of Jul 1 2026 the Fed's consolidated deferred asset stood at ~$236 bn (down $7 bn since Jan 2026), with remittances to Treasury still suspended since Sep 2022; Sen. Rand Paul reintroduced the Audit the Fed bill (Jul 2"
     }
    ]
   },
@@ -1755,13 +1975,13 @@
      "question": "Has Taiwan taken a formal step toward independence, or has the U.S. recognized it?",
      "trip": "Trips on a referendum, a constitutional change to name or territory, a declaration, U.S. recognition, or U.S. troops. The one thing that makes a Chinese move near-certain.",
      "status": "GREEN",
-     "reading": "As of Sep 2026, the DPP has not attempted to change the constitution or declare independence; any amendment requires 75% of lawmakers and a referendum threshold Taiwan's divided legislature cannot meet.",
+     "reading": "No referendum, constitutional change, or formal independence move detected in the last 30 days; Taiwan's government affirmed on Sep 29, 2026 that U.S. arms-sale and security policy is unchanged, and the U.S. ambassador reconfirmed the One China policy after the Trump-Xi summit.",
      "evidence": "Written into China's 2005 Anti-Secession Law; every leader since has repeated it.",
      "source": "Web check",
      "value": null,
      "subs": null,
-     "url": "https://www.usnews.com/news/world/articles/2026-09-24/explainer-what-is-taiwan-independence-and-is-taiwan-already-independent",
-     "checked": "2026-09-28",
+     "url": "https://www.cbsnews.com/live-updates/trump-china-xi-jinping-state-visit-dinner-tariffs-ai/",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -1770,6 +1990,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "GREEN",
+       "value": null
+      },
+      {
+       "date": "2026-09-29",
        "status": "GREEN",
        "value": null
       }
@@ -1784,13 +2009,13 @@
      "question": "Has Beijing stopped saying 'peaceful reunification', or declared peaceful means exhausted?",
      "trip": "Trips when Beijing invokes the Anti-Secession Law's third condition or drops the peaceful framing. Amber when the KMT route is failing.",
      "status": "AMBER",
-     "reading": "At the Sep 24 2026 White House summit, Xi pressed Trump to 'oppose' Taiwan independence — stronger wording than the prior US 'do not support' formulation — while Xi's Jan 1 2026 address called reunification 'unstoppable' and established an annual 'Taiwan Recovery Day'; 'peaceful' is still nominally retained but the framing is hardening.",
+     "reading": "Xi on Jan 1, 2026 called reunification 'unstoppable' after live-fire drills, and at the Sep 23-25 White House summit he pressed Trump to 'oppose Taiwan independence'; Beijing's 'peaceful reunification' formula formally retained but the word 'unstoppable' and the new annual 'Taiwan Recovery Day' (est. 2025) signal growing impatience; Anti-Secession Law not formally invoked.",
      "evidence": "The third legal trigger is a judgment call Xi controls — which is exactly why he can wait.",
      "source": "Web check",
      "value": null,
      "subs": null,
-     "url": "https://www.bloomberg.com/news/articles/2026-09-24/xi-presses-trump-to-oppose-taiwan-independence-during-summit",
-     "checked": "2026-09-28",
+     "url": "https://www.aljazeera.com/news/2026/1/1/chinas-xi-says-reunification-with-taiwan-unstoppable",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -1799,6 +2024,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "AMBER",
+       "value": null
+      },
+      {
+       "date": "2026-09-29",
        "status": "AMBER",
        "value": null
       }
@@ -1813,13 +2043,13 @@
      "question": "Is Xi's peaceful route — a KMT government in 2028 — still alive?",
      "trip": "Amber if the KMT is losing ground or Beijing's engagement backfires; a DPP win in January 2028 is the hinge.",
      "status": "AMBER",
-     "reading": "Nov 28 2026 local elections are 61 days away; KMT and TPP are cooperating to challenge DPP in all six special municipalities; Xi met KMT chair Cheng Li-wun in Beijing on Apr 10 2026 — the first such meeting in nearly a decade — keeping Beijing's KMT channel alive, but DPP holds the presidency and the 2028 race is wide open, leaving the peaceful route uncertain.",
+     "reading": "KMT (14 seats) and TPP signed a joint nomination agreement Mar 14, 2026 to contest the Nov 28, 2026 local elections together against the DPP (5 seats); DPP favored to lose ground in Taipei; KMT chair Cheng Li-wun invited to Beijing by Xi, signaling Beijing's continued courting of the KMT; 2028 presidential primaries open after November results.",
      "evidence": "January 2028 is the face trap: if the KMT loses after Xi hosted its chair, the peaceful story loses its vehicle.",
      "source": "Web check; polls",
      "value": null,
      "subs": null,
-     "url": "https://eastasiaforum.org/2026/08/19/taiwans-2026-local-elections-test-the-opposition-alliance/",
-     "checked": "2026-09-28",
+     "url": "https://focustaiwan.tw/politics/202603140008",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -1828,6 +2058,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "AMBER",
+       "value": null
+      },
+      {
+       "date": "2026-09-29",
        "status": "AMBER",
        "value": null
       }
@@ -1842,13 +2077,13 @@
      "question": "Does Washington look willing and able to fight for Taiwan?",
      "trip": "Amber when arms sales are paused, statements hedge, or carriers are elsewhere; red on an explicit statement of non-defense.",
      "status": "AMBER",
-     "reading": "The USS George Washington was moved out of the Indo-Pacific into CENTCOM by Sep 26 2026, leaving the Far East without a US carrier; a $14 bn arms package has been 'kept in abeyance' since May 2026; Trump at the Sep 24 summit declined to repeat the 'do not support independence' formulation and said only 'He understands how I feel.'",
+     "reading": "As of Sep 29, 2026 a record $14 billion U.S. arms package remains on hold (paused after the May 2026 Trump-Xi Beijing summit); Trump called it a 'negotiating chip'; existing sales and 66 F-16V jets nearing delivery are unaffected; U.S. ambassador confirmed no change to Taiwan policy post-summit Sep 26, 2026.",
      "evidence": "The denial strategy is built for this fight; the president has said he made no commitment either way.",
      "source": "Web check",
      "value": null,
      "subs": null,
-     "url": "https://asiatimes.com/2026/09/the-politics-limiting-us-arms-deliveries-to-taiwan/",
-     "checked": "2026-09-28",
+     "url": "https://www.usnews.com/news/world/articles/2026-09-29/taiwan-says-us-arms-sales-to-island-are-unchanged-but-a-14b-package-remains-on-hold",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -1857,6 +2092,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "AMBER",
+       "value": null
+      },
+      {
+       "date": "2026-09-29",
        "status": "AMBER",
        "value": null
       }
@@ -1871,13 +2111,13 @@
      "question": "Is the PLA's leadership settled and its amphibious force mature?",
      "trip": "Purges under way are a brake (green). Settled command plus maturing exercises is amber.",
      "status": "GREEN",
-     "reading": "On Jan 24 2026 China's top general Zhang Youxia and Joint Staff chief Liu Zhenli were placed under investigation; CSIS found roughly 68% of deputy theater-command-level officers purged from the command track, creating leadership gaps that analysts say delay any amphibious Taiwan operation, likely pushing the serious window to the late 2020s.",
+     "reading": "On Sep 23, 2026 China expelled two of its most senior military leaders—CMC Vice Chairman Zhang Youxia and Chief of Joint Staff Liu Zhenli—from the Communist Party; purges since July 2023 have removed 30+ generals; analysts say the shakeup has 'dented war-fighting readiness' and degraded complex amphibious capability, acting as a brake on the 2027 benchmark.",
      "evidence": "You don't fire your commanders on the eve of a war you expect to win.",
      "source": "Web check",
      "value": null,
      "subs": null,
-     "url": "https://www.csis.org/analysis/assessing-xis-unprecedented-purges-chinas-military-key-developments-and-potential",
-     "checked": "2026-09-28",
+     "url": "https://www.usnews.com/news/world/articles/2026-09-23/analysis-chinas-purges-of-top-military-commanders-spur-questions-about-war-waging-ability",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -1886,6 +2126,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "GREEN",
+       "value": null
+      },
+      {
+       "date": "2026-09-29",
        "status": "GREEN",
        "value": null
       }
@@ -1900,13 +2145,13 @@
      "question": "Are China's oil, grain, and financial reserves being built or drawn down?",
      "trip": "Drawing down (as in 2026) closes the window: green. Refilling fast is amber.",
      "status": "AMBER",
-     "reading": "By end-2025 China held ~1.4 bn barrels of crude in strategic and commercial reserves (~121 days of imports); the EIA assumes China continued building at ~1.0 mn b/d in 2026; gold reserves rose to 2,346 tonnes in Q2 2026 from 2,313 in Q1; no public data on US Treasury selling in the last 30 days.",
+     "reading": "EIA estimates China built ~1.1 mb/d of strategic crude reserves through 2025; total inventories entering 2026 estimated at ~1.4 billion barrels (~121 days of imports, well above IEA's 90-day benchmark); gold reserves rose to 2,346 tonnes in Q2 2026 (up from 2,313 in Q1); stockpiling pace expected ~730,000 b/d in 2026.",
      "evidence": "1.2–1.5 billion barrels bought in 2024–25 is what let China absorb the Iran and Venezuela cuts.",
      "source": "Web check; customs data",
      "value": 1.4,
      "subs": null,
      "url": "https://projectfifty4.com/china-strategic-petroleum-reserve-2026/",
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -1915,6 +2160,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "AMBER",
+       "value": 1.4
+      },
+      {
+       "date": "2026-09-29",
        "status": "AMBER",
        "value": 1.4
       }
@@ -1929,13 +2179,13 @@
      "question": "Is China nearing the point where it can absorb a rupture, before the U.S. can?",
      "trip": "Amber as China nears chip sufficiency while U.S. magnet supply is unfinished; the window is 2028–2032.",
      "status": "AMBER",
-     "reading": "China's domestic chip self-sufficiency reached ~28% in Q4 2025 (up from 16% in 2024); SMIC is producing 7nm using multi-patterning DUV; EUV prototype in testing with functional chips targeted 2028–2030; US magnet self-sufficiency still modest — new capacity came online summer 2026 but self-sufficiency 'remains a long road'; the Oct 2025 US–China tech truce was extended only 2 months at the Sep 2026 summit.",
+     "reading": "China's domestic chip self-sufficiency reached ~28% in Q4 2025 (up from 16% in 2024); SMIC announced 7nm DUV multi-patterning mass production Dec 15, 2025; China mandated 50% domestic semiconductor equipment for new capacity Jan 2026; U.S. rare-earth magnet self-sufficiency remains modest with new capacity coming online summer 2026 but 'self-sufficiency remains a long road'; the 2025 U.S.-China chip/rare-earth one-year truce is expiring and both sides are expected to revisit in late 2026.",
      "evidence": "The side that finishes first gets to choose the break.",
      "source": "Web check",
      "value": null,
      "subs": null,
-     "url": "https://techwireasia.com/2026/05/china-semiconductor-self-sufficiency-wafer-target-2026/",
-     "checked": "2026-09-28",
+     "url": "https://www.csis.org/analysis/rare-earth-export-restrictions-one-year-later",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -1944,6 +2194,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "AMBER",
+       "value": null
+      },
+      {
+       "date": "2026-09-29",
        "status": "AMBER",
        "value": null
       }
@@ -1958,13 +2213,13 @@
      "question": "How long could Taiwan last under a blockade, and is it getting longer?",
      "trip": "Red if LNG reserves shrink or the defense budget dies; green only when the clock is visibly lengthening.",
      "status": "AMBER",
-     "reading": "As of mid-2026 Taiwan's LNG reserve stands at ~12 days of consumption and coal at ~40 days (above the statutory 30-day floor); in May 2026 the legislature passed a $24.8 bn 8-year special defense budget, 38% below the executive request; one-year conscription is fully operational as of 2025.",
+     "reading": "Taiwan's LNG reserve is 11 days as of early 2026 (plan to raise to 14 days by 2027); Iran war has disrupted ~10 of 30 monthly LNG shipments from the Middle East, though Taiwan secured supply through September 2026; the legislature passed a reduced $24.8 billion (38% below the executive's proposal) special defense budget in May 2026; the annual 2026 defense budget had not been passed as of June 18, 2026.",
      "evidence": "Eleven days of gas is the most important number in this whole picture.",
      "source": "Web check",
-     "value": 12.0,
+     "value": 11.0,
      "subs": null,
-     "url": "https://www.csis.org/analysis/iran-conflict-illuminates-taiwans-unique-energy-security-challenge",
-     "checked": "2026-09-28",
+     "url": "https://www.congress.gov/crs-product/IF12481",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -1975,6 +2230,11 @@
        "date": "2026-09-28",
        "status": "AMBER",
        "value": 12.0
+      },
+      {
+       "date": "2026-09-29",
+       "status": "AMBER",
+       "value": 11.0
       }
      ]
     },
@@ -1987,13 +2247,13 @@
      "question": "Do the Taiwanese still say they would fight, and do they believe help is coming?",
      "trip": "Amber if willingness to resist falls below half or trust in the U.S. keeps falling.",
      "status": "GREEN",
-     "reading": "Academia Sinica's Jan 2026 survey (n=1,206) found 58.7% of Taiwanese would resist a Chinese invasion 'at all costs' even without US military help; TVBS found 77% see being pro-US as important; one China principle rejection fell to 58% (from 72–77% in 2019–2023), signalling some softening but still a majority.",
+     "reading": "Academia Sinica 'American Portrait' survey (Jan 20-26, 2026; n=1,206) found 58.7% of Taiwanese willing to resist a Chinese invasion 'at all costs' even without U.S. military help; trust in the U.S. as a 'credible country' fell to ~34% from ~45% in 2021, a concern but resistance intent remains well above 50%.",
      "evidence": "Giving up is a function of dark cities and whether anyone believes help is coming.",
      "source": "Polls via web check",
      "value": 58.7,
      "subs": null,
      "url": "https://www.taipeitimes.com/News/front/archives/2026/03/13/2003853732",
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -2002,6 +2262,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "GREEN",
+       "value": 58.7
+      },
+      {
+       "date": "2026-09-29",
        "status": "GREEN",
        "value": 58.7
       }
@@ -2016,13 +2281,13 @@
      "question": "Has China moved from exercises to actually stopping ships?",
      "trip": "Trips on any coast-guard boarding or inspection of Taiwan-bound shipping, or a declared quarantine. Drills alone stay green.",
      "status": "AMBER",
-     "reading": "In June 2026 China launched a 'special maritime law enforcement operation' east of Taiwan, hailing three foreign vessels (Singapore, Benin, Liberia-flagged) by radio to demand ship information — no physical boarding occurred but Taiwan's CGA told vessels to ignore the calls; since July China maintains regularized CCG patrols east of Taiwan; CGA counted 244 Chinese vessels in Aug 2026 vs 55 in June; daily PLA aircraft sorties averaged ~7.5 in H1 2026 and ran 3–4 in late Sep 2026.",
+     "reading": "Since July 2026 China's Coast Guard has conducted regularized patrols east of Taiwan for the first time; 244 Chinese vessels (60% coast guard) detected in August 2026 vs 55 in June; on Sep 28-29 Taiwan's MND reported 3 PLA aircraft sorties and 5-6 PLAN ships daily with median-line crossings; Sep 5 and Sep 9 saw large multi-platform PLA patrols including H-6 bombers east of Taiwan; no actual boarding or inspection of Taiwan-bound shipping recorded.",
      "evidence": "Drills are cheap face; inspections are the first act of a blockade.",
      "source": "Web check; Taiwan MND",
-     "value": 7.5,
+     "value": 5.0,
      "subs": null,
-     "url": "https://www.csri.global/research/eroding-the-status-quo-one-patrol-at-a-time",
-     "checked": "2026-09-28",
+     "url": "https://thediplomat.com/2026/09/the-battle-for-taiwans-east-taipeis-western-pacific-strategy/",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -2033,6 +2298,11 @@
        "date": "2026-09-28",
        "status": "AMBER",
        "value": 7.5
+      },
+      {
+       "date": "2026-09-29",
+       "status": "AMBER",
+       "value": 5.0
       }
      ]
     },
@@ -2045,13 +2315,13 @@
      "question": "Is China doing the things a country does in the months before it fights?",
      "trip": "Amber on preparatory steps (ferry requisition drills, reserve call-ups, mobilization-law changes); red on several at once.",
      "status": "AMBER",
-     "reading": "On Aug 28 2026 China's NPC passed a revised National Defense Mobilization Law broadening requisition of civilian assets to 'short-of-war engagements'; by end-2026 China is expected to have built 70+ dual-use RO-RO ferries; a Jan 2026 fishing-fleet L-shaped array of thousands of vessels blocked the Taiwan Strait for 30+ hours; Fuzhou municipal regulations already govern civilian vessel requisition.",
+     "reading": "China's revised National Defense Mobilization Law was approved Aug 28, 2026 and takes effect Oct 1, 2026, giving the PLA expanded authority to requisition civilian companies, tech firms, transport, and citizens; CSIS confirmed China is completing ~76 dual-use RO-RO ferries by end of 2026; Fujian-level civil ferry mobilization regulations published; no confirmed PLA leave cancellations or blood-drive drives for military purposes, but the new mobilization law crosses an AMBER threshold.",
      "evidence": "The mobilization-law revision of August 2026 is one; watch for the rest.",
      "source": "Web check",
      "value": null,
      "subs": null,
-     "url": "https://www.aei.org/commentary/china-taiwan-update-september-4-2026/",
-     "checked": "2026-09-28",
+     "url": "https://www.washingtontimes.com/news/2026/sep/21/xi-jinpings-new-mobilization-law-prepares-china-prolonged-war/",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -2060,6 +2330,11 @@
       },
       {
        "date": "2026-09-28",
+       "status": "AMBER",
+       "value": null
+      },
+      {
+       "date": "2026-09-29",
        "status": "AMBER",
        "value": null
       }
@@ -2074,13 +2349,13 @@
      "question": "Are money and insurers pricing a conflict?",
      "trip": "Amber on a 3% fall in the Taiwan dollar in a month, Taiwan stocks lagging the S&P by 8% in 60 sessions, or a sharp insurance move; red at 25% invasion odds or double those moves.",
      "status": "GREEN",
-     "reading": "Taiwan dollar +0.3% vs USD in 30 days; Taiwan ETF vs S&P 500 over 60 sessions +5.2%. Prediction markets: Will China invade Taiwan by September 30, 2026? 0%; Will China invade Taiwan by end of 2026? 3%; Will China blockade Taiwan in 2026? 3%; Will China invade Taiwan by June 30, 2027? 8%. No Taiwan-specific war-risk insurance listing or CDS repricing comparable to Hormuz has been reported; Polymarket's 'Will China invade Taiwan by end of 2026?' contract traded at ~4% as of late Sep 2026 ($42 mn volume); US intelligence community's 2026 Annual Threat Assessment found Chinese leaders have no fixed timeline for unification.",
+     "reading": "Taiwan dollar +0.5% vs USD in 30 days; Taiwan ETF vs S&P 500 over 60 sessions +4.2%. Prediction markets: Will China invade Taiwan by September 30, 2026? 0%; Will China invade Taiwan by end of 2026? 3%; Will China blockade Taiwan in 2026? 3%; Will China invade Taiwan by June 30, 2027? 8%. Polymarket 'Will China invade Taiwan by end of 2026?' market shows ~4% implied probability as of late Sep 2026 ($42M+ in volume); no Taiwan-specific war-risk insurance listing from marine underwriters (distinct from elevated Hormuz rates); Taiwan CDS spread at ~45 bps vs 32 bps 2024 average, a moderate increase but not a sharp move; prediction-market consensus attributes reduced odds partly to ongoing PLA purges degrading amphibious readiness.",
      "evidence": "Markets price the decision before governments announce it; they also panic for other reasons, so this confirms rather than triggers.",
      "source": "Yahoo Finance; Polymarket; web check",
      "value": 12.5,
      "subs": null,
      "url": "https://polymarket.com/event/will-china-invade-taiwan-before-2027",
-     "checked": "2026-09-28",
+     "checked": "2026-09-29",
      "history": [
       {
        "date": "2026-09-25",
@@ -2091,6 +2366,11 @@
        "date": "2026-09-28",
        "status": "GREEN",
        "value": 12.5
+      },
+      {
+       "date": "2026-09-29",
+       "status": "GREEN",
+       "value": 12.5
       }
      ]
     }
@@ -2099,34 +2379,158 @@
     {
      "board": "taiwan",
      "label": "Taiwan",
-     "kind": "gate",
-     "name": "Gate",
-     "old": "A decision is showing — inspections or mobilization under way",
-     "new": "No invasion condition present; 3 on watch",
-     "reading": ""
-    },
-    {
-     "board": "taiwan",
-     "label": "Taiwan",
-     "kind": "status",
-     "name": "From drills to inspections",
-     "old": "RED",
-     "new": "AMBER",
-     "reading": "In June 2026 China launched a 'special maritime law enforcement operation' east of Taiwan, hailing three foreign vessels (Singapore, Benin, Liberia-flagged) by radio to demand ship information — no physical boarding occu"
+     "kind": "value",
+     "name": "Taiwan's own clock",
+     "old": 12.0,
+     "new": 11.0,
+     "reading": "Taiwan's LNG reserve is 11 days as of early 2026 (plan to raise to 14 days by 2027); Iran war has disrupted ~10 of 30 monthly LNG shipments from the Middle East, though Taiwan secured supply through September 2026; the l"
     },
     {
      "board": "taiwan",
      "label": "Taiwan",
      "kind": "value",
-     "name": "Markets smell it",
-     "old": 11.5,
-     "new": 12.5,
-     "reading": "Taiwan dollar +0.3% vs USD in 30 days; Taiwan ETF vs S&P 500 over 60 sessions +5.2%. Prediction markets: Will China invade Taiwan by September 30, 2026? 0%; Will China invade Taiwan by end of 2026? 3%; Will China blockad"
+     "name": "From drills to inspections",
+     "old": 7.5,
+     "new": 5.0,
+     "reading": "Since July 2026 China's Coast Guard has conducted regularized patrols east of Taiwan for the first time; 244 Chinese vessels (60% coast guard) detected in August 2026 vs 55 in June; on Sep 28-29 Taiwan's MND reported 3 P"
     }
    ]
   }
  ],
  "changelog": [
+  {
+   "date": "2026-09-29",
+   "first_run": false,
+   "items": [
+    {
+     "board": "plumbing",
+     "label": "Plumbing",
+     "kind": "value",
+     "name": "Treasury market function",
+     "old": 96.0,
+     "new": 102.0,
+     "reading": "MOVE index 102. The Sep 23, 2026 $70B 5-year note auction priced at 5.033%, tailed 3.1bp (second-largest tail on record), bid-to-cover 2.212 (weakest since Dec 2018), with primary dealers forced to absorb 15.8% of the of"
+    },
+    {
+     "board": "plumbing",
+     "label": "Plumbing",
+     "kind": "value",
+     "name": "The dollar shortage gauge",
+     "old": -32.0,
+     "new": -25.0,
+     "reading": "As of mid-May 2026, the 3-month EUR/USD xccy basis was approximately -16 to -20bp; Japan's $550bn US trade deal is driving structural pressure toward a wider (more negative) JPY/USD basis into Q4 2026, with quarter-end b"
+    },
+    {
+     "board": "plumbing",
+     "label": "Plumbing",
+     "kind": "status",
+     "name": "Transmission",
+     "old": "AMBER",
+     "new": "GREEN",
+     "reading": "Current streak of sessions with yields up, stocks down and the dollar up: 0. 10-year 5.17% on 2026-09-25."
+    },
+    {
+     "board": "market",
+     "label": "Market",
+     "kind": "value",
+     "name": "The average stock is already falling",
+     "old": 54.9,
+     "new": 57.3,
+     "reading": "S&P 500 7,678 vs 200-day 7,213 (0 closes below). 57% of 501 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: -4.2%. As of Sep 28 2026, only 25.2% of S&P 500 constituents tra"
+    },
+    {
+     "board": "market",
+     "label": "Market",
+     "kind": "value",
+     "name": "Lenders are getting nervous",
+     "old": 2.8,
+     "new": 2.93,
+     "reading": "High-yield spread 2.93% (+0.12 pts in 60 days); VIX 14.2."
+    },
+    {
+     "board": "market",
+     "label": "Market",
+     "kind": "value",
+     "name": "Outside shock",
+     "old": 5,
+     "new": 4,
+     "reading": "0 red, 4 on watch, of five."
+    },
+    {
+     "board": "ai",
+     "label": "AI cycle",
+     "kind": "status",
+     "name": "Chips are getting easier to get",
+     "old": "RED",
+     "new": "AMBER",
+     "reading": "Nvidia inventory +111% vs sales +106% (quarter ended 2026-07-26); inventory days 119. As of Sep 27–28 2026, H100 median on-demand is ~$3.25–$3.84/hr (down ~50% since early 2024 due to Blackwell arrival); B200 median is $"
+    },
+    {
+     "board": "ai",
+     "label": "AI cycle",
+     "kind": "status",
+     "name": "Lenders are getting nervous",
+     "old": "AMBER",
+     "new": "GREEN",
+     "reading": "High-yield spread 2.93% (+0.12 pts in 60 days). No rounds delayed or downsized in the last 30 days; Anthropic closed a $65B Series H (May 2026) at $965B valuation; OpenAI closed $122B in March 2026; one notable AMBER fla"
+    },
+    {
+     "board": "fiscal",
+     "label": "Fiscal",
+     "kind": "gate",
+     "name": "Gate",
+     "old": "The Fed is on step one of four — pressure building toward step three",
+     "new": "The Fed has taken none of the four steps",
+     "reading": ""
+    },
+    {
+     "board": "fiscal",
+     "label": "Fiscal",
+     "kind": "status",
+     "name": "Reserve purchases outgrow reserves",
+     "old": "AMBER",
+     "new": "GREEN",
+     "reading": "Fed total assets $6,748 billion, +12 billion over 13 weeks; bank reserves -21 billion over the same period. As of Sep 14 2026, the Fed announced for the second straight month it will conduct zero reserve management purch"
+    },
+    {
+     "board": "fiscal",
+     "label": "Fiscal",
+     "kind": "status",
+     "name": "Foreign demand",
+     "old": "AMBER",
+     "new": "GREEN",
+     "reading": "The Sep 9 2026 10-year auction drew an indirect bidder share of 79.2% (bid-to-cover 2.71 vs 12-month avg 2.49, graded STRONG); the Sep 10 30-year auction saw indirects take 79.5%, the second-highest share on record for t"
+    },
+    {
+     "board": "fiscal",
+     "label": "Fiscal",
+     "kind": "value",
+     "name": "The Fed's own position",
+     "old": 244.0,
+     "new": 236.0,
+     "reading": "As of Jul 1 2026 the Fed's consolidated deferred asset stood at ~$236 bn (down $7 bn since Jan 2026), with remittances to Treasury still suspended since Sep 2022; Sen. Rand Paul reintroduced the Audit the Fed bill (Jul 2"
+    },
+    {
+     "board": "taiwan",
+     "label": "Taiwan",
+     "kind": "value",
+     "name": "Taiwan's own clock",
+     "old": 12.0,
+     "new": 11.0,
+     "reading": "Taiwan's LNG reserve is 11 days as of early 2026 (plan to raise to 14 days by 2027); Iran war has disrupted ~10 of 30 monthly LNG shipments from the Middle East, though Taiwan secured supply through September 2026; the l"
+    },
+    {
+     "board": "taiwan",
+     "label": "Taiwan",
+     "kind": "value",
+     "name": "From drills to inspections",
+     "old": 7.5,
+     "new": 5.0,
+     "reading": "Since July 2026 China's Coast Guard has conducted regularized patrols east of Taiwan for the first time; 244 Chinese vessels (60% coast guard) detected in August 2026 vs 55 in June; on Sep 28-29 Taiwan's MND reported 3 P"
+    }
+   ],
+   "summary": "5 status change(s), 1 gate change(s), 8 notable move(s)."
+  },
   {
    "date": "2026-09-28",
    "first_run": false,
