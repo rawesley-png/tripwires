@@ -442,5 +442,120 @@
    }
   ],
   "summary": "5 status change(s), 1 gate change(s), 8 notable move(s)."
+ },
+ {
+  "date": "2026-09-30",
+  "first_run": false,
+  "items": [
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "The buffer",
+    "old": 1.0,
+    "new": 11.0,
+    "reading": "Reverse-repo balance $11 billion (peak $2,550 billion); bank reserves $2,930 billion, -21 billion over 13 weeks. Every dollar of Treasury settlement now comes straight out of reserves."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "Bank stress",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Discount-window primary credit $6.2 billion (week of 2026-09-23). No large-bank CDS spike or discount-window usage reported in September 2026; big-bank CD APYs rising normally to 4.25–4.30% as of Sep 24, consistent with "
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "The dollar shortage gauge",
+    "old": -25.0,
+    "new": -28.0,
+    "reading": "3-month EUR/USD basis was approximately -16 to -20bp as of mid-2026; JPY/USD basis expected to widen more negative into quarter-end as Japan's $550bn US investment deal drives receiving flows; USD/JPY at 157.0 on Sep 30 "
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "Stocks yield no more than bonds",
+    "old": "AMBER",
+    "new": "RED",
+    "reading": "Forward P/E 19.2 → earnings yield 5.21% against a 10-year at 5.24%: premium -0.03 points."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "Lenders are getting nervous",
+    "old": 2.93,
+    "new": 3.02,
+    "reading": "High-yield spread 3.02% (+0.18 pts in 60 days); VIX 16.0."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "Outside shock",
+    "old": 4,
+    "new": 5,
+    "reading": "0 red, 5 on watch, of five."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "value",
+    "name": "Lenders are getting nervous",
+    "old": 2.93,
+    "new": 3.02,
+    "reading": "High-yield spread 3.02% (+0.18 pts in 60 days). As of Sep 29, 2026, OpenAI is in active talks to raise ≥$30B at a ~$1.4T valuation; Anthropic closed a $65B Series H in May 2026 at $965B post-money; CoreWeave launched an "
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "status",
+    "name": "The long end",
+    "old": "AMBER",
+    "new": "RED",
+    "reading": "30-year 5.56% on 2026-09-28; 10-year breakeven +0.01 over three months — a supply premium, not an inflation premium."
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "value",
+    "name": "The arithmetic",
+    "old": -1.39,
+    "new": -1.07,
+    "reading": "Nominal GDP growth 6.3% over the year to 2026-04-01; 10-year yield 5.24%; federal interest running at $1,280 billion a year."
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "value",
+    "name": "The Fed's own position",
+    "old": 236.0,
+    "new": 223.6,
+    "reading": "As of Sep 2026 the Fed's deferred asset (cumulative losses not yet recovered) stands at approximately $223.6bn on the H.4.1, down from a peak of ~$243bn in Dec 2025; the Trump-v-Cook Supreme Court litigation (decided 5-4"
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "value",
+    "name": "China's war chest",
+    "old": 1.4,
+    "new": 1.47,
+    "reading": "China stockpiled aggressively through Feb 2026 at ~12 mb/d, building ~1.47 billion bbl commercial inventory (~130 days of imports) by end-2025; imports crashed 32% in Q2 2026 to 8.1 mb/d as Hormuz disruptions spiked pric"
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "value",
+    "name": "From drills to inspections",
+    "old": 5.0,
+    "new": 7.5,
+    "reading": "In June 2026 China's Coast Guard began regularized 'special maritime law enforcement' patrols east of Taiwan for the first time, hailing vessels from Singapore, Benin and Liberia and claiming jurisdictional authority; Se"
+   }
+  ],
+  "summary": "3 status change(s), 0 gate change(s), 9 notable move(s)."
  }
 ]
