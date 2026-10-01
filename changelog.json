@@ -557,5 +557,183 @@
    }
   ],
   "summary": "3 status change(s), 0 gate change(s), 9 notable move(s)."
+ },
+ {
+  "date": "2026-10-01",
+  "first_run": false,
+  "items": [
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "gate",
+    "name": "Gate",
+    "old": "Stage 0 of 4 — every ingredient, no event: the buffer is gone and a drain day is near",
+    "new": "Stage 0 of 4 — the buffer is gone; no drain day near, no event",
+    "reading": ""
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "SOFR against the Fed's rate",
+    "old": -2.0,
+    "new": 0.0,
+    "reading": "SOFR 3.90% on 2026-09-30, +0 bp against the rate on reserves (3.90%); ceiling 4.00%. Worst spread in the last five sessions +0 bp."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "The Fed's repo window",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Fed overnight repo lending $1.2 billion on 2026-09-30; peak in the last ten sessions $1.2 billion. On Sep 30 2026, Fed overnight repo (SRF) Treasury purchases were $1.2bn per FRED RPONTSYD; RMPs paused since Aug 2026 wit"
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "The buffer",
+    "old": 11.0,
+    "new": 12.0,
+    "reading": "Reverse-repo balance $12 billion (peak $2,550 billion); bank reserves $2,930 billion, -21 billion over 13 weeks. Every dollar of Treasury settlement now comes straight out of reserves."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "The drain calendar",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Next drain: Thursday Oct 15 (mid-month coupon settlement), 14 days away. Upcoming: Oct 15 (mid-month coupon settlement); Oct 31 (month-end settlement); Nov 15 (mid-month coupon settlement); Nov 30 (month-end settlement)."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "Treasury market function",
+    "old": "RED",
+    "new": "AMBER",
+    "reading": "MOVE index 109. Sep 23 2026 5Y auction cleared at 5.033% with only 2.21x cover (well below the 6-month avg ~2.36x); Sep 9 10Y was strong at -1.5bp stop-through and 2.71x cover; no failed auctions but 5Y demand was notabl"
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "The dollar shortage gauge",
+    "old": -28.0,
+    "new": -32.0,
+    "reading": "As of mid-Sep 2026 the USD/JPY 3M forward points were approximately -120 pips (spot ~157.7), implying a yen basis of roughly -32bp; EUR/USD 3M basis was around -16 to -20bp in Q2 2026 per market data; yen basis is approa"
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "Stablecoins",
+    "old": 303.0,
+    "new": 316.7,
+    "reading": "Total stablecoin supply was $316.7bn as of late Sep 2026 per Artemis, up 0.7% over the prior 30 days; USDT $183.8bn and USDC $74.6bn both trading at par; no depeg events detected."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "The Fed's response",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Nothing to respond to. Fed paused reserve management purchases (RMPs) for a second straight month through Oct 14 2026; only ~$15.6bn in scheduled reinvestment purchases; bank reserves stood at $3.04tn as of Sep 9 2026; n"
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "Stocks yield no more than bonds",
+    "old": -0.03,
+    "new": -0.05,
+    "reading": "Forward P/E 19.2 → earnings yield 5.21% against a 10-year at 5.26%: premium -0.05 points."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "The average stock is already falling",
+    "old": 57.9,
+    "new": 60.5,
+    "reading": "S&P 500 7,630 vs 200-day 7,221 (0 closes below). 60% of 501 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: -4.2%. As of Sep 28 2026: only 47.2% of S&P 500 constituents tra"
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "Outside shock",
+    "old": 5,
+    "new": 4,
+    "reading": "0 red, 4 on watch, of five."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "value",
+    "name": "Chips are getting easier to get",
+    "old": 3.84,
+    "new": 4.19,
+    "reading": "Nvidia inventory +111% vs sales +106% (quarter ended 2026-07-26); inventory days 119. As of Sep 13–25 2026: H100 median on-demand ~$3.84–4.74/hr across specialist clouds (down ~50% from 2023 peak of ~$8/hr); B200 surged "
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "status",
+    "name": "Foreign demand",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Sep 9 10-yr auction indirect share was 79.2% and Sep 10 30-yr was 79.5% (solid), but China's Treasury holdings hit a record low of $618B in July 2026 (down from $633.4B in June), total foreign holdings fell to $9,248.1B "
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "value",
+    "name": "The Fed's own position",
+    "old": 223.6,
+    "new": 236.0,
+    "reading": "The Fed's consolidated deferred asset stood at ~$236B as of the July 2026 Monetary Policy Report (down from $244B in March 2026), with Treasury remittances not expected to resume before 2030; Trump is actively targeting "
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "value",
+    "name": "China's war chest",
+    "old": 1.47,
+    "new": 1.4,
+    "reading": "By Dec 2025 EIA estimated China held ~1.4 bn barrels of crude (≈130 days of import cover, well above the IEA 90-day standard); PBoC bought 14.93 tonnes of gold in Jun 2026, its 20th consecutive month of buying and larges"
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "value",
+    "name": "Taiwan's own clock",
+    "old": 11.0,
+    "new": 12.0,
+    "reading": "As of mid-2026 Taiwan's LNG reserve stands at ~12 days of consumption; coal reserve ~40–49 days; oil reserve ~140 days; May 2026 legislature passed a special defense budget of NT$780 bn ($24.8 bn) — 38% below the executi"
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "status",
+    "name": "Taiwan's will",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Mar 2026 Academia Sinica survey: 58.7% of Taiwanese would resist a Chinese invasion 'at all costs' even without US military intervention; perceived US credibility fell from ~45% in 2021 to 34% in 2026; Brookings 2026 sur"
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "value",
+    "name": "From drills to inspections",
+    "old": 7.5,
+    "new": 5.5,
+    "reading": "Since Jun 2026 China Coast Guard has maintained a continuous presence east of Taiwan (avg 5.2 ships/day in early Jun, up from ~1/day Jan–May), claiming to have 'inspected' 198 vessels remotely in Jun 2026; no physical bo"
+   }
+  ],
+  "summary": "6 status change(s), 1 gate change(s), 12 notable move(s)."
  }
 ]
