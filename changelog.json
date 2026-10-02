@@ -735,5 +735,156 @@
    }
   ],
   "summary": "6 status change(s), 1 gate change(s), 12 notable move(s)."
+ },
+ {
+  "date": "2026-10-02",
+  "first_run": false,
+  "items": [
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "The Fed's repo window",
+    "old": 1.2,
+    "new": 0.0,
+    "reading": "Fed overnight repo lending $0.0 billion on 2026-10-01; peak in the last ten sessions $1.2 billion."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "The buffer",
+    "old": 12.0,
+    "new": 0.0,
+    "reading": "Reverse-repo balance $0 billion (peak $2,550 billion); bank reserves $2,948 billion, -19 billion over 13 weeks. Every dollar of Treasury settlement now comes straight out of reserves."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "Bank stress",
+    "old": 6.2,
+    "new": 8.7,
+    "reading": "Discount-window primary credit $8.7 billion (week of 2026-09-30)."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "The dollar shortage gauge",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Not checked this run (no Claude key)."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "The Fed's swap lines",
+    "old": 0.1,
+    "new": 0.2,
+    "reading": "Central-bank liquidity swaps outstanding $0.2 billion (week of 2026-09-30). Peaks: $580 billion in 2008, $450 billion in 2020."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "Japan and the carry trade",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Yen 157.5 per dollar, -0.8% on the week (negative = yen surging)."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "Stablecoins",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Not checked this run (no Claude key)."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "Stocks yield no more than bonds",
+    "old": -0.05,
+    "new": -0.08,
+    "reading": "Forward P/E 19.2 → earnings yield 5.21% against a 10-year at 5.29%: premium -0.08 points."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "The average stock is already falling",
+    "old": 60.5,
+    "new": 57.5,
+    "reading": "S&P 500 7,742 vs 200-day 7,226 (0 closes below). 58% of 501 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: -4.1%. As of late Sep 2026, LPL Financial's Adam Turnquist noted"
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "Outside shock",
+    "old": 4,
+    "new": 5,
+    "reading": "0 red, 5 on watch, of five."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "value",
+    "name": "Chips are getting easier to get",
+    "old": 4.19,
+    "new": 3.84,
+    "reading": "Nvidia inventory +111% vs sales +106% (quarter ended 2026-07-26); inventory days 119. As of Sep 25, 2026, B200 cloud rental hit $8.01/hr on the SemiAnalysis index, up 79% in 3 months; H100 median sits ~$3.84/hr (Mercatus"
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "value",
+    "name": "Reserve purchases outgrow reserves",
+    "old": 12.0,
+    "new": 18.0,
+    "reading": "Fed total assets $6,743 billion, +18 billion over 13 weeks; bank reserves -19 billion over the same period."
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "value",
+    "name": "Taiwan's own clock",
+    "old": 12.0,
+    "new": 11.0,
+    "reading": "As of Apr-Sep 2026, Taiwan's LNG reserve is ~10-12 days of consumption (statutory minimum rising to 14 days only by 2027); coal reserve ~40-49 days; oil ~140-150 days (government + industry); defense budget: parliament a"
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "status",
+    "name": "Taiwan's will",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Academia Sinica Jan 2026 'American Portrait' survey (n=1,206): 58.7% would resist Chinese invasion 'at all costs' even without US military help (41.2% 'definitely', 17.5% 'probably'); trust in US as credible country fell"
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "value",
+    "name": "From drills to inspections",
+    "old": 5.5,
+    "new": 3.5,
+    "reading": "Jun 2026: China conducted 'special maritime traffic law-enforcement operation' east of Taiwan, CCG vessels harassed commercial ships demanding port-of-origin/destination data and asserting jurisdiction (no actual boardin"
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "value",
+    "name": "Markets smell it",
+    "old": 12.5,
+    "new": 12.0,
+    "reading": "Taiwan dollar +0.2% vs USD in 30 days; Taiwan ETF vs S&P 500 over 60 sessions +8.1%. Prediction markets: Will China invade Taiwan by end of 2026? 2%; Will China blockade Taiwan in 2026? 3%; Will China invade Taiwan by Ju"
+   }
+  ],
+  "summary": "4 status change(s), 0 gate change(s), 12 notable move(s)."
  }
 ]
