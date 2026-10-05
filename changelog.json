@@ -886,5 +886,111 @@
    }
   ],
   "summary": "4 status change(s), 0 gate change(s), 12 notable move(s)."
+ },
+ {
+  "date": "2026-10-05",
+  "first_run": false,
+  "items": [
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "SOFR against the Fed's rate",
+    "old": -3.0,
+    "new": -2.0,
+    "reading": "SOFR 3.88% on 2026-10-02, -2 bp against the rate on reserves (3.90%); ceiling 4.00%. Worst spread in the last five sessions +0 bp."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "Treasury market function",
+    "old": 107.0,
+    "new": 114.0,
+    "reading": "MOVE index 114."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "gate",
+    "name": "Gate",
+    "old": "One of the three bear-market conditions is present, 1 on watch",
+    "new": "One of the three bear-market conditions is present, 2 on watch",
+    "reading": ""
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "Stocks yield no more than bonds",
+    "old": "RED",
+    "new": "AMBER",
+    "reading": "Check failed: no forward P/E (set FORWARD_PE_FALLBACK in .env or add ANTHROPIC_API_KEY)"
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "Earnings stop growing",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Not checked (no Claude key). "
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "The AI-cycle bell",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Not rung. Spending growth: Green; chips easier: Green."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "status",
+    "name": "Nvidia is financing its own customers",
+    "old": "AMBER",
+    "new": "RED",
+    "reading": "Present as of September 2026: Nvidia stakes in OpenAI and the neoclouds; hyperscaler gains on AI-lab stakes flowing into reported profits. Not re-checked this run (no Claude key)."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "status",
+    "name": "Chips are getting easier to get",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Nvidia inventory +111% vs sales +106% (quarter ended 2026-07-26); inventory days 119."
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "status",
+    "name": "China's war chest",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Not checked this run (no Claude key)."
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "status",
+    "name": "From drills to inspections",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Not checked this run (no Claude key)."
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "value",
+    "name": "Markets smell it",
+    "old": 12.0,
+    "new": 11.5,
+    "reading": "Taiwan dollar +0.3% vs USD in 30 days; Taiwan ETF vs S&P 500 over 60 sessions +8.3%. Prediction markets: Will China invade Taiwan by end of 2026? 2%; Will China blockade Taiwan in 2026? 3%; Will China invade Taiwan by Ju"
+   }
+  ],
+  "summary": "7 status change(s), 1 gate change(s), 3 notable move(s)."
  }
 ]
