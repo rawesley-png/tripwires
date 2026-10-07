@@ -1035,5 +1035,48 @@
    }
   ],
   "summary": "0 status change(s), 0 gate change(s), 4 notable move(s)."
+ },
+ {
+  "date": "2026-10-07",
+  "first_run": false,
+  "items": [
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "SOFR against the Fed's rate",
+    "old": -1.0,
+    "new": 0.0,
+    "reading": "SOFR 3.90% on 2026-10-06, +0 bp against the rate on reserves (3.90%); ceiling 4.00%. Worst spread in the last five sessions +0 bp."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "gate",
+    "name": "Gate",
+    "old": "One of the three bear-market conditions is present, 2 on watch",
+    "new": "2 of the three bear-market conditions are present",
+    "reading": ""
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "Outside shock",
+    "old": "AMBER",
+    "new": "RED",
+    "reading": "1 red, 4 on watch, of five."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "status",
+    "name": "Oil",
+    "old": "AMBER",
+    "new": "RED",
+    "reading": "Brent $125 on 2026-10-06."
+   }
+  ],
+  "summary": "2 status change(s), 1 gate change(s), 1 notable move(s)."
  }
 ]
