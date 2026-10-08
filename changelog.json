@@ -1078,5 +1078,39 @@
    }
   ],
   "summary": "2 status change(s), 1 gate change(s), 1 notable move(s)."
+ },
+ {
+  "date": "2026-10-08",
+  "first_run": false,
+  "items": [
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "The buffer",
+    "old": 2.0,
+    "new": 0.0,
+    "reading": "Reverse-repo balance $0 billion (peak $2,550 billion); bank reserves $2,948 billion, -19 billion over 13 weeks. Every dollar of Treasury settlement now comes straight out of reserves."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "The average stock is already falling",
+    "old": 54.5,
+    "new": 52.7,
+    "reading": "S&P 500 7,762 vs 200-day 7,246 (0 closes below). 53% of 499 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: -2.9%. "
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "value",
+    "name": "The arithmetic",
+    "old": -1.0,
+    "new": -1.04,
+    "reading": "Nominal GDP growth 6.3% over the year to 2026-04-01; 10-year yield 5.27%; federal interest running at $1,280 billion a year."
+   }
+  ],
+  "summary": "0 status change(s), 0 gate change(s), 3 notable move(s)."
  }
 ]
