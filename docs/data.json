@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-08",
+ "updated": "2026-10-09",
  "soft_checked": false,
  "site_url": "https://rawesley-png.github.io/tripwires/",
  "boards": [
@@ -7,7 +7,7 @@
    "key": "plumbing",
    "label": "Plumbing",
    "title": "Plumbing tripwires",
-   "summary": "2 tripped, 4 on watch, of 15. Stage 0 of 4 — the buffer is gone; no drain day near, no event.",
+   "summary": "2 tripped, 3 on watch, of 15. Stage 0 of 4 — the buffer is gone; no drain day near, no event.",
    "gate": {
     "kind": "stages",
     "rung": false,
@@ -72,13 +72,13 @@
      "question": "Is overnight cash costing more than the Fed pays banks to hold it?",
      "trip": "Red at +25 basis points over the rate on reserves outside a month-end, or SOFR above the Fed's standing-repo ceiling on any day. A spike that does not come back down the next day is the real thing.",
      "status": "GREEN",
-     "reading": "SOFR 3.88% on 2026-10-07, -2 bp against the rate on reserves (3.90%); ceiling 4.00%. Worst spread in the last five sessions +0 bp.",
+     "reading": "SOFR 3.87% on 2026-10-08, -3 bp against the rate on reserves (3.90%); ceiling 4.00%. Worst spread in the last five sessions +0 bp.",
      "evidence": "September 2019: 2% to 8% in a morning, the day after a tax date and a Treasury settlement drained cash together.",
      "source": "FRED: SOFR, IORB, DFEDTARU",
-     "value": -2.0,
+     "value": -3.0,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -129,6 +129,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": -2.0
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": -3.0
       }
      ]
     },
@@ -141,13 +146,13 @@
      "question": "Are banks borrowing from the Fed because private lenders won't lend?",
      "trip": "Red at $50 billion or more, or any sustained use on ordinary days. Amber at $10 billion on a day that isn't month-end.",
      "status": "GREEN",
-     "reading": "Fed overnight repo lending $0.0 billion on 2026-10-08; peak in the last ten sessions $1.2 billion.",
+     "reading": "Fed overnight repo lending $0.0 billion on 2026-10-09; peak in the last ten sessions $1.2 billion.",
      "evidence": "The window is a ceiling only if banks will use it; stigma has kept it under-used, which is why spikes get past it.",
      "source": "FRED: RPONTSYD; web check",
      "value": 0.0,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -198,6 +203,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": 0.0
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": 0.0
       }
      ]
     },
@@ -210,13 +220,13 @@
      "question": "Is there spare cash left to absorb a shock?",
      "trip": "This lamp is the standing condition, not the event. It stays red while the reverse-repo buffer is gone, until the Fed's balance sheet is growing with the economy on purpose or the repo window is open to everyone.",
      "status": "RED",
-     "reading": "Reverse-repo balance $0 billion (peak $2,550 billion); bank reserves $2,948 billion, -19 billion over 13 weeks. Every dollar of Treasury settlement now comes straight out of reserves.",
+     "reading": "Reverse-repo balance $0 billion (peak $2,550 billion); bank reserves $3,030 billion, -69 billion over 13 weeks. Every dollar of Treasury settlement now comes straight out of reserves.",
      "evidence": "Nobody knows where scarcity begins; the Fed found it by accident in 2019.",
      "source": "FRED: RRPONTSYD, WRESBAL",
      "value": 0.0,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -267,6 +277,11 @@
        "date": "2026-10-08",
        "status": "RED",
        "value": 0.0
+      },
+      {
+       "date": "2026-10-09",
+       "status": "RED",
+       "value": 0.0
       }
      ]
     },
@@ -279,13 +294,13 @@
      "question": "Is a day coming when cash leaves the banks all at once?",
      "trip": "Amber inside five business days of a quarter-end, month-end settlement, or tax date; the lamp is a calendar, not a reading. Red only in combination with the SOFR or window tiles.",
      "status": "GREEN",
-     "reading": "Next drain: Thursday Oct 15 (mid-month coupon settlement), 7 days away. Upcoming: Oct 15 (mid-month coupon settlement); Oct 31 (month-end settlement); Nov 15 (mid-month coupon settlement); Nov 30 (month-end settlement).",
+     "reading": "Next drain: Thursday Oct 15 (mid-month coupon settlement), 6 days away. Upcoming: Oct 15 (mid-month coupon settlement); Oct 31 (month-end settlement); Nov 15 (mid-month coupon settlement); Nov 30 (month-end settlement).",
      "evidence": "2019's spike and every quarter-end pop since late 2025 landed on these dates. Seizures do not happen on a random Tuesday.",
      "source": "Treasury settlement and tax calendars",
-     "value": 7,
+     "value": 6,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -336,6 +351,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": 7
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": 6
       }
      ]
     },
@@ -347,14 +367,14 @@
      "name": "Treasury market function",
      "question": "Can the basis trade be unwound without breaking the market?",
      "trip": "Red on a failed or badly tailed coupon auction, dealers refusing balance sheet, bond volatility (MOVE) above 140, or bid-ask spreads widening the way they did in March 2020. Amber with MOVE above 100.",
-     "status": "AMBER",
-     "reading": "MOVE index 101.",
+     "status": "GREEN",
+     "reading": "MOVE index 99.",
      "evidence": "March 2020: repo tightened, the basis trade could not roll, Treasuries were dumped, and the Fed bought $75 billion a day. Ten days start to finish.",
      "source": "Yahoo Finance ^MOVE; auction results via web check",
-     "value": 101.0,
+     "value": 99.0,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -405,6 +425,11 @@
        "date": "2026-10-08",
        "status": "AMBER",
        "value": 101.0
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": 99.0
       }
      ]
     },
@@ -417,13 +442,13 @@
      "question": "Are the lenders worried about each other?",
      "trip": "Red on a spike in a large bank's default-insurance cost or discount-window borrowing above $50 billion. Amber above $10 billion, or if uninsured deposits start moving to money funds again.",
      "status": "GREEN",
-     "reading": "Discount-window primary credit $8.7 billion (week of 2026-09-30).",
+     "reading": "Discount-window primary credit $10.0 billion (week of 2026-10-07).",
      "evidence": "March 2023: $42 billion left one bank in a day through an app. The next run will be as fast.",
      "source": "FRED: WLCFLPCL; bank CDS via web check",
-     "value": 8.7,
+     "value": 10.0,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -474,6 +499,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": 8.7
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": 10.0
       }
      ]
     },
@@ -492,7 +522,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -543,6 +573,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": null
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": null
       }
      ]
     },
@@ -555,13 +590,13 @@
      "question": "Are foreign central banks drawing dollars from the Fed?",
      "trip": "Red at $50 billion drawn; amber at $5 billion. Any non-trivial draw means the private swap market has stopped working somewhere.",
      "status": "GREEN",
-     "reading": "Central-bank liquidity swaps outstanding $0.2 billion (week of 2026-09-30). Peaks: $580 billion in 2008, $450 billion in 2020.",
+     "reading": "Central-bank liquidity swaps outstanding $0.2 billion (week of 2026-10-07). Peaks: $580 billion in 2008, $450 billion in 2020.",
      "evidence": "The swap lines have worked every time they were used, for the fourteen countries that have them.",
      "source": "FRED: SWPT",
      "value": 0.2,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -612,6 +647,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": 0.2
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": 0.2
       }
      ]
     },
@@ -624,13 +664,13 @@
      "question": "Is the largest source of swapped dollars being pulled home?",
      "trip": "Red on a yen move of more than 5% in a week against the dollar, or a surprise Bank of Japan hike. Amber at 3%, or while the hiking cycle runs.",
      "status": "GREEN",
-     "reading": "Yen 157.9 per dollar, +0.2% on the week (negative = yen surging).",
+     "reading": "Yen 158.2 per dollar, +0.2% on the week (negative = yen surging).",
      "evidence": "August 2024: the yen jumped and U.S. stocks fell 8% in three days on no American news.",
      "source": "Yahoo Finance JPY=X; BoJ via web check",
-     "value": 157.9,
+     "value": 158.2,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -681,6 +721,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": 157.9
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": 158.2
       }
      ]
     },
@@ -699,7 +744,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -748,6 +793,11 @@
       },
       {
        "date": "2026-10-08",
+       "status": "AMBER",
+       "value": null
+      },
+      {
+       "date": "2026-10-09",
        "status": "AMBER",
        "value": null
       }
@@ -768,7 +818,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -819,6 +869,11 @@
        "date": "2026-10-08",
        "status": "AMBER",
        "value": null
+      },
+      {
+       "date": "2026-10-09",
+       "status": "AMBER",
+       "value": null
       }
      ]
     },
@@ -837,7 +892,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -888,6 +943,11 @@
        "date": "2026-10-08",
        "status": "AMBER",
        "value": null
+      },
+      {
+       "date": "2026-10-09",
+       "status": "AMBER",
+       "value": null
       }
      ]
     },
@@ -906,7 +966,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -955,6 +1015,11 @@
       },
       {
        "date": "2026-10-08",
+       "status": "RED",
+       "value": null
+      },
+      {
+       "date": "2026-10-09",
        "status": "RED",
        "value": null
       }
@@ -969,13 +1034,13 @@
      "question": "Has the seizure reached the markets — Treasuries and stocks falling together, the dollar jumping?",
      "trip": "Red when 10-year Treasury prices and the S&P 500 fall together for three sessions with the dollar index up. Amber on the first such day.",
      "status": "GREEN",
-     "reading": "Current streak of sessions with yields up, stocks down and the dollar up: 0. 10-year 5.27% on 2026-10-06.",
+     "reading": "Current streak of sessions with yields up, stocks down and the dollar up: 0. 10-year 5.28% on 2026-10-07.",
      "evidence": "In 2019 the spike never left the repo desks; the Fed lent within 48 hours. In 2020 it reached the Treasury market in ten days and every margin call in the world landed the same week.",
      "source": "FRED: DGS10, DTWEXBGS; Yahoo SPY",
      "value": 0,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -1024,6 +1089,11 @@
       },
       {
        "date": "2026-10-08",
+       "status": "GREEN",
+       "value": 0
+      },
+      {
+       "date": "2026-10-09",
        "status": "GREEN",
        "value": 0
       }
@@ -1044,7 +1114,7 @@
      "value": 0,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -1095,6 +1165,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": 0
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": 0
       }
      ]
     }
@@ -1104,10 +1179,28 @@
      "board": "plumbing",
      "label": "Plumbing",
      "kind": "value",
-     "name": "The buffer",
-     "old": 2.0,
-     "new": 0.0,
-     "reading": "Reverse-repo balance $0 billion (peak $2,550 billion); bank reserves $2,948 billion, -19 billion over 13 weeks. Every dollar of Treasury settlement now comes straight out of reserves."
+     "name": "SOFR against the Fed's rate",
+     "old": -2.0,
+     "new": -3.0,
+     "reading": "SOFR 3.87% on 2026-10-08, -3 bp against the rate on reserves (3.90%); ceiling 4.00%. Worst spread in the last five sessions +0 bp."
+    },
+    {
+     "board": "plumbing",
+     "label": "Plumbing",
+     "kind": "status",
+     "name": "Treasury market function",
+     "old": "AMBER",
+     "new": "GREEN",
+     "reading": "MOVE index 99."
+    },
+    {
+     "board": "plumbing",
+     "label": "Plumbing",
+     "kind": "value",
+     "name": "Bank stress",
+     "old": 8.7,
+     "new": 10.0,
+     "reading": "Discount-window primary credit $10.0 billion (week of 2026-10-07)."
     }
    ]
   },
@@ -1163,13 +1256,13 @@
      "question": "Is the 10-year Treasury yield holding above 5%?",
      "trip": "Trips when the 10-year holds above 5% for more than a few days.",
      "status": "RED",
-     "reading": "5.27% on 2026-10-06; 10 consecutive readings at or above 5%.",
+     "reading": "5.28% on 2026-10-07; 11 consecutive readings at or above 5%.",
      "evidence": "Rates, not earnings, are what has moved this year.",
      "source": "FRED",
-     "value": 5.27,
+     "value": 5.28,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-24",
@@ -1225,6 +1318,11 @@
        "date": "2026-10-08",
        "status": "RED",
        "value": 5.27
+      },
+      {
+       "date": "2026-10-09",
+       "status": "RED",
+       "value": 5.28
       }
      ]
     },
@@ -1243,7 +1341,7 @@
      "value": null,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-24",
@@ -1299,6 +1397,11 @@
        "date": "2026-10-08",
        "status": "AMBER",
        "value": null
+      },
+      {
+       "date": "2026-10-09",
+       "status": "AMBER",
+       "value": null
       }
      ]
     },
@@ -1317,7 +1420,7 @@
      "value": null,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-24",
@@ -1373,6 +1476,11 @@
        "date": "2026-10-08",
        "status": "AMBER",
        "value": null
+      },
+      {
+       "date": "2026-10-09",
+       "status": "AMBER",
+       "value": null
       }
      ]
     },
@@ -1385,13 +1493,13 @@
      "question": "Is the index rising on a few giant companies while most stocks fall?",
      "trip": "Watch at half the members below their own 200-day average; red at two-thirds, or when the index itself breaks its 200-day average.",
      "status": "AMBER",
-     "reading": "S&P 500 7,762 vs 200-day 7,246 (0 closes below). 53% of 499 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: -2.9%. ",
+     "reading": "S&P 500 7,816 vs 200-day 7,251 (0 closes below). 52% of 499 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: -4.4%. ",
      "evidence": "Narrow leadership is how the last two bear markets began.",
      "source": "Yahoo Finance, all constituents; web check as fallback",
-     "value": 52.7,
+     "value": 52.1,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-24",
@@ -1447,6 +1555,11 @@
        "date": "2026-10-08",
        "status": "AMBER",
        "value": 52.7
+      },
+      {
+       "date": "2026-10-09",
+       "status": "AMBER",
+       "value": 52.1
       }
      ]
     },
@@ -1459,13 +1572,13 @@
      "question": "Are bond investors demanding more to lend to risky companies?",
      "trip": "Trips on spreads above 5%, a 1.5-point jump in 60 days, or a VIX that stays above 30.",
      "status": "GREEN",
-     "reading": "High-yield spread 3.09% (+0.39 pts in 60 days); VIX 15.1.",
+     "reading": "High-yield spread 3.15% (+0.45 pts in 60 days); VIX 15.4.",
      "evidence": "Credit usually cracks after rates and before earnings.",
      "source": "FRED",
-     "value": 3.09,
+     "value": 3.15,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-24",
@@ -1521,6 +1634,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": 3.09
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": 3.15
       }
      ]
     },
@@ -1565,7 +1683,7 @@
       }
      ],
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-24",
@@ -1619,6 +1737,11 @@
       },
       {
        "date": "2026-10-08",
+       "status": "RED",
+       "value": 5
+      },
+      {
+       "date": "2026-10-09",
        "status": "RED",
        "value": 5
       }
@@ -1639,7 +1762,7 @@
      "value": 4.2,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-24",
@@ -1693,6 +1816,11 @@
       },
       {
        "date": "2026-10-08",
+       "status": "GREEN",
+       "value": 4.2
+      },
+      {
+       "date": "2026-10-09",
        "status": "GREEN",
        "value": 4.2
       }
@@ -1713,7 +1841,7 @@
      "value": 0,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-24",
@@ -1767,6 +1895,11 @@
       },
       {
        "date": "2026-10-08",
+       "status": "GREEN",
+       "value": 0
+      },
+      {
+       "date": "2026-10-09",
        "status": "GREEN",
        "value": 0
       }
@@ -1787,7 +1920,7 @@
      "value": 4.0,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-24",
@@ -1843,21 +1976,16 @@
        "date": "2026-10-08",
        "status": "RED",
        "value": 4.0
+      },
+      {
+       "date": "2026-10-09",
+       "status": "RED",
+       "value": 4.0
       }
      ]
     }
    ],
-   "since_last_run": [
-    {
-     "board": "market",
-     "label": "Market",
-     "kind": "value",
-     "name": "The average stock is already falling",
-     "old": 54.5,
-     "new": 52.7,
-     "reading": "S&P 500 7,762 vs 200-day 7,246 (0 closes below). 53% of 499 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: -2.9%. "
-    }
-   ]
+   "since_last_run": []
   },
   {
    "key": "ai",
@@ -1913,7 +2041,7 @@
      "value": 1.0,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-24",
@@ -1967,6 +2095,11 @@
       },
       {
        "date": "2026-10-08",
+       "status": "AMBER",
+       "value": 1.0
+      },
+      {
+       "date": "2026-10-09",
        "status": "AMBER",
        "value": 1.0
       }
@@ -1987,7 +2120,7 @@
      "value": 1,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-24",
@@ -2041,6 +2174,11 @@
       },
       {
        "date": "2026-10-08",
+       "status": "RED",
+       "value": 1
+      },
+      {
+       "date": "2026-10-09",
        "status": "RED",
        "value": 1
       }
@@ -2061,7 +2199,7 @@
      "value": 0,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-24",
@@ -2117,6 +2255,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": 0
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": 0
       }
      ]
     },
@@ -2135,7 +2278,7 @@
      "value": 5.2,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-24",
@@ -2191,6 +2334,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": 5.2
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": 5.2
       }
      ]
     },
@@ -2203,13 +2351,13 @@
      "question": "Is the 10-year Treasury yield holding above 5%?",
      "trip": "Amber at 4.75%; trips at 5% sustained.",
      "status": "RED",
-     "reading": "5.27% on 2026-10-06; 10 consecutive readings at or above 5%.",
+     "reading": "5.28% on 2026-10-07; 11 consecutive readings at or above 5%.",
      "evidence": "Higher rates make the borrowing in tile 1 more expensive and expensive stocks worth less on paper.",
      "source": "Federal Reserve (FRED)",
-     "value": 5.27,
+     "value": 5.28,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-24",
@@ -2265,6 +2413,11 @@
        "date": "2026-10-08",
        "status": "RED",
        "value": 5.27
+      },
+      {
+       "date": "2026-10-09",
+       "status": "RED",
+       "value": 5.28
       }
      ]
     },
@@ -2277,13 +2430,13 @@
      "question": "Are bond investors demanding more to lend to the AI borrowers, and are the labs still raising money easily?",
      "trip": "Trips on spreads above 5%, a 1.5-point jump in 60 days, or a delayed or downsized AI-lab round.",
      "status": "GREEN",
-     "reading": "High-yield spread 3.09% (+0.39 pts in 60 days).",
+     "reading": "High-yield spread 3.15% (+0.45 pts in 60 days).",
      "evidence": "Watch Oracle- and CoreWeave-type borrowers first; they are the leveraged link between the labs and Nvidia.",
      "source": "FRED; financing headlines",
-     "value": 3.09,
+     "value": 3.15,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-24",
@@ -2339,6 +2492,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": 3.09
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": 3.15
       }
      ]
     },
@@ -2351,13 +2509,13 @@
      "question": "Has Nvidia broken below its one-year average price, or gone vertical?",
      "trip": "Trips on 10 straight closes below the 200-day average, or +35% in 30 sessions.",
      "status": "GREEN",
-     "reading": "$231 vs 200-day average $202; 0 closes below it; +10% over 30 sessions.",
+     "reading": "$230 vs 200-day average $202; 0 closes below it; +1% over 30 sessions.",
      "evidence": "Picks-and-shovels stocks peak before their customers' spending does.",
      "source": "Yahoo Finance",
-     "value": 230.55,
+     "value": 229.72,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-24",
@@ -2413,6 +2571,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": 230.55
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": 229.72
       }
      ]
     },
@@ -2431,7 +2594,7 @@
      "value": 125.44,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-24",
@@ -2485,6 +2648,11 @@
       },
       {
        "date": "2026-10-08",
+       "status": "RED",
+       "value": 125.44
+      },
+      {
+       "date": "2026-10-09",
        "status": "RED",
        "value": 125.44
       }
@@ -2549,13 +2717,13 @@
      "question": "Is the Fed buying more than the plumbing needs?",
      "trip": "Red when the balance sheet grows more than $100 billion beyond the growth in bank reserves over 13 weeks, or when the Fed buys coupons rather than bills. Amber while bill purchases run.",
      "status": "GREEN",
-     "reading": "Fed total assets $6,743 billion, +18 billion over 13 weeks; bank reserves -19 billion over the same period.",
+     "reading": "Fed total assets $6,748 billion, +12 billion over 13 weeks; bank reserves -69 billion over the same period.",
      "evidence": "Compare the Fed's total assets with bank reserve balances, both weekly on the H.4.1. Buying that outruns reserves is buying for the Treasury.",
      "source": "FRED: WALCL, WRESBAL; web check",
-     "value": 18.0,
+     "value": 12.0,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -2606,6 +2774,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": 18.0
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": 12.0
       }
      ]
     },
@@ -2624,7 +2797,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -2673,6 +2846,11 @@
       },
       {
        "date": "2026-10-08",
+       "status": "GREEN",
+       "value": null
+      },
+      {
+       "date": "2026-10-09",
        "status": "GREEN",
        "value": null
       }
@@ -2693,7 +2871,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -2742,6 +2920,11 @@
       },
       {
        "date": "2026-10-08",
+       "status": "AMBER",
+       "value": null
+      },
+      {
+       "date": "2026-10-09",
        "status": "AMBER",
        "value": null
       }
@@ -2762,7 +2945,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -2813,6 +2996,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": null
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": null
       }
      ]
     },
@@ -2825,13 +3013,13 @@
      "question": "Do bond investors expect inflation to stay near 2%?",
      "trip": "Red when 5-year-forward breakevens pass 3%; amber at 2.6%. That is the market naming the policy before the Fed does.",
      "status": "GREEN",
-     "reading": "5-year, 5-year-forward breakeven 2.35%; 10-year breakeven 2.36% (2026-10-07).",
+     "reading": "5-year, 5-year-forward breakeven 2.33%; 10-year breakeven 2.35% (2026-10-08).",
      "evidence": "Breakevens are the cleanest reading of whether the anchor holds; they stayed anchored through 2021 until they didn't.",
      "source": "FRED: T5YIFR, T10YIE",
-     "value": 2.35,
+     "value": 2.33,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -2882,6 +3070,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": 2.35
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": 2.33
       }
      ]
     },
@@ -2894,13 +3087,13 @@
      "question": "Is the world buying the one asset that isn't a promise, even while promises pay well?",
      "trip": "Amber when gold is within 3% of its 52-week high while 30-year real yields sit above 2%. Red when gold makes a new high while real yields rise — the referendum going against the pyramid with the odds still in its favor.",
      "status": "GREEN",
-     "reading": "Gold $4,153 (52-week high $5,318); 30-year TIPS real yield 3.35% (+0.51 over three months).",
+     "reading": "Gold $4,224 (52-week high $5,318); 30-year TIPS real yield 3.36% (+0.50 over three months).",
      "evidence": "Gold has outrun TIPS since 2022 while breakevens stayed flat. It is hedging the regime, not the index.",
      "source": "Yahoo GC=F; FRED DFII30",
-     "value": 4153.0,
+     "value": 4224.0,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -2951,6 +3144,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": 4153.0
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": 4224.0
       }
      ]
     },
@@ -2969,7 +3167,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -3020,6 +3218,11 @@
        "date": "2026-10-08",
        "status": "AMBER",
        "value": null
+      },
+      {
+       "date": "2026-10-09",
+       "status": "AMBER",
+       "value": null
       }
      ]
     },
@@ -3032,13 +3235,13 @@
      "question": "Is the market charging more to hold the government's longest promises?",
      "trip": "Red when the 30-year holds above 5.5% with breakevens unchanged: the premium blowing out on supply alone. Amber above 5%.",
      "status": "RED",
-     "reading": "30-year 5.64% on 2026-10-06; 10-year breakeven -0.04 over three months — a supply premium, not an inflation premium.",
+     "reading": "30-year 5.67% on 2026-10-07; 10-year breakeven -0.01 over three months — a supply premium, not an inflation premium.",
      "evidence": "A long end rising while expected inflation is flat is the market's own yield-curve control, run against the Treasury.",
      "source": "FRED: DGS30, T10YIE",
-     "value": 5.64,
+     "value": 5.67,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -3089,6 +3292,11 @@
        "date": "2026-10-08",
        "status": "RED",
        "value": 5.64
+      },
+      {
+       "date": "2026-10-09",
+       "status": "RED",
+       "value": 5.67
       }
      ]
     },
@@ -3101,13 +3309,13 @@
      "question": "Is money leaving the dollar, or just leaving bonds?",
      "trip": "Red when the dollar falls more than 5% in a month while long yields rise a quarter point or more — capital leaving the system rather than repricing within it. Amber at 3%.",
      "status": "GREEN",
-     "reading": "Broad dollar index 121.4, +2.9% over a month; 10-year yield +0.49 over the same period.",
+     "reading": "Broad dollar index 121.4, +2.9% over a month; 10-year yield +0.50 over the same period.",
      "evidence": "In 2008 and 2020 the dollar rose in the crisis. The day it falls in one is the day the fourth pillar is being tested. April 2025 was the preview.",
      "source": "FRED: DTWEXBGS, DGS10",
      "value": 121.4,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -3158,6 +3366,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": 121.4
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": 121.4
       }
      ]
     },
@@ -3170,13 +3383,13 @@
      "question": "Does the debt cost more than the economy grows?",
      "trip": "Red when the 10-year yield exceeds nominal GDP growth; amber within a point of it. Interest costs are shown for scale.",
      "status": "GREEN",
-     "reading": "Nominal GDP growth 6.3% over the year to 2026-04-01; 10-year yield 5.27%; federal interest running at $1,280 billion a year.",
+     "reading": "Nominal GDP growth 6.3% over the year to 2026-04-01; 10-year yield 5.28%; federal interest running at $1,280 billion a year.",
      "evidence": "Every government at this point on the curve has reached for the bond desk. The arithmetic, not the politics, is what forces the steps.",
      "source": "FRED: GDP, DGS10, A091RC1Q027SBEA",
-     "value": -1.04,
+     "value": -1.03,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -3227,6 +3440,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": -1.04
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": -1.03
       }
      ]
     },
@@ -3245,7 +3463,7 @@
      "value": 0,
      "subs": null,
      "url": null,
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -3296,6 +3514,11 @@
        "date": "2026-10-08",
        "status": "AMBER",
        "value": 0
+      },
+      {
+       "date": "2026-10-09",
+       "status": "AMBER",
+       "value": 0
       }
      ]
     },
@@ -3314,7 +3537,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -3365,6 +3588,11 @@
        "date": "2026-10-08",
        "status": "AMBER",
        "value": null
+      },
+      {
+       "date": "2026-10-09",
+       "status": "AMBER",
+       "value": null
       }
      ]
     }
@@ -3374,10 +3602,10 @@
      "board": "fiscal",
      "label": "Fiscal",
      "kind": "value",
-     "name": "The arithmetic",
-     "old": -1.0,
-     "new": -1.04,
-     "reading": "Nominal GDP growth 6.3% over the year to 2026-04-01; 10-year yield 5.27%; federal interest running at $1,280 billion a year."
+     "name": "Reserve purchases outgrow reserves",
+     "old": 18.0,
+     "new": 12.0,
+     "reading": "Fed total assets $6,748 billion, +12 billion over 13 weeks; bank reserves -69 billion over the same period."
     }
    ]
   },
@@ -3439,7 +3667,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -3488,6 +3716,11 @@
       },
       {
        "date": "2026-10-08",
+       "status": "GREEN",
+       "value": null
+      },
+      {
+       "date": "2026-10-09",
        "status": "GREEN",
        "value": null
       }
@@ -3508,7 +3741,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -3557,6 +3790,11 @@
       },
       {
        "date": "2026-10-08",
+       "status": "AMBER",
+       "value": null
+      },
+      {
+       "date": "2026-10-09",
        "status": "AMBER",
        "value": null
       }
@@ -3577,7 +3815,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -3626,6 +3864,11 @@
       },
       {
        "date": "2026-10-08",
+       "status": "AMBER",
+       "value": null
+      },
+      {
+       "date": "2026-10-09",
        "status": "AMBER",
        "value": null
       }
@@ -3646,7 +3889,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -3695,6 +3938,11 @@
       },
       {
        "date": "2026-10-08",
+       "status": "AMBER",
+       "value": null
+      },
+      {
+       "date": "2026-10-09",
        "status": "AMBER",
        "value": null
       }
@@ -3715,7 +3963,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -3766,6 +4014,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": null
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": null
       }
      ]
     },
@@ -3784,7 +4037,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -3835,6 +4088,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": null
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": null
       }
      ]
     },
@@ -3853,7 +4111,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -3902,6 +4160,11 @@
       },
       {
        "date": "2026-10-08",
+       "status": "AMBER",
+       "value": null
+      },
+      {
+       "date": "2026-10-09",
        "status": "AMBER",
        "value": null
       }
@@ -3922,7 +4185,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -3973,6 +4236,11 @@
        "date": "2026-10-08",
        "status": "AMBER",
        "value": null
+      },
+      {
+       "date": "2026-10-09",
+       "status": "AMBER",
+       "value": null
       }
      ]
     },
@@ -3991,7 +4259,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -4042,6 +4310,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": null
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": null
       }
      ]
     },
@@ -4060,7 +4333,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -4111,6 +4384,11 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": null
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": null
       }
      ]
     },
@@ -4129,7 +4407,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -4180,6 +4458,11 @@
        "date": "2026-10-08",
        "status": "AMBER",
        "value": null
+      },
+      {
+       "date": "2026-10-09",
+       "status": "AMBER",
+       "value": null
       }
      ]
     },
@@ -4192,13 +4475,13 @@
      "question": "Are money and insurers pricing a conflict?",
      "trip": "Amber on a 3% fall in the Taiwan dollar in a month, Taiwan stocks lagging the S&P by 8% in 60 sessions, or a sharp insurance move; red at 25% invasion odds or double those moves.",
      "status": "GREEN",
-     "reading": "Taiwan dollar +1.4% vs USD in 30 days; Taiwan ETF vs S&P 500 over 60 sessions +7.7%. Prediction markets: Will China invade Taiwan by end of 2026? 2%; Will China blockade Taiwan in 2026? 4%; Will China invade Taiwan by June 30, 2027? 8%; Will China invade Taiwan by December 31, 2027? 12%.",
+     "reading": "Taiwan dollar +1.5% vs USD in 30 days; Taiwan ETF vs S&P 500 over 60 sessions +9.9%. Prediction markets: Will China invade Taiwan by end of 2026? 2%; Will China blockade Taiwan in 2026? 4%; Will China invade Taiwan by June 30, 2027? 8%; Will China invade Taiwan by December 31, 2027? 10%.",
      "evidence": "Markets price the decision before governments announce it; they also panic for other reasons, so this confirms rather than triggers.",
      "source": "Yahoo Finance; Polymarket; web check",
-     "value": 11.5,
+     "value": 10.5,
      "subs": null,
      "url": "",
-     "checked": "2026-10-08",
+     "checked": "2026-10-09",
      "history": [
       {
        "date": "2026-09-25",
@@ -4249,14 +4532,81 @@
        "date": "2026-10-08",
        "status": "GREEN",
        "value": 11.5
+      },
+      {
+       "date": "2026-10-09",
+       "status": "GREEN",
+       "value": 10.5
       }
      ]
     }
    ],
-   "since_last_run": []
+   "since_last_run": [
+    {
+     "board": "taiwan",
+     "label": "Taiwan",
+     "kind": "value",
+     "name": "Markets smell it",
+     "old": 11.5,
+     "new": 10.5,
+     "reading": "Taiwan dollar +1.5% vs USD in 30 days; Taiwan ETF vs S&P 500 over 60 sessions +9.9%. Prediction markets: Will China invade Taiwan by end of 2026? 2%; Will China blockade Taiwan in 2026? 4%; Will China invade Taiwan by Ju"
+    }
+   ]
   }
  ],
  "changelog": [
+  {
+   "date": "2026-10-09",
+   "first_run": false,
+   "items": [
+    {
+     "board": "plumbing",
+     "label": "Plumbing",
+     "kind": "value",
+     "name": "SOFR against the Fed's rate",
+     "old": -2.0,
+     "new": -3.0,
+     "reading": "SOFR 3.87% on 2026-10-08, -3 bp against the rate on reserves (3.90%); ceiling 4.00%. Worst spread in the last five sessions +0 bp."
+    },
+    {
+     "board": "plumbing",
+     "label": "Plumbing",
+     "kind": "status",
+     "name": "Treasury market function",
+     "old": "AMBER",
+     "new": "GREEN",
+     "reading": "MOVE index 99."
+    },
+    {
+     "board": "plumbing",
+     "label": "Plumbing",
+     "kind": "value",
+     "name": "Bank stress",
+     "old": 8.7,
+     "new": 10.0,
+     "reading": "Discount-window primary credit $10.0 billion (week of 2026-10-07)."
+    },
+    {
+     "board": "fiscal",
+     "label": "Fiscal",
+     "kind": "value",
+     "name": "Reserve purchases outgrow reserves",
+     "old": 18.0,
+     "new": 12.0,
+     "reading": "Fed total assets $6,748 billion, +12 billion over 13 weeks; bank reserves -69 billion over the same period."
+    },
+    {
+     "board": "taiwan",
+     "label": "Taiwan",
+     "kind": "value",
+     "name": "Markets smell it",
+     "old": 11.5,
+     "new": 10.5,
+     "reading": "Taiwan dollar +1.5% vs USD in 30 days; Taiwan ETF vs S&P 500 over 60 sessions +9.9%. Prediction markets: Will China invade Taiwan by end of 2026? 2%; Will China blockade Taiwan in 2026? 4%; Will China invade Taiwan by Ju"
+    }
+   ],
+   "summary": "1 status change(s), 0 gate change(s), 4 notable move(s)."
+  },
   {
    "date": "2026-10-08",
    "first_run": false,
