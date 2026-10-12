@@ -1164,5 +1164,39 @@
    }
   ],
   "summary": "1 status change(s), 0 gate change(s), 4 notable move(s)."
+ },
+ {
+  "date": "2026-10-12",
+  "first_run": false,
+  "items": [
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "gate",
+    "name": "Gate",
+    "old": "Stage 0 of 4 — the buffer is gone; no drain day near, no event",
+    "new": "Stage 0 of 4 — every ingredient, no event: the buffer is gone and a drain day is near",
+    "reading": ""
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "The drain calendar",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Next drain: Thursday Oct 15 (mid-month coupon settlement), 3 days away. Upcoming: Oct 15 (mid-month coupon settlement); Oct 31 (month-end settlement); Nov 15 (mid-month coupon settlement); Nov 30 (month-end settlement)."
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "value",
+    "name": "The arithmetic",
+    "old": -1.03,
+    "new": -1.09,
+    "reading": "Nominal GDP growth 6.3% over the year to 2026-04-01; 10-year yield 5.22%; federal interest running at $1,280 billion a year."
+   }
+  ],
+  "summary": "1 status change(s), 1 gate change(s), 1 notable move(s)."
  }
 ]
