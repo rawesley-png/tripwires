@@ -1198,5 +1198,21 @@
    }
   ],
   "summary": "1 status change(s), 1 gate change(s), 1 notable move(s)."
+ },
+ {
+  "date": "2026-10-13",
+  "first_run": false,
+  "items": [
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "Treasury market function",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "MOVE index 101."
+   }
+  ],
+  "summary": "1 status change(s), 0 gate change(s), 0 notable move(s)."
  }
 ]
