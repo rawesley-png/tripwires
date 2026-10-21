@@ -1438,5 +1438,219 @@
    }
   ],
   "summary": "0 status change(s), 0 gate change(s), 2 notable move(s)."
+ },
+ {
+  "date": "2026-10-21",
+  "first_run": false,
+  "items": [
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "SOFR against the Fed's rate",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Check failed: Expecting value: line 1 column 1 (char 0)"
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "The Fed's repo window",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Check failed: Expecting value: line 1 column 1 (char 0)"
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "The buffer",
+    "old": "RED",
+    "new": "AMBER",
+    "reading": "Check failed: Expecting value: line 1 column 1 (char 0)"
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "Treasury market function",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "MOVE index 97."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "The Fed's swap lines",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Check failed: Expecting value: line 1 column 1 (char 0)"
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "Transmission",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Check failed: Expecting value: line 1 column 1 (char 0)"
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "The Fed's response",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Check failed: Expecting value: line 1 column 1 (char 0)"
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "gate",
+    "name": "Gate",
+    "old": "2 of the three bear-market conditions are present",
+    "new": "No condition present; 3 on watch",
+    "reading": ""
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "Borrowing costs have jumped",
+    "old": "RED",
+    "new": "AMBER",
+    "reading": "Check failed: Expecting value: line 1 column 1 (char 0)"
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "The average stock is already falling",
+    "old": 47.3,
+    "new": 45.1,
+    "reading": "S&P 500 7,770 vs 200-day 7,284 (0 closes below). 45% of 499 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: -4.6%. "
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "Lenders are getting nervous",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Check failed: Expecting value: line 1 column 1 (char 0)"
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "Outside shock",
+    "old": "RED",
+    "new": "AMBER",
+    "reading": "0 red, 5 on watch, of five."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "The economy",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Check failed: Expecting value: line 1 column 1 (char 0)"
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "The Fed",
+    "old": "RED",
+    "new": "AMBER",
+    "reading": "Check failed: Expecting value: line 1 column 1 (char 0)"
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "status",
+    "name": "Interest rates keep rising",
+    "old": "RED",
+    "new": "AMBER",
+    "reading": "Check failed: Expecting value: line 1 column 1 (char 0)"
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "status",
+    "name": "Lenders are getting nervous",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Check failed: Expecting value: line 1 column 1 (char 0)"
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "status",
+    "name": "Oil",
+    "old": "RED",
+    "new": "AMBER",
+    "reading": "Check failed: Expecting value: line 1 column 1 (char 0)"
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "gate",
+    "name": "Gate",
+    "old": "The Fed has taken none of the four steps",
+    "new": "The Fed is on step one of four — pressure building toward step three",
+    "reading": ""
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "status",
+    "name": "Reserve purchases outgrow reserves",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Check failed: Expecting value: line 1 column 1 (char 0)"
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "status",
+    "name": "Expected inflation",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Check failed: Expecting value: line 1 column 1 (char 0)"
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "status",
+    "name": "Gold against real yields",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Check failed: Expecting value: line 1 column 1 (char 0)"
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "status",
+    "name": "The dollar itself",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Check failed: Expecting value: line 1 column 1 (char 0)"
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "status",
+    "name": "The arithmetic",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Check failed: Expecting value: line 1 column 1 (char 0)"
+   }
+  ],
+  "summary": "20 status change(s), 2 gate change(s), 1 notable move(s)."
  }
 ]

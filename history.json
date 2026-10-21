@@ -94,6 +94,11 @@
    "date": "2026-10-20",
    "status": "AMBER",
    "value": 1.0
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": 1.0
   }
  ],
  "t2": [
@@ -189,6 +194,11 @@
   },
   {
    "date": "2026-10-20",
+   "status": "RED",
+   "value": 1
+  },
+  {
+   "date": "2026-10-21",
    "status": "RED",
    "value": 1
   }
@@ -288,6 +298,11 @@
    "date": "2026-10-20",
    "status": "GREEN",
    "value": 0
+  },
+  {
+   "date": "2026-10-21",
+   "status": "GREEN",
+   "value": 0
   }
  ],
  "t4": [
@@ -383,6 +398,11 @@
   },
   {
    "date": "2026-10-20",
+   "status": "GREEN",
+   "value": 5.2
+  },
+  {
+   "date": "2026-10-21",
    "status": "GREEN",
    "value": 5.2
   }
@@ -482,6 +502,11 @@
    "date": "2026-10-20",
    "status": "RED",
    "value": 5.09
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "t6": [
@@ -579,6 +604,11 @@
    "date": "2026-10-20",
    "status": "GREEN",
    "value": 3.29
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "t7": [
@@ -676,6 +706,11 @@
    "date": "2026-10-20",
    "status": "GREEN",
    "value": 217.14
+  },
+  {
+   "date": "2026-10-21",
+   "status": "GREEN",
+   "value": 221.75
   }
  ],
  "t8": [
@@ -773,6 +808,11 @@
    "date": "2026-10-20",
    "status": "RED",
    "value": 126.55
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "m1": [
@@ -870,6 +910,11 @@
    "date": "2026-10-20",
    "status": "RED",
    "value": 5.09
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "m2": [
@@ -965,6 +1010,11 @@
   },
   {
    "date": "2026-10-20",
+   "status": "AMBER",
+   "value": null
+  },
+  {
+   "date": "2026-10-21",
    "status": "AMBER",
    "value": null
   }
@@ -1064,6 +1114,11 @@
    "date": "2026-10-20",
    "status": "AMBER",
    "value": null
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "m4": [
@@ -1161,6 +1216,11 @@
    "date": "2026-10-20",
    "status": "GREEN",
    "value": 47.3
+  },
+  {
+   "date": "2026-10-21",
+   "status": "GREEN",
+   "value": 45.1
   }
  ],
  "m5": [
@@ -1258,6 +1318,11 @@
    "date": "2026-10-20",
    "status": "GREEN",
    "value": 3.29
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "m6": [
@@ -1354,6 +1419,11 @@
   {
    "date": "2026-10-20",
    "status": "RED",
+   "value": 5
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
    "value": 5
   }
  ],
@@ -1452,6 +1522,11 @@
    "date": "2026-10-20",
    "status": "GREEN",
    "value": 4.2
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "m9": [
@@ -1547,6 +1622,11 @@
   },
   {
    "date": "2026-10-20",
+   "status": "GREEN",
+   "value": 0
+  },
+  {
+   "date": "2026-10-21",
    "status": "GREEN",
    "value": 0
   }
@@ -1646,6 +1726,11 @@
    "date": "2026-10-20",
    "status": "RED",
    "value": 4.0
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "k1": [
@@ -1736,6 +1821,11 @@
   },
   {
    "date": "2026-10-20",
+   "status": "GREEN",
+   "value": null
+  },
+  {
+   "date": "2026-10-21",
    "status": "GREEN",
    "value": null
   }
@@ -1830,6 +1920,11 @@
    "date": "2026-10-20",
    "status": "AMBER",
    "value": null
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "k3": [
@@ -1920,6 +2015,11 @@
   },
   {
    "date": "2026-10-20",
+   "status": "AMBER",
+   "value": null
+  },
+  {
+   "date": "2026-10-21",
    "status": "AMBER",
    "value": null
   }
@@ -2014,6 +2114,11 @@
    "date": "2026-10-20",
    "status": "AMBER",
    "value": null
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "k5": [
@@ -2104,6 +2209,11 @@
   },
   {
    "date": "2026-10-20",
+   "status": "GREEN",
+   "value": null
+  },
+  {
+   "date": "2026-10-21",
    "status": "GREEN",
    "value": null
   }
@@ -2198,6 +2308,11 @@
    "date": "2026-10-20",
    "status": "GREEN",
    "value": null
+  },
+  {
+   "date": "2026-10-21",
+   "status": "GREEN",
+   "value": null
   }
  ],
  "k7": [
@@ -2288,6 +2403,11 @@
   },
   {
    "date": "2026-10-20",
+   "status": "AMBER",
+   "value": null
+  },
+  {
+   "date": "2026-10-21",
    "status": "AMBER",
    "value": null
   }
@@ -2382,6 +2502,11 @@
    "date": "2026-10-20",
    "status": "AMBER",
    "value": null
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "k9": [
@@ -2472,6 +2597,11 @@
   },
   {
    "date": "2026-10-20",
+   "status": "GREEN",
+   "value": null
+  },
+  {
+   "date": "2026-10-21",
    "status": "GREEN",
    "value": null
   }
@@ -2566,6 +2696,11 @@
    "date": "2026-10-20",
    "status": "GREEN",
    "value": null
+  },
+  {
+   "date": "2026-10-21",
+   "status": "GREEN",
+   "value": null
   }
  ],
  "k11": [
@@ -2656,6 +2791,11 @@
   },
   {
    "date": "2026-10-20",
+   "status": "AMBER",
+   "value": null
+  },
+  {
+   "date": "2026-10-21",
    "status": "AMBER",
    "value": null
   }
@@ -2750,6 +2890,11 @@
    "date": "2026-10-20",
    "status": "GREEN",
    "value": 9.5
+  },
+  {
+   "date": "2026-10-21",
+   "status": "GREEN",
+   "value": 9.5
   }
  ],
  "r1": [
@@ -2842,6 +2987,11 @@
    "date": "2026-10-20",
    "status": "GREEN",
    "value": -3.0
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "r2": [
@@ -2934,6 +3084,11 @@
    "date": "2026-10-20",
    "status": "GREEN",
    "value": 0.0
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "r3": [
@@ -3026,6 +3181,11 @@
    "date": "2026-10-20",
    "status": "RED",
    "value": 0.0
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "r4": [
@@ -3118,6 +3278,11 @@
    "date": "2026-10-20",
    "status": "GREEN",
    "value": 11
+  },
+  {
+   "date": "2026-10-21",
+   "status": "GREEN",
+   "value": 10
   }
  ],
  "r5": [
@@ -3210,6 +3375,11 @@
    "date": "2026-10-20",
    "status": "AMBER",
    "value": 102.0
+  },
+  {
+   "date": "2026-10-21",
+   "status": "GREEN",
+   "value": 97.0
   }
  ],
  "r6": [
@@ -3302,6 +3472,11 @@
    "date": "2026-10-20",
    "status": "AMBER",
    "value": 11.0
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "e1": [
@@ -3392,6 +3567,11 @@
   },
   {
    "date": "2026-10-20",
+   "status": "GREEN",
+   "value": null
+  },
+  {
+   "date": "2026-10-21",
    "status": "GREEN",
    "value": null
   }
@@ -3486,6 +3666,11 @@
    "date": "2026-10-20",
    "status": "GREEN",
    "value": 0.2
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "e3": [
@@ -3578,6 +3763,11 @@
    "date": "2026-10-20",
    "status": "GREEN",
    "value": 158.2
+  },
+  {
+   "date": "2026-10-21",
+   "status": "GREEN",
+   "value": 158.1
   }
  ],
  "n1": [
@@ -3668,6 +3858,11 @@
   },
   {
    "date": "2026-10-20",
+   "status": "AMBER",
+   "value": null
+  },
+  {
+   "date": "2026-10-21",
    "status": "AMBER",
    "value": null
   }
@@ -3762,6 +3957,11 @@
    "date": "2026-10-20",
    "status": "AMBER",
    "value": null
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "n3": [
@@ -3852,6 +4052,11 @@
   },
   {
    "date": "2026-10-20",
+   "status": "AMBER",
+   "value": null
+  },
+  {
+   "date": "2026-10-21",
    "status": "AMBER",
    "value": null
   }
@@ -3946,6 +4151,11 @@
    "date": "2026-10-20",
    "status": "RED",
    "value": null
+  },
+  {
+   "date": "2026-10-21",
+   "status": "RED",
+   "value": null
   }
  ],
  "q1": [
@@ -4038,6 +4248,11 @@
    "date": "2026-10-20",
    "status": "GREEN",
    "value": 0
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "q2": [
@@ -4130,6 +4345,11 @@
    "date": "2026-10-20",
    "status": "GREEN",
    "value": 0
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "s1": [
@@ -4222,6 +4442,11 @@
    "date": "2026-10-20",
    "status": "GREEN",
    "value": 13.0
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "s2": [
@@ -4312,6 +4537,11 @@
   },
   {
    "date": "2026-10-20",
+   "status": "GREEN",
+   "value": null
+  },
+  {
+   "date": "2026-10-21",
    "status": "GREEN",
    "value": null
   }
@@ -4406,6 +4636,11 @@
    "date": "2026-10-20",
    "status": "AMBER",
    "value": null
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "s4": [
@@ -4496,6 +4731,11 @@
   },
   {
    "date": "2026-10-20",
+   "status": "GREEN",
+   "value": null
+  },
+  {
+   "date": "2026-10-21",
    "status": "GREEN",
    "value": null
   }
@@ -4590,6 +4830,11 @@
    "date": "2026-10-20",
    "status": "GREEN",
    "value": 2.32
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "v2": [
@@ -4682,6 +4927,11 @@
    "date": "2026-10-20",
    "status": "GREEN",
    "value": 4142.0
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "v3": [
@@ -4772,6 +5022,11 @@
   },
   {
    "date": "2026-10-20",
+   "status": "AMBER",
+   "value": null
+  },
+  {
+   "date": "2026-10-21",
    "status": "AMBER",
    "value": null
   }
@@ -4866,6 +5121,11 @@
    "date": "2026-10-20",
    "status": "AMBER",
    "value": 5.43
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "v5": [
@@ -4958,6 +5218,11 @@
    "date": "2026-10-20",
    "status": "GREEN",
    "value": 121.4
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "p1": [
@@ -5050,6 +5315,11 @@
    "date": "2026-10-20",
    "status": "GREEN",
    "value": -1.22
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": null
   }
  ],
  "p2": [
@@ -5142,6 +5412,11 @@
    "date": "2026-10-20",
    "status": "AMBER",
    "value": 0
+  },
+  {
+   "date": "2026-10-21",
+   "status": "AMBER",
+   "value": 0
   }
  ],
  "p3": [
@@ -5232,6 +5507,11 @@
   },
   {
    "date": "2026-10-20",
+   "status": "AMBER",
+   "value": null
+  },
+  {
+   "date": "2026-10-21",
    "status": "AMBER",
    "value": null
   }
