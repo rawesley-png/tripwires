@@ -1652,5 +1652,210 @@
    }
   ],
   "summary": "20 status change(s), 2 gate change(s), 1 notable move(s)."
+ },
+ {
+  "date": "2026-10-22",
+  "first_run": false,
+  "items": [
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "SOFR against the Fed's rate",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "SOFR 3.88% on 2026-10-21, -2 bp against the rate on reserves (3.90%); ceiling 4.00%. Worst spread in the last five sessions -1 bp."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "The Fed's repo window",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Fed overnight repo lending $0.0 billion on 2026-10-22; peak in the last ten sessions $0.1 billion."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "The buffer",
+    "old": "AMBER",
+    "new": "RED",
+    "reading": "Reverse-repo balance $0 billion (peak $2,550 billion); bank reserves $3,022 billion, -121 billion over 13 weeks. Every dollar of Treasury settlement now comes straight out of reserves."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "Treasury market function",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "MOVE index 105."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "The Fed's swap lines",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Central-bank liquidity swaps outstanding $0.2 billion (week of 2026-10-14). Peaks: $580 billion in 2008, $450 billion in 2020."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "Transmission",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Current streak of sessions with yields up, stocks down and the dollar up: 0. 10-year 5.12% on 2026-10-20."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "The Fed's response",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Nothing to respond to."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "gate",
+    "name": "Gate",
+    "old": "No condition present; 3 on watch",
+    "new": "2 of the three bear-market conditions are present",
+    "reading": ""
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "Borrowing costs have jumped",
+    "old": "AMBER",
+    "new": "RED",
+    "reading": "5.12% on 2026-10-20; 19 consecutive readings at or above 5%."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "Lenders are getting nervous",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "High-yield spread 3.27% (+0.57 pts in 60 days); VIX 16.7."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "Outside shock",
+    "old": "AMBER",
+    "new": "RED",
+    "reading": "1 red, 4 on watch, of five."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "The economy",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Unemployment 4.2% (2026-09-01), low 4.0%; Sahm indicator 0.00; jobless claims 4-week average 197,750 vs 52-week low 189,000."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "The Fed",
+    "old": "AMBER",
+    "new": "RED",
+    "reading": "Fed funds target (upper) 4.00%, up from 3.75% 90 days ago."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "status",
+    "name": "Interest rates keep rising",
+    "old": "AMBER",
+    "new": "RED",
+    "reading": "5.12% on 2026-10-20; 19 consecutive readings at or above 5%."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "status",
+    "name": "Lenders are getting nervous",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "High-yield spread 3.27% (+0.57 pts in 60 days)."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "value",
+    "name": "The stock is acting wrong",
+    "old": 221.75,
+    "new": 212.37,
+    "reading": "$212 vs 200-day average $204; 0 closes below it; -3% over 30 sessions."
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "gate",
+    "name": "Gate",
+    "old": "The Fed is on step one of four — pressure building toward step three",
+    "new": "The Fed has taken none of the four steps",
+    "reading": ""
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "status",
+    "name": "Reserve purchases outgrow reserves",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Fed total assets $6,756 billion, +13 billion over 13 weeks; bank reserves -121 billion over the same period."
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "status",
+    "name": "Expected inflation",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "5-year, 5-year-forward breakeven 2.34%; 10-year breakeven 2.37% (2026-10-21)."
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "status",
+    "name": "Gold against real yields",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Gold $4,060 (52-week high $5,318); 30-year TIPS real yield 3.16% (+0.25 over three months)."
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "status",
+    "name": "The dollar itself",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Broad dollar index 121.4, +1.7% over a month; 10-year yield +0.11 over the same period."
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "status",
+    "name": "The arithmetic",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Nominal GDP growth 6.3% over the year to 2026-04-01; 10-year yield 5.12%; federal interest running at $1,280 billion a year."
+   }
+  ],
+  "summary": "19 status change(s), 2 gate change(s), 1 notable move(s)."
  }
 ]
