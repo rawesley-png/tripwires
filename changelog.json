@@ -1857,5 +1857,66 @@
    }
   ],
   "summary": "19 status change(s), 2 gate change(s), 1 notable move(s)."
+ },
+ {
+  "date": "2026-10-23",
+  "first_run": false,
+  "items": [
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "SOFR against the Fed's rate",
+    "old": -2.0,
+    "new": 0.0,
+    "reading": "SOFR 3.90% on 2026-10-22, +0 bp against the rate on reserves (3.90%); ceiling 4.00%. Worst spread in the last five sessions +0 bp."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "Bank stress",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Discount-window primary credit $9.2 billion (week of 2026-10-21)."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "Lenders are getting nervous",
+    "old": 3.27,
+    "new": 3.4,
+    "reading": "High-yield spread 3.40% (+0.70 pts in 60 days); VIX 19.0."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "value",
+    "name": "Lenders are getting nervous",
+    "old": 3.27,
+    "new": 3.4,
+    "reading": "High-yield spread 3.40% (+0.70 pts in 60 days)."
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "value",
+    "name": "Reserve purchases outgrow reserves",
+    "old": 13.0,
+    "new": 6.0,
+    "reading": "Fed total assets $6,754 billion, +6 billion over 13 weeks; bank reserves -100 billion over the same period."
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "value",
+    "name": "Expected inflation",
+    "old": 2.34,
+    "new": 2.19,
+    "reading": "5-year, 5-year-forward breakeven 2.19%; 10-year breakeven 2.32% (2026-10-22)."
+   }
+  ],
+  "summary": "1 status change(s), 0 gate change(s), 5 notable move(s)."
  }
 ]
