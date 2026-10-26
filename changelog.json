@@ -1918,5 +1918,93 @@
    }
   ],
   "summary": "1 status change(s), 0 gate change(s), 5 notable move(s)."
+ },
+ {
+  "date": "2026-10-26",
+  "first_run": false,
+  "items": [
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "gate",
+    "name": "Gate",
+    "old": "Stage 0 of 4 — the buffer is gone; no drain day near, no event",
+    "new": "Stage 0 of 4 — every ingredient, no event: the buffer is gone and a drain day is near",
+    "reading": ""
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "The drain calendar",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Next drain: Saturday Oct 31 (month-end settlement), 5 days away. Upcoming: Oct 31 (month-end settlement); Nov 15 (mid-month coupon settlement); Nov 30 (month-end settlement); Dec 15 (mid-month coupon settlement and corpo"
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "gate",
+    "name": "Gate",
+    "old": "2 of the three bear-market conditions are present",
+    "new": "One of the three bear-market conditions is present, 2 on watch",
+    "reading": ""
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "Borrowing costs have jumped",
+    "old": "RED",
+    "new": "AMBER",
+    "reading": "4.96% on 2026-10-22; 0 consecutive readings at or above 5%."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "The average stock is already falling",
+    "old": 44.3,
+    "new": 41.0,
+    "reading": "S&P 500 7,682 vs 200-day 7,295 (0 closes below). 41% of 500 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: -1.4%. "
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "The Fed",
+    "old": "RED",
+    "new": "AMBER",
+    "reading": "Fed funds target (upper) 4.00%, up from 3.75% 90 days ago."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "status",
+    "name": "Interest rates keep rising",
+    "old": "RED",
+    "new": "AMBER",
+    "reading": "4.96% on 2026-10-22; 0 consecutive readings at or above 5%."
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "value",
+    "name": "The arithmetic",
+    "old": -1.18,
+    "new": -1.35,
+    "reading": "Nominal GDP growth 6.3% over the year to 2026-04-01; 10-year yield 4.96%; federal interest running at $1,280 billion a year."
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "value",
+    "name": "Markets smell it",
+    "old": 9.5,
+    "new": 10.5,
+    "reading": "Taiwan dollar +2.3% vs USD in 30 days; Taiwan ETF vs S&P 500 over 60 sessions +6.8%. Prediction markets: Will China invade Taiwan by end of 2026? 2%; Will China blockade Taiwan in 2026? 3%; Will China invade Taiwan by Ju"
+   }
+  ],
+  "summary": "4 status change(s), 2 gate change(s), 3 notable move(s)."
  }
 ]
