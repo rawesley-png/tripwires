@@ -2137,5 +2137,84 @@
    }
   ],
   "summary": "1 status change(s), 0 gate change(s), 5 notable move(s)."
+ },
+ {
+  "date": "2026-10-29",
+  "first_run": false,
+  "items": [
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "SOFR against the Fed's rate",
+    "old": 5.0,
+    "new": 4.0,
+    "reading": "SOFR 3.94% on 2026-10-28, +4 bp against the rate on reserves (3.90%); ceiling 4.00%. Worst spread in the last five sessions +5 bp."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "gate",
+    "name": "Gate",
+    "old": "2 of the three bear-market conditions are present",
+    "new": "One of the three bear-market conditions is present, 2 on watch",
+    "reading": ""
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "Borrowing costs have jumped",
+    "old": "RED",
+    "new": "AMBER",
+    "reading": "4.99% on 2026-10-27; 0 consecutive readings at or above 5%."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "The average stock is already falling",
+    "old": 43.4,
+    "new": 37.8,
+    "reading": "S&P 500 7,699 vs 200-day 7,306 (0 closes below). 38% of 500 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: +0.1%. "
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "The Fed",
+    "old": "RED",
+    "new": "AMBER",
+    "reading": "Fed funds target (upper) 4.00%, up from 3.75% 90 days ago."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "value",
+    "name": "The buyers are borrowing to buy chips",
+    "old": 1.0,
+    "new": 1.5,
+    "reading": "Trailing-year capex as a share of operating cash flow: Microsoft 0.69×, Amazon 1.07×, Alphabet 0.89×, Meta 0.78×. 1 above 1.0, 1 above 0.8."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "status",
+    "name": "Interest rates keep rising",
+    "old": "RED",
+    "new": "AMBER",
+    "reading": "4.99% on 2026-10-27; 0 consecutive readings at or above 5%."
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "status",
+    "name": "The arithmetic",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Nominal GDP growth 5.9% over the year to 2026-07-01; 10-year yield 4.99%; federal interest running at $1,329 billion a year."
+   }
+  ],
+  "summary": "4 status change(s), 1 gate change(s), 3 notable move(s)."
  }
 ]
