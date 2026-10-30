@@ -2216,5 +2216,129 @@
    }
   ],
   "summary": "4 status change(s), 1 gate change(s), 3 notable move(s)."
+ },
+ {
+  "date": "2026-10-30",
+  "first_run": false,
+  "items": [
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "Treasury market function",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "MOVE index 100."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "Bank stress",
+    "old": 9.2,
+    "new": 9.5,
+    "reading": "Discount-window primary credit $9.5 billion (week of 2026-10-28)."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "gate",
+    "name": "Gate",
+    "old": "One of the three bear-market conditions is present, 2 on watch",
+    "new": "2 of the three bear-market conditions are present",
+    "reading": ""
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "Borrowing costs have jumped",
+    "old": "AMBER",
+    "new": "RED",
+    "reading": "5.05% on 2026-10-28; 1 consecutive readings at or above 5%."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "The average stock is already falling",
+    "old": 37.8,
+    "new": 42.0,
+    "reading": "S&P 500 7,530 vs 200-day 7,310 (0 closes below). 42% of 500 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: +1.6%. "
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "Lenders are getting nervous",
+    "old": 3.14,
+    "new": 3.26,
+    "reading": "High-yield spread 3.26% (+0.66 pts in 60 days); VIX 17.2."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "The Fed",
+    "old": "AMBER",
+    "new": "RED",
+    "reading": "Fed funds target (upper) 4.00%, up from 3.75% 90 days ago."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "status",
+    "name": "Interest rates keep rising",
+    "old": "AMBER",
+    "new": "RED",
+    "reading": "5.05% on 2026-10-28; 1 consecutive readings at or above 5%."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "value",
+    "name": "Lenders are getting nervous",
+    "old": 3.14,
+    "new": 3.26,
+    "reading": "High-yield spread 3.26% (+0.66 pts in 60 days)."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "status",
+    "name": "The stock is acting wrong",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "$202 vs 200-day average $204; 1 closes below it; -9% over 30 sessions."
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "value",
+    "name": "Reserve purchases outgrow reserves",
+    "old": 6.0,
+    "new": 7.0,
+    "reading": "Fed total assets $6,746 billion, +7 billion over 13 weeks; bank reserves -91 billion over the same period."
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "value",
+    "name": "Gold against real yields",
+    "old": 4025.0,
+    "new": 3893.0,
+    "reading": "Gold $3,893 (52-week high $5,318); 30-year TIPS real yield 3.10% (+0.12 over three months)."
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "value",
+    "name": "The arithmetic",
+    "old": -0.88,
+    "new": -0.82,
+    "reading": "Nominal GDP growth 5.9% over the year to 2026-07-01; 10-year yield 5.05%; federal interest running at $1,329 billion a year."
+   }
+  ],
+  "summary": "5 status change(s), 1 gate change(s), 7 notable move(s)."
  }
 ]
