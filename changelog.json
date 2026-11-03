@@ -2455,5 +2455,57 @@
    }
   ],
   "summary": "4 status change(s), 2 gate change(s), 6 notable move(s)."
+ },
+ {
+  "date": "2026-11-03",
+  "first_run": false,
+  "items": [
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "The buffer",
+    "old": 5.0,
+    "new": 0.0,
+    "reading": "Reverse-repo balance $0 billion (peak $2,550 billion); bank reserves $2,894 billion, -91 billion over 13 weeks. Every dollar of Treasury settlement now comes straight out of reserves."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "Treasury market function",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "MOVE index 100."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "The average stock is already falling",
+    "old": 36.8,
+    "new": 38.5,
+    "reading": "S&P 500 7,564 vs 200-day 7,316 (0 closes below). 38% of 499 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: +2.0%. "
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "status",
+    "name": "The stock is acting wrong",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "$207 vs 200-day average $205; 0 closes below it; -10% over 30 sessions."
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "status",
+    "name": "Markets smell it",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Taiwan dollar +3.0% vs USD in 30 days; Taiwan ETF vs S&P 500 over 60 sessions -1.4%. Prediction markets: Will China invade Taiwan by end of 2026? 2%; Will China blockade Taiwan in 2026? 2%; Will China invade Taiwan by Ju"
+   }
+  ],
+  "summary": "3 status change(s), 0 gate change(s), 2 notable move(s)."
  }
 ]
