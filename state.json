@@ -27,7 +27,7 @@
  "k9": "GREEN",
  "k10": "GREEN",
  "k11": "AMBER",
- "k12": "AMBER",
+ "k12": "GREEN",
  "r1": "GREEN",
  "r2": "GREEN",
  "r3": "RED",
@@ -52,7 +52,7 @@
  "v3": "AMBER",
  "v4": "AMBER",
  "v5": "GREEN",
- "p1": "AMBER",
+ "p1": "GREEN",
  "p2": "AMBER",
  "p3": "AMBER"
 }
