@@ -2961,5 +2961,120 @@
    }
   ],
   "summary": "1 status change(s), 0 gate change(s), 5 notable move(s)."
+ },
+ {
+  "date": "2026-11-16",
+  "first_run": false,
+  "items": [
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "gate",
+    "name": "Gate",
+    "old": "Stage 0 of 4 — every ingredient, no event: the buffer is gone and a drain day is near",
+    "new": "Stage 0 of 4 — the buffer is gone; no drain day near, no event",
+    "reading": ""
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "The drain calendar",
+    "old": "AMBER",
+    "new": "GREEN",
+    "reading": "Next drain: Monday Nov 30 (month-end settlement), 14 days away. Upcoming: Nov 30 (month-end settlement); Dec 15 (mid-month coupon settlement and corporate tax date); Dec 31 (quarter-end); Jan 15 (mid-month coupon settlem"
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "Treasury market function",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "MOVE index 101."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "Transmission",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Current streak of sessions with yields up, stocks down and the dollar up: 1. 10-year 5.15% on 2026-11-13."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "gate",
+    "name": "Gate",
+    "old": "One of the three bear-market conditions is present, 2 on watch",
+    "new": "2 of the three bear-market conditions are present",
+    "reading": ""
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "Borrowing costs have jumped",
+    "old": "AMBER",
+    "new": "RED",
+    "reading": "5.15% on 2026-11-13; 2 consecutive readings at or above 5%."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "The average stock is already falling",
+    "old": 37.7,
+    "new": 40.5,
+    "reading": "S&P 500 7,417 vs 200-day 7,343 (0 closes below). 40% of 499 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: +2.2%. "
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "The Fed",
+    "old": "AMBER",
+    "new": "RED",
+    "reading": "Fed funds target (upper) 4.00%, up from 3.75% 90 days ago."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "status",
+    "name": "Interest rates keep rising",
+    "old": "AMBER",
+    "new": "RED",
+    "reading": "5.15% on 2026-11-13; 2 consecutive readings at or above 5%."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "value",
+    "name": "The stock is acting wrong",
+    "old": 161.82,
+    "new": 156.14,
+    "reading": "$156 vs 200-day average $204; 9 closes below it; -35% over 30 sessions."
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "value",
+    "name": "The arithmetic",
+    "old": -0.89,
+    "new": -0.72,
+    "reading": "Nominal GDP growth 5.9% over the year to 2026-07-01; 10-year yield 5.15%; federal interest running at $1,329 billion a year."
+   },
+   {
+    "board": "taiwan",
+    "label": "Taiwan",
+    "kind": "status",
+    "name": "Markets smell it",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Taiwan dollar +2.0% vs USD in 30 days; Taiwan ETF vs S&P 500 over 60 sessions -9.9%. Prediction markets: Will China invade Taiwan by end of 2026? 2%; Will China blockade Taiwan in 2026? 2%; Will China invade Taiwan by Ju"
+   }
+  ],
+  "summary": "7 status change(s), 2 gate change(s), 3 notable move(s)."
  }
 ]
