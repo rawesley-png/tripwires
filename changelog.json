@@ -3076,5 +3076,57 @@
    }
   ],
   "summary": "7 status change(s), 2 gate change(s), 3 notable move(s)."
+ },
+ {
+  "date": "2026-11-17",
+  "first_run": false,
+  "items": [
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "The average stock is already falling",
+    "old": 40.5,
+    "new": 44.3,
+    "reading": "S&P 500 7,341 vs 200-day 7,345 (1 closes below). 44% of 499 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: +1.3%. "
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "status",
+    "name": "Lenders are getting nervous",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "High-yield spread 3.34% (+0.64 pts in 60 days); VIX 22.9."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "value",
+    "name": "Lenders are getting nervous",
+    "old": 3.23,
+    "new": 3.34,
+    "reading": "High-yield spread 3.34% (+0.64 pts in 60 days)."
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "status",
+    "name": "The stock is acting wrong",
+    "old": "AMBER",
+    "new": "RED",
+    "reading": "$155 vs 200-day average $204; 10 closes below it; -35% over 30 sessions."
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "value",
+    "name": "The arithmetic",
+    "old": -0.72,
+    "new": -0.75,
+    "reading": "Nominal GDP growth 5.9% over the year to 2026-07-01; 10-year yield 5.12%; federal interest running at $1,329 billion a year."
+   }
+  ],
+  "summary": "2 status change(s), 0 gate change(s), 3 notable move(s)."
  }
 ]
