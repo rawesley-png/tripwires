@@ -3250,5 +3250,48 @@
    }
   ],
   "summary": "2 status change(s), 0 gate change(s), 5 notable move(s)."
+ },
+ {
+  "date": "2026-11-20",
+  "first_run": false,
+  "items": [
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "Treasury market function",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "MOVE index 106."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "The average stock is already falling",
+    "old": 51.2,
+    "new": 54.5,
+    "reading": "S&P 500 6,910 vs 200-day 7,349 (4 closes below). 54% of 499 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: +4.7%. "
+   },
+   {
+    "board": "ai",
+    "label": "AI cycle",
+    "kind": "value",
+    "name": "The stock is acting wrong",
+    "old": 145.98,
+    "new": 125.53,
+    "reading": "$126 vs 200-day average $203; 13 closes below it; -45% over 30 sessions."
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "value",
+    "name": "The arithmetic",
+    "old": -0.8,
+    "new": -0.83,
+    "reading": "Nominal GDP growth 5.9% over the year to 2026-07-01; 10-year yield 5.04%; federal interest running at $1,329 billion a year."
+   }
+  ],
+  "summary": "1 status change(s), 0 gate change(s), 3 notable move(s)."
  }
 ]
