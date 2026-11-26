@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "soft_checked": false,
  "site_url": "https://rawesley-png.github.io/tripwires/",
  "boards": [
@@ -78,7 +78,7 @@
      "value": 4.0,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -289,6 +289,11 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": 4.0
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": 4.0
       }
      ]
     },
@@ -307,7 +312,7 @@
      "value": 0.0,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -518,6 +523,11 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": 0.0
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": 0.0
       }
      ]
     },
@@ -536,7 +546,7 @@
      "value": 0.0,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -747,6 +757,11 @@
        "date": "2026-11-25",
        "status": "RED",
        "value": 0.0
+      },
+      {
+       "date": "2026-11-26",
+       "status": "RED",
+       "value": 0.0
       }
      ]
     },
@@ -759,13 +774,13 @@
      "question": "Is a day coming when cash leaves the banks all at once?",
      "trip": "Amber inside five business days of a quarter-end, month-end settlement, or tax date; the lamp is a calendar, not a reading. Red only in combination with the SOFR or window tiles.",
      "status": "AMBER",
-     "reading": "Next drain: Monday Nov 30 (month-end settlement), 5 days away. Upcoming: Nov 30 (month-end settlement); Dec 15 (mid-month coupon settlement and corporate tax date); Dec 31 (quarter-end); Jan 15 (mid-month coupon settlement).",
+     "reading": "Next drain: Monday Nov 30 (month-end settlement), 4 days away. Upcoming: Nov 30 (month-end settlement); Dec 15 (mid-month coupon settlement and corporate tax date); Dec 31 (quarter-end); Jan 15 (mid-month coupon settlement).",
      "evidence": "2019's spike and every quarter-end pop since late 2025 landed on these dates. Seizures do not happen on a random Tuesday.",
      "source": "Treasury settlement and tax calendars",
-     "value": 5,
+     "value": 4,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -976,6 +991,11 @@
        "date": "2026-11-25",
        "status": "AMBER",
        "value": 5
+      },
+      {
+       "date": "2026-11-26",
+       "status": "AMBER",
+       "value": 4
       }
      ]
     },
@@ -994,7 +1014,7 @@
      "value": 98.0,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -1205,6 +1225,11 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": 98.0
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": 98.0
       }
      ]
     },
@@ -1223,7 +1248,7 @@
      "value": 9.1,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -1434,6 +1459,11 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": 9.1
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": 9.1
       }
      ]
     },
@@ -1452,7 +1482,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -1663,6 +1693,11 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": null
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": null
       }
      ]
     },
@@ -1681,7 +1716,7 @@
      "value": 0.1,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -1892,6 +1927,11 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": 0.1
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": 0.1
       }
      ]
     },
@@ -1904,13 +1944,13 @@
      "question": "Is the largest source of swapped dollars being pulled home?",
      "trip": "Red on a yen move of more than 5% in a week against the dollar, or a surprise Bank of Japan hike. Amber at 3%, or while the hiking cycle runs.",
      "status": "GREEN",
-     "reading": "Yen 159.1 per dollar, -0.3% on the week (negative = yen surging).",
+     "reading": "Yen 159.2 per dollar, -0.1% on the week (negative = yen surging).",
      "evidence": "August 2024: the yen jumped and U.S. stocks fell 8% in three days on no American news.",
      "source": "Yahoo Finance JPY=X; BoJ via web check",
-     "value": 159.1,
+     "value": 159.2,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -2121,6 +2161,11 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": 159.1
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": 159.2
       }
      ]
     },
@@ -2139,7 +2184,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -2348,6 +2393,11 @@
       },
       {
        "date": "2026-11-25",
+       "status": "AMBER",
+       "value": null
+      },
+      {
+       "date": "2026-11-26",
        "status": "AMBER",
        "value": null
       }
@@ -2368,7 +2418,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -2579,6 +2629,11 @@
        "date": "2026-11-25",
        "status": "AMBER",
        "value": null
+      },
+      {
+       "date": "2026-11-26",
+       "status": "AMBER",
+       "value": null
       }
      ]
     },
@@ -2597,7 +2652,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -2808,6 +2863,11 @@
        "date": "2026-11-25",
        "status": "AMBER",
        "value": null
+      },
+      {
+       "date": "2026-11-26",
+       "status": "AMBER",
+       "value": null
       }
      ]
     },
@@ -2826,7 +2886,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -3035,6 +3095,11 @@
       },
       {
        "date": "2026-11-25",
+       "status": "RED",
+       "value": null
+      },
+      {
+       "date": "2026-11-26",
        "status": "RED",
        "value": null
       }
@@ -3055,7 +3120,7 @@
      "value": 0,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -3264,6 +3329,11 @@
       },
       {
        "date": "2026-11-25",
+       "status": "GREEN",
+       "value": 0
+      },
+      {
+       "date": "2026-11-26",
        "status": "GREEN",
        "value": 0
       }
@@ -3284,7 +3354,7 @@
      "value": 0,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -3495,39 +3565,16 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": 0
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": 0
       }
      ]
     }
    ],
-   "since_last_run": [
-    {
-     "board": "plumbing",
-     "label": "Plumbing",
-     "kind": "gate",
-     "name": "Gate",
-     "old": "Stage 0 of 4 — the buffer is gone; no drain day near, no event",
-     "new": "Stage 0 of 4 — every ingredient, no event: the buffer is gone and a drain day is near",
-     "reading": ""
-    },
-    {
-     "board": "plumbing",
-     "label": "Plumbing",
-     "kind": "value",
-     "name": "SOFR against the Fed's rate",
-     "old": 2.0,
-     "new": 4.0,
-     "reading": "SOFR 3.94% on 2026-11-24, +4 bp against the rate on reserves (3.90%); ceiling 4.00%. Worst spread in the last five sessions +4 bp."
-    },
-    {
-     "board": "plumbing",
-     "label": "Plumbing",
-     "kind": "status",
-     "name": "The drain calendar",
-     "old": "GREEN",
-     "new": "AMBER",
-     "reading": "Next drain: Monday Nov 30 (month-end settlement), 5 days away. Upcoming: Nov 30 (month-end settlement); Dec 15 (mid-month coupon settlement and corporate tax date); Dec 31 (quarter-end); Jan 15 (mid-month coupon settleme"
-    }
-   ]
+   "since_last_run": []
   },
   {
    "key": "market",
@@ -3587,7 +3634,7 @@
      "value": 4.91,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-24",
@@ -3803,6 +3850,11 @@
        "date": "2026-11-25",
        "status": "AMBER",
        "value": 4.91
+      },
+      {
+       "date": "2026-11-26",
+       "status": "AMBER",
+       "value": 4.91
       }
      ]
     },
@@ -3821,7 +3873,7 @@
      "value": null,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-24",
@@ -4037,6 +4089,11 @@
        "date": "2026-11-25",
        "status": "AMBER",
        "value": null
+      },
+      {
+       "date": "2026-11-26",
+       "status": "AMBER",
+       "value": null
       }
      ]
     },
@@ -4055,7 +4112,7 @@
      "value": null,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-24",
@@ -4271,6 +4328,11 @@
        "date": "2026-11-25",
        "status": "AMBER",
        "value": null
+      },
+      {
+       "date": "2026-11-26",
+       "status": "AMBER",
+       "value": null
       }
      ]
     },
@@ -4289,7 +4351,7 @@
      "value": 45.4,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-24",
@@ -4505,6 +4567,11 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": 45.4
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": 45.4
       }
      ]
     },
@@ -4523,7 +4590,7 @@
      "value": 3.72,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-24",
@@ -4739,6 +4806,11 @@
        "date": "2026-11-25",
        "status": "AMBER",
        "value": 3.72
+      },
+      {
+       "date": "2026-11-26",
+       "status": "AMBER",
+       "value": 3.72
       }
      ]
     },
@@ -4783,7 +4855,7 @@
       }
      ],
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-24",
@@ -4997,6 +5069,11 @@
       },
       {
        "date": "2026-11-25",
+       "status": "RED",
+       "value": 5
+      },
+      {
+       "date": "2026-11-26",
        "status": "RED",
        "value": 5
       }
@@ -5017,7 +5094,7 @@
      "value": 4.1,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-24",
@@ -5231,6 +5308,11 @@
       },
       {
        "date": "2026-11-25",
+       "status": "GREEN",
+       "value": 4.1
+      },
+      {
+       "date": "2026-11-26",
        "status": "GREEN",
        "value": 4.1
       }
@@ -5251,7 +5333,7 @@
      "value": 0,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-24",
@@ -5467,6 +5549,11 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": 0
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": 0
       }
      ]
     },
@@ -5485,7 +5572,7 @@
      "value": 4.0,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-24",
@@ -5701,21 +5788,16 @@
        "date": "2026-11-25",
        "status": "AMBER",
        "value": 4.0
+      },
+      {
+       "date": "2026-11-26",
+       "status": "AMBER",
+       "value": 4.0
       }
      ]
     }
    ],
-   "since_last_run": [
-    {
-     "board": "market",
-     "label": "Market",
-     "kind": "value",
-     "name": "The average stock is already falling",
-     "old": 46.9,
-     "new": 45.4,
-     "reading": "S&P 500 7,183 vs 200-day 7,352 (7 closes below). 45% of 500 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: +5.4%. "
-    }
-   ]
+   "since_last_run": []
   },
   {
    "key": "ai",
@@ -5771,7 +5853,7 @@
      "value": 1.5,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-24",
@@ -5985,6 +6067,11 @@
       },
       {
        "date": "2026-11-25",
+       "status": "AMBER",
+       "value": 1.5
+      },
+      {
+       "date": "2026-11-26",
        "status": "AMBER",
        "value": 1.5
       }
@@ -6005,7 +6092,7 @@
      "value": 1,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-24",
@@ -6219,6 +6306,11 @@
       },
       {
        "date": "2026-11-25",
+       "status": "RED",
+       "value": 1
+      },
+      {
+       "date": "2026-11-26",
        "status": "RED",
        "value": 1
       }
@@ -6239,7 +6331,7 @@
      "value": 0,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-24",
@@ -6455,6 +6547,11 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": 0
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": 0
       }
      ]
     },
@@ -6473,7 +6570,7 @@
      "value": 5.2,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-24",
@@ -6689,6 +6786,11 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": 5.2
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": 5.2
       }
      ]
     },
@@ -6707,7 +6809,7 @@
      "value": 4.91,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-24",
@@ -6923,6 +7025,11 @@
        "date": "2026-11-25",
        "status": "AMBER",
        "value": 4.91
+      },
+      {
+       "date": "2026-11-26",
+       "status": "AMBER",
+       "value": 4.91
       }
      ]
     },
@@ -6941,7 +7048,7 @@
      "value": 3.72,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-24",
@@ -7157,6 +7264,11 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": 3.72
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": 3.72
       }
      ]
     },
@@ -7175,7 +7287,7 @@
      "value": 149.3,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-24",
@@ -7391,6 +7503,11 @@
        "date": "2026-11-25",
        "status": "RED",
        "value": 149.3
+      },
+      {
+       "date": "2026-11-26",
+       "status": "RED",
+       "value": 149.3
       }
      ]
     },
@@ -7409,7 +7526,7 @@
      "value": 91.8,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-24",
@@ -7625,21 +7742,16 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": 91.8
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": 91.8
       }
      ]
     }
    ],
-   "since_last_run": [
-    {
-     "board": "ai",
-     "label": "AI cycle",
-     "kind": "value",
-     "name": "The stock is acting wrong",
-     "old": 155.38,
-     "new": 149.3,
-     "reading": "$149 vs 200-day average $203; 16 closes below it; -33% over 30 sessions."
-    }
-   ]
+   "since_last_run": []
   },
   {
    "key": "fiscal",
@@ -7703,7 +7815,7 @@
      "value": -4.0,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -7912,6 +8024,11 @@
       },
       {
        "date": "2026-11-25",
+       "status": "GREEN",
+       "value": -4.0
+      },
+      {
+       "date": "2026-11-26",
        "status": "GREEN",
        "value": -4.0
       }
@@ -7932,7 +8049,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -8141,6 +8258,11 @@
       },
       {
        "date": "2026-11-25",
+       "status": "GREEN",
+       "value": null
+      },
+      {
+       "date": "2026-11-26",
        "status": "GREEN",
        "value": null
       }
@@ -8161,7 +8283,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -8370,6 +8492,11 @@
       },
       {
        "date": "2026-11-25",
+       "status": "AMBER",
+       "value": null
+      },
+      {
+       "date": "2026-11-26",
        "status": "AMBER",
        "value": null
       }
@@ -8390,7 +8517,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -8601,6 +8728,11 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": null
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": null
       }
      ]
     },
@@ -8619,7 +8751,7 @@
      "value": 2.11,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -8830,6 +8962,11 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": 2.11
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": 2.11
       }
      ]
     },
@@ -8842,13 +8979,13 @@
      "question": "Is the world buying the one asset that isn't a promise, even while promises pay well?",
      "trip": "Amber when gold is within 3% of its 52-week high while 30-year real yields sit above 2%. Red when gold makes a new high while real yields rise — the referendum going against the pyramid with the odds still in its favor.",
      "status": "GREEN",
-     "reading": "Gold $3,618 (52-week high $5,318); 30-year TIPS real yield 3.19% (+0.27 over three months).",
+     "reading": "Gold $3,593 (52-week high $5,318); 30-year TIPS real yield 3.19% (+0.27 over three months).",
      "evidence": "Gold has outrun TIPS since 2022 while breakevens stayed flat. It is hedging the regime, not the index.",
      "source": "Yahoo GC=F; FRED DFII30",
-     "value": 3618.0,
+     "value": 3593.0,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -9059,6 +9196,11 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": 3618.0
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": 3593.0
       }
      ]
     },
@@ -9077,7 +9219,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -9288,6 +9430,11 @@
        "date": "2026-11-25",
        "status": "AMBER",
        "value": null
+      },
+      {
+       "date": "2026-11-26",
+       "status": "AMBER",
+       "value": null
       }
      ]
     },
@@ -9306,7 +9453,7 @@
      "value": 5.3,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -9517,6 +9664,11 @@
        "date": "2026-11-25",
        "status": "AMBER",
        "value": 5.3
+      },
+      {
+       "date": "2026-11-26",
+       "status": "AMBER",
+       "value": 5.3
       }
      ]
     },
@@ -9535,7 +9687,7 @@
      "value": 123.6,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -9746,6 +9898,11 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": 123.6
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": 123.6
       }
      ]
     },
@@ -9764,7 +9921,7 @@
      "value": -1.11,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -9975,6 +10132,11 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": -1.11
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": -1.11
       }
      ]
     },
@@ -9993,7 +10155,7 @@
      "value": 0,
      "subs": null,
      "url": null,
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -10204,6 +10366,11 @@
        "date": "2026-11-25",
        "status": "AMBER",
        "value": 0
+      },
+      {
+       "date": "2026-11-26",
+       "status": "AMBER",
+       "value": 0
       }
      ]
     },
@@ -10222,7 +10389,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -10433,21 +10600,16 @@
        "date": "2026-11-25",
        "status": "AMBER",
        "value": null
+      },
+      {
+       "date": "2026-11-26",
+       "status": "AMBER",
+       "value": null
       }
      ]
     }
    ],
-   "since_last_run": [
-    {
-     "board": "fiscal",
-     "label": "Fiscal",
-     "kind": "status",
-     "name": "The arithmetic",
-     "old": "AMBER",
-     "new": "GREEN",
-     "reading": "Nominal GDP growth 6.0% over the year to 2026-07-01; 10-year yield 4.91%; federal interest running at $1,329 billion a year."
-    }
-   ]
+   "since_last_run": []
   },
   {
    "key": "taiwan",
@@ -10507,7 +10669,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -10716,6 +10878,11 @@
       },
       {
        "date": "2026-11-25",
+       "status": "GREEN",
+       "value": null
+      },
+      {
+       "date": "2026-11-26",
        "status": "GREEN",
        "value": null
       }
@@ -10736,7 +10903,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -10945,6 +11112,11 @@
       },
       {
        "date": "2026-11-25",
+       "status": "AMBER",
+       "value": null
+      },
+      {
+       "date": "2026-11-26",
        "status": "AMBER",
        "value": null
       }
@@ -10965,7 +11137,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -11174,6 +11346,11 @@
       },
       {
        "date": "2026-11-25",
+       "status": "AMBER",
+       "value": null
+      },
+      {
+       "date": "2026-11-26",
        "status": "AMBER",
        "value": null
       }
@@ -11194,7 +11371,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -11403,6 +11580,11 @@
       },
       {
        "date": "2026-11-25",
+       "status": "AMBER",
+       "value": null
+      },
+      {
+       "date": "2026-11-26",
        "status": "AMBER",
        "value": null
       }
@@ -11423,7 +11605,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -11634,6 +11816,11 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": null
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": null
       }
      ]
     },
@@ -11652,7 +11839,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -11863,6 +12050,11 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": null
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": null
       }
      ]
     },
@@ -11881,7 +12073,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -12090,6 +12282,11 @@
       },
       {
        "date": "2026-11-25",
+       "status": "AMBER",
+       "value": null
+      },
+      {
+       "date": "2026-11-26",
        "status": "AMBER",
        "value": null
       }
@@ -12110,7 +12307,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -12321,6 +12518,11 @@
        "date": "2026-11-25",
        "status": "AMBER",
        "value": null
+      },
+      {
+       "date": "2026-11-26",
+       "status": "AMBER",
+       "value": null
       }
      ]
     },
@@ -12339,7 +12541,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -12550,6 +12752,11 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": null
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": null
       }
      ]
     },
@@ -12568,7 +12775,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -12779,6 +12986,11 @@
        "date": "2026-11-25",
        "status": "GREEN",
        "value": null
+      },
+      {
+       "date": "2026-11-26",
+       "status": "GREEN",
+       "value": null
       }
      ]
     },
@@ -12797,7 +13009,7 @@
      "value": null,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -13008,6 +13220,11 @@
        "date": "2026-11-25",
        "status": "AMBER",
        "value": null
+      },
+      {
+       "date": "2026-11-26",
+       "status": "AMBER",
+       "value": null
       }
      ]
     },
@@ -13020,13 +13237,13 @@
      "question": "Are money and insurers pricing a conflict?",
      "trip": "Amber on a 3% fall in the Taiwan dollar in a month, Taiwan stocks lagging the S&P by 8% in 60 sessions, or a sharp insurance move; red at 25% invasion odds or double those moves.",
      "status": "RED",
-     "reading": "Taiwan dollar +2.1% vs USD in 30 days; Taiwan ETF vs S&P 500 over 60 sessions -19.1%. Prediction markets: Will China invade Taiwan by end of 2026? 1%; Will China blockade Taiwan by December 31, 2026?? 2%; Will China invade Taiwan by June 30, 2027? 4%; Will China blockade Taiwan by June 30, 2027? 48%.",
+     "reading": "Taiwan dollar +1.5% vs USD in 30 days; Taiwan ETF vs S&P 500 over 60 sessions -19.1%. Prediction markets: Will China invade Taiwan by end of 2026? 1%; Will China blockade Taiwan by December 31, 2026?? 2%; Will China invade Taiwan by June 30, 2027? 4%; Will China blockade Taiwan by June 30, 2027? 18%.",
      "evidence": "Markets price the decision before governments announce it; they also panic for other reasons, so this confirms rather than triggers.",
      "source": "Yahoo Finance; Polymarket; web check",
      "value": 8.5,
      "subs": null,
      "url": "",
-     "checked": "2026-11-25",
+     "checked": "2026-11-26",
      "history": [
       {
        "date": "2026-09-25",
@@ -13237,6 +13454,11 @@
        "date": "2026-11-25",
        "status": "RED",
        "value": 8.5
+      },
+      {
+       "date": "2026-11-26",
+       "status": "RED",
+       "value": 8.5
       }
      ]
     }
@@ -13245,6 +13467,12 @@
   }
  ],
  "changelog": [
+  {
+   "date": "2026-11-26",
+   "first_run": false,
+   "items": [],
+   "summary": "Nothing moved."
+  },
   {
    "date": "2026-11-25",
    "first_run": false,
