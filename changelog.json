@@ -3439,5 +3439,75 @@
   "first_run": false,
   "items": [],
   "summary": "Nothing moved."
+ },
+ {
+  "date": "2026-11-27",
+  "first_run": false,
+  "items": [
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "SOFR against the Fed's rate",
+    "old": 4.0,
+    "new": 5.0,
+    "reading": "SOFR 3.95% on 2026-11-25, +5 bp against the rate on reserves (3.90%); ceiling 4.00%. Worst spread in the last five sessions +5 bp."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "The Fed's repo window",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Fed overnight repo lending $22.8 billion on 2026-11-27; peak in the last ten sessions $22.8 billion."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "value",
+    "name": "Treasury market function",
+    "old": 98.0,
+    "new": 95.0,
+    "reading": "MOVE index 95."
+   },
+   {
+    "board": "plumbing",
+    "label": "Plumbing",
+    "kind": "status",
+    "name": "The Fed's response",
+    "old": "GREEN",
+    "new": "AMBER",
+    "reading": "Fed operations under way."
+   },
+   {
+    "board": "market",
+    "label": "Market",
+    "kind": "value",
+    "name": "The average stock is already falling",
+    "old": 45.4,
+    "new": 40.6,
+    "reading": "S&P 500 7,297 vs 200-day 7,354 (8 closes below). 41% of 500 members below their own 200-day average (counted). Equal-weight vs cap-weight over 60 sessions: +5.0%. "
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "value",
+    "name": "Reserve purchases outgrow reserves",
+    "old": -4.0,
+    "new": 1.0,
+    "reading": "Fed total assets $6,732 billion, +1 billion over 13 weeks; bank reserves +39 billion over the same period."
+   },
+   {
+    "board": "fiscal",
+    "label": "Fiscal",
+    "kind": "value",
+    "name": "The arithmetic",
+    "old": -1.11,
+    "new": -1.17,
+    "reading": "Nominal GDP growth 6.0% over the year to 2026-07-01; 10-year yield 4.85%; federal interest running at $1,329 billion a year."
+   }
+  ],
+  "summary": "2 status change(s), 0 gate change(s), 5 notable move(s)."
  }
 ]
